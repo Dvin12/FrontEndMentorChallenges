@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,400;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: hsl(0, 0%, 94%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  background-color: hsl(0, 0%, 100%);
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 600px;
+  border-radius: 2.4rem;
+  border-bottom-right-radius: 20rem;
+
+  padding: 5rem 4rem;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3rem;
+}
+
+.day,
+.month,
+.year {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  margin: 0.4rem 0;
+  position: relative;
+}
+
+label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  color: hsl(0, 1%, 44%);
+  margin-bottom: 4px;
+}
+
+label.error {
+  color: hsl(0, 100%, 67%);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  padding: 1.2rem 2.2rem;
+  border-radius: 6px;
+  border-width: 1px;
+  border-color: hsl(0, 0%, 86%);
+  border-style: solid;
+  font-weight: 700;
+  font-size: 2.8rem;
+  outline: none;
+  cursor: pointer;
+}
+
+input:focus {
+  border-color: hsl(259, 100%, 65%);
+}
+
+input.error {
+  border-color: hsl(0, 100%, 67%);
+}
+
+p.error {
+  color: hsl(0, 100%, 67%);
+  position: absolute;
+  top: 86px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: none;
+}
+
+.button-container {
+  width: 100%;
+  position: relative;
+}
+
+.line {
+  margin-top: 20px;
+  background-color: hsl(0, 0%, 94%);
+  width: 90%;
+  height: 2px;
+}
+
+.btn {
+  background-color: hsl(259, 100%, 65%);
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: hsl(0, 0%, 8%);
+}
+
+.display-date {
+  display: flex;
+  flex-direction: column;
+  margin: 3.2rem 0;
+  font-size: 8.3rem;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 11rem;
+  letter-spacing: 2px;
+}
+
+.display-date span {
+  color: hsl(259, 100%, 65%);
+}
+
+@media only screen and (max-width: 890px) {
+}
+
+@media only screen and (max-width: 650px) {
+  .app {
+    width: 480px;
+
+    border-radius: 2rem;
+    border-bottom-right-radius: 14rem;
+    padding: 4rem 2.1rem;
+  }
+
+  .form {
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .day,
+  .month,
+  .year {
+    margin: 0.2rem 0rem;
+  }
+
+  input {
+    padding: 1.4rem 2.4rem;
+
+    font-size: 2.4rem;
+  }
+
+  p.error {
+    top: 90px;
+    font-size: 1.1rem;
+  }
+
+  .line {
+    margin-top: 64px;
+    width: 100%;
+  }
+
+  .btn {
+    width: 70px;
+    height: 70px;
+    transform: translate(-50%, -50%);
+    top: 100%;
+    right: 50%;
+    left: 50%;
+  }
+  svg {
+    width: 35px;
+  }
+
+  .display-date {
+    margin: 6.2rem 0rem;
+    font-size: 6.8rem;
+
+    line-height: 7.4rem;
+    letter-spacing: 2px;
+  }
+}
+
+@media only screen and (max-width: 393px) {
+  .app {
+    width: 320px;
+    height: 540px;
+    border-radius: 2rem;
+    border-bottom-right-radius: 12rem;
+    padding: 4rem 2.1rem;
+  }
+
+  .form {
+    gap: 1.8rem;
+  }
+
+  .day,
+  .month,
+  .year {
+    margin: 0.2rem 0rem;
+  }
+
+  input {
+    padding: 1.6rem 1.4rem;
+
+    font-size: 1.4rem;
+  }
+
+  p.error {
+    top: 75px;
+    font-size: 0.9rem;
+  }
+
+  .line {
+    margin-top: 60px;
+
+    width: 100%;
+  }
+
+  .btn {
+    width: 60px;
+    height: 60px;
+
+    top: 100%;
+    right: 50%;
+    left: 50%;
+  }
+  svg {
+    width: 35px;
+  }
+
+  .display-date {
+    margin: 6.2rem 0;
+    font-size: 5rem;
+
+    line-height: 6rem;
+    letter-spacing: 1px;
+  }
+}
+
+.footer {
+  margin-top: 1.4rem;
+  font-size: 1.2rem;
+  color: hsl(0, 1%, 44%);
+  font-weight: 400;
+}
