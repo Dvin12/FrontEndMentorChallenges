@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/result-summary-component-built-with-react-and-tailwind-7O_Mk_Einc)
+- Live Site URL: [Live Site](https://result-summary-ev.netlify.app/)
 
 ## My process
 
