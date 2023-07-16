@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution]([https://your-solution-url.com](https://www.frontendmentor.io/solutions/newsletter-signup-component-built-with-react-and-tailwindcss-lUPQREYfR4))
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/newsletter-signup-component-built-with-react-and-tailwindcss-lUPQREYfR4)
 - Live Site URL: [Live Site](https://newsletter-signup-ev.netlify.app/)
 
 ## My process
