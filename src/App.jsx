@@ -25,7 +25,7 @@ export default function App() {
 
   const isMobile = windowWidth <= breakpoint;
   return (
-    <main className=" font-Inter bg-[hsl(36,100%,96%)]  xl:py-20 xl:px-600  px-6 py-8">
+    <main className=" font-Inter bg-[hsl(36,100%,96%)]  xl:py-20 xl:px-60  px-6 py-8">
       <Navigation>
         <Logo />
         {isMobile ? (
