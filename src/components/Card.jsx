@@ -8,13 +8,13 @@ export default function Card({ read }) {
       >
         <img
           src="./assets/images/avatar-mark-webber.webp"
-          alt=""
+          alt="person"
           className="md:w-[50px] md:h-[50px] w-[40px] h-[40px]"
         />
         <section className="flex flex-col justify-center w-full">
           <article className="flex flex-row w-full">
             <p className="w-full">
-              <span className="mr-1 font-bold text-[hsl(224,21%,14%)]">
+              <span className="mr-1 font-bold text-[hsl(224,21%,14%)] cursor-pointer hover:text-[hsl(219,85%,26%)] duration-300">
                 Mark Webber
               </span>
               reacted to your recent post
@@ -39,13 +39,13 @@ export default function Card({ read }) {
       >
         <img
           src="./assets/images/avatar-angela-gray.webp"
-          alt=""
+          alt="person"
           className="md:w-[50px] md:h-[50px] w-[40px] h-[40px]"
         />
         <section className="flex flex-col justify-center ">
           <article className="flex flex-row w-full">
             <p className="relative">
-              <span className="mr-1 text-[hsl(224,21%,14%)] font-bold">
+              <span className="mr-1 text-[hsl(224,21%,14%)] font-bold cursor-pointer hover:text-[hsl(219,85%,26%)] duration-300">
                 Angela Gray
               </span>
               followed you
@@ -67,13 +67,13 @@ export default function Card({ read }) {
       >
         <img
           src="./assets/images/avatar-jacob-thompson.webp"
-          alt=""
+          alt="person"
           className="md:w-[50px] md:h-[50px] w-[40px] h-[40px]"
         />
         <section className="flex flex-col justify-center ">
           <article className="flex flex-row w-full">
             <p className="relative">
-              <span className="mr-1 text-[hsl(224,21%,14%)] font-bold">
+              <span className="mr-1 text-[hsl(224,21%,14%)] font-bold cursor-pointer hover:text-[hsl(219,85%,26%)] duration-300">
                 Jacob Thompson
               </span>
               has joined your group
@@ -94,14 +94,14 @@ export default function Card({ read }) {
       <li className=" p-4 rounded-xl flex flex-row gap-4 text-sm text-[hsl(219,12%,42%)] ">
         <img
           src="./assets/images/avatar-rizky-hasanuddin.webp"
-          alt=""
+          alt="person"
           className="md:w-[50px] md:h-[50px] w-[40px] h-[40px]"
         />
         <section className="flex flex-col justify-center w-full ">
           <article className="flex flex-row w-full">
             <p className="relative">
-              <span className="mr-1 text-[hsl(224,21%,14%)] font-bold">
-                Jacob Thompson
+              <span className="mr-1 text-[hsl(224,21%,14%)] font-bold cursor-pointer hover:text-[hsl(219,85%,26%)] duration-300">
+                Rizky Hasanuddin
               </span>
               sent you a private message
             </p>
@@ -119,13 +119,13 @@ export default function Card({ read }) {
         <section className="flex flex-row items-center justify-between w-full">
           <img
             src="./assets/images/avatar-kimberly-smith.webp"
-            alt=""
+            alt="person"
             className="md:w-[50px] md:h-[50px] w-[40px] h-[40px]"
           />
           <section className="flex-1 flex-col justify-center ml-4 ">
             <article className="flex flex-row w-full">
               <p className="relative">
-                <span className="mr-1 text-[hsl(224,21%,14%)] font-bold">
+                <span className="mr-1 text-[hsl(224,21%,14%)] font-bold cursor-pointer hover:text-[hsl(219,85%,26%)] duration-300">
                   Kimberly Smith
                 </span>
                 commented on your picture
@@ -135,7 +135,7 @@ export default function Card({ read }) {
           </section>
           <img
             src="./assets/images/image-chess.webp"
-            alt=""
+            alt="person"
             className="md:w-[50px] md:h-[50px] w-[40px] h-[40px] cursor-pointer"
           />
         </section>
@@ -144,13 +144,13 @@ export default function Card({ read }) {
       <li className=" p-4 rounded-xl flex flex-row gap-4 text-sm text-[hsl(219,12%,42%)] ">
         <img
           src="./assets/images/avatar-nathan-peterson.webp"
-          alt=""
+          alt="person"
           className="w-[50px] h-[50px]"
         />
         <section className="flex flex-col justify-center">
           <article className="flex flex-row w-full">
             <p className="relative">
-              <span className="mr-1 font-bold text-[hsl(224,21%,14%)]">
+              <span className="mr-1 font-bold text-[hsl(224,21%,14%)] cursor-pointer hover:text-[hsl(219,85%,26%)] duration-300">
                 Nathan Peterson
               </span>
               reacted to your recent post
@@ -166,14 +166,14 @@ export default function Card({ read }) {
       <li className=" p-4 rounded-xl flex flex-row gap-4 text-sm text-[hsl(219,12%,42%)] ">
         <img
           src="./assets/images/avatar-anna-kim.webp"
-          alt=""
+          alt="person"
           className="w-[50px] h-[50px]"
         />
         <section className="flex flex-col justify-center">
           <article className="flex flex-row w-full">
             <p className="relative">
-              <span className="mr-1 font-bold text-[hsl(224,21%,14%)]">
-                Nathan Peterson
+              <span className="mr-1 font-bold text-[hsl(224,21%,14%)] cursor-pointer hover:text-[hsl(219,85%,26%)] duration-300">
+                Anna Kim
               </span>
               left the group
               <span className="ml-1 font-bold text-[hsl(219,85%,26%)] cursor-pointer">
