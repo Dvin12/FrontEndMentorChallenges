@@ -9,7 +9,7 @@ export default function Card({ read }) {
         <img
           src="./assets/images/avatar-mark-webber.webp"
           alt="person"
-          className="md:w-[50px] md:h-[50px] w-[40px] h-[40px]"
+          className="md:w-[50px] md:h-[50px] w-[40px] h-[40px] cursor-pointer"
         />
         <section className="flex flex-col justify-center w-full">
           <article className="flex flex-row w-full">
@@ -40,7 +40,7 @@ export default function Card({ read }) {
         <img
           src="./assets/images/avatar-angela-gray.webp"
           alt="person"
-          className="md:w-[50px] md:h-[50px] w-[40px] h-[40px]"
+          className="md:w-[50px] md:h-[50px] w-[40px] h-[40px] cursor-pointer"
         />
         <section className="flex flex-col justify-center ">
           <article className="flex flex-row w-full">
@@ -68,7 +68,7 @@ export default function Card({ read }) {
         <img
           src="./assets/images/avatar-jacob-thompson.webp"
           alt="person"
-          className="md:w-[50px] md:h-[50px] w-[40px] h-[40px]"
+          className="md:w-[50px] md:h-[50px] w-[40px] h-[40px] cursor-pointer"
         />
         <section className="flex flex-col justify-center ">
           <article className="flex flex-row w-full">
@@ -95,7 +95,7 @@ export default function Card({ read }) {
         <img
           src="./assets/images/avatar-rizky-hasanuddin.webp"
           alt="person"
-          className="md:w-[50px] md:h-[50px] w-[40px] h-[40px]"
+          className="md:w-[50px] md:h-[50px] w-[40px] h-[40px] cursor-pointer"
         />
         <section className="flex flex-col justify-center w-full ">
           <article className="flex flex-row w-full">
@@ -120,7 +120,7 @@ export default function Card({ read }) {
           <img
             src="./assets/images/avatar-kimberly-smith.webp"
             alt="person"
-            className="md:w-[50px] md:h-[50px] w-[40px] h-[40px]"
+            className="md:w-[50px] md:h-[50px] w-[40px] h-[40px] cursor-pointer"
           />
           <section className="flex-1 flex-col justify-center ml-4 ">
             <article className="flex flex-row w-full">
@@ -145,7 +145,7 @@ export default function Card({ read }) {
         <img
           src="./assets/images/avatar-nathan-peterson.webp"
           alt="person"
-          className="w-[50px] h-[50px]"
+          className="w-[50px] h-[50px] cursor-pointer"
         />
         <section className="flex flex-col justify-center">
           <article className="flex flex-row w-full">
@@ -167,7 +167,7 @@ export default function Card({ read }) {
         <img
           src="./assets/images/avatar-anna-kim.webp"
           alt="person"
-          className="w-[50px] h-[50px]"
+          className="w-[50px] h-[50px] cursor-pointer"
         />
         <section className="flex flex-col justify-center">
           <article className="flex flex-row w-full">
