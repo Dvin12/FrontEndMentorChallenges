@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/interactive-card-details-form-built-with-react-DW759CysoX)
 - Live Site URL: [Live Site](https://card-details-ev.netlify.app/)
 
 ## My process
@@ -47,6 +47,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Edvin Venclavovic](https://edvinven.com/)
+- Frontend Mentor - [@Dvin12](https://www.frontendmentor.io/profile/Dvin12)
