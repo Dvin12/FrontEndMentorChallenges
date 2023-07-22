@@ -21,8 +21,6 @@ export default function CardForm({
   const [nameError, setNameError] = useState("");
   const [cardLength, setCardLength] = useState("");
 
-  // add the required to submit form and create a submit form ///
-
   function handleSubmit(e) {
     e.preventDefault();
 
