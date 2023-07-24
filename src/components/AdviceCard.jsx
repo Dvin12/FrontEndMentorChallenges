@@ -36,7 +36,7 @@ export default function AdviceCard({ quote, getAdvice }) {
           alt=""
           className="w-full h-full"
         />
-        <div className="absolute  bottom-[-10%]">
+        <div className="fixed  bottom-[-10%]">
           <button
             onClick={getAdvice}
             className=" w-16 h-16  rounded-full bg-[hsl(150,100%,66%)] flex items-center justify-center active:w-14 active:h-14   hover:glow duration-200 transition-all"
