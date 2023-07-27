@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/time-tracking-dashboard-built-in-react-Rzozdgn0_8)
 - Live Site URL: [Live Site](https://time-tracking-ev.netlify.app/)
 
 ## My process
