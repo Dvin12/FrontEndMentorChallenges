@@ -10,7 +10,7 @@ export default function UserReportCard({
     <aside className="md:row-span-2">
       <div className="bg-[hsl(246,80%,60%)] rounded-xl w-full px-8 py-6 md:py-10 flex md:flex-col md:items-start md:justify-start items-center justify-center relative gap-4 md:gap-0 z-40">
         <img
-          src="./public/assets/images/image-jeremy.png"
+          src="./assets/images/image-jeremy.png"
           alt="Jeremy"
           className="md:w-[100px] w-[80px] border-4 rounded-full"
         />
