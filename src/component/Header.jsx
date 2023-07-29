@@ -3,7 +3,7 @@ import Button from "./Button";
 export default function Header({ isMobile }) {
   return (
     <section className="w-full h-fot my-8">
-      <div className="lg:grid lg:grid-cols-2 flex flex-col gap-6  ">
+      <div className="md:grid md:grid-cols-2 flex flex-col gap-6  ">
         <article className="flex flex-col justify-between md:mx-36 w-full order-last lg:order-first lg:h-full">
           <div className="h-full w-full flex flex-col md:justify-center items-center md:items-start md:gap-14 gap-6 ">
             <div className="md:text-7xl text-xl font-bold w-full flex  justify-center gap-3 md:flex-col mt-4 text-center md:text-start">
