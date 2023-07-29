@@ -67,8 +67,8 @@ export default function NavigationMobile({
       <div className="flex flex-col gap-4 w-full">
         <button>Login</button>
         <Button
-          px="6"
-          py="2"
+          px="px-6"
+          py="py-2"
           border="border-[2px] border-[hsl(0,0%,41%)]"
           text="text-[hsl(0,0%,41%)]"
           hover="hover:border-[hsl(0,0%,8%)] hover:text-[hsl(0,0%,8%)]"

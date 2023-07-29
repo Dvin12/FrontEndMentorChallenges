@@ -9,7 +9,7 @@ export default function Button({
 }) {
   return (
     <button
-      className={`${backgroundColour} px-${px} py-${py} rounded-2xl ${text} ${border} ${hover} duration-300 `}
+      className={`${backgroundColour} ${px} ${py} rounded-2xl ${text} ${border} ${hover} duration-300 `}
     >
       {children}
     </button>

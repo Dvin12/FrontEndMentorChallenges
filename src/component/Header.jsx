@@ -20,8 +20,8 @@ export default function Header({ isMobile }) {
               text="text-white font-bold"
               border="border-[1px] border-black"
               hover="hover:bg-white hover:text-black  "
-              px="8"
-              py="4"
+              px="px-8"
+              py="py-4"
             >
               Learn more
             </Button>
