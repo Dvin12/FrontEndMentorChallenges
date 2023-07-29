@@ -41,7 +41,7 @@ export default function Header({ isMobile }) {
                 ? "image-hero-mobile.png"
                 : "image-hero-desktop.png"
             }`}
-            alt=""
+            alt="hero image"
             className="xl:w-[540px] lg:w-[480px]"
           />
         </aside>
