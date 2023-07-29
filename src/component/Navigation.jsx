@@ -23,6 +23,8 @@ export default function Navigation({
             handleCompany={handleCompany}
             handleFeatures={handleFeatures}
             isMobile={isMobile}
+            features={features}
+            company={company}
           />
           {features === true ? <Features /> : ""}
           {company === true ? <Company /> : ""}

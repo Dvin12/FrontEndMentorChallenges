@@ -30,14 +30,25 @@ export default function NavigationMobile({
           >
             <span>Features</span>
             <span>
-              <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  stroke="#686868"
-                  strokeWidth="1.5"
-                  fill="none"
-                  d="m1 1 4 4 4-4"
-                />
-              </svg>
+              {features === true ? (
+                <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    stroke="#686868"
+                    strokeWidth="1.5"
+                    fill="none"
+                    d="m1 5 4-4 4 4"
+                  />
+                </svg>
+              ) : (
+                <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    stroke="#686868"
+                    strokeWidth="1.5"
+                    fill="none"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              )}
             </span>
           </li>
           <li>{features && <Features />}</li>
@@ -49,14 +60,25 @@ export default function NavigationMobile({
           >
             <span>Company</span>
             <span>
-              <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  stroke="#686868"
-                  strokeWidth="1.5"
-                  fill="none"
-                  d="m1 1 4 4 4-4"
-                />
-              </svg>
+              {company === true ? (
+                <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    stroke="#686868"
+                    strokeWidth="1.5"
+                    fill="none"
+                    d="m1 5 4-4 4 4"
+                  />
+                </svg>
+              ) : (
+                <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    stroke="#686868"
+                    strokeWidth="1.5"
+                    fill="none"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              )}
             </span>
           </li>
           <li>{company && <Company />}</li>
