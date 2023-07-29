@@ -13,7 +13,7 @@ export default function Navigation({
 }) {
   return (
     <nav className="flex items-center gap-16 relative">
-      <img src="./public/assets/images/logo.svg" alt="" />
+      <img src="./assets/images/logo.svg" alt="" />
 
       {isMobile ? (
         <Hamburger handleIsOpen={handleIsOpen} />
