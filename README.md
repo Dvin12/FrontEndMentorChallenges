@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/expenses-chart-component-bcAmQ5IILR)
 - Live Site URL: [Live Site](https://chart-component-ev.netlify.app/)
 
 ## My process
@@ -41,7 +41,6 @@ Users should be able to:
 - TailwindCSS
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 
