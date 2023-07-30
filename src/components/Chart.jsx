@@ -14,7 +14,7 @@ export default function Chart({ chart }) {
           </ul>
         ))}
       </div>
-      <div className="flex justify-between items-end border-t-[2px] border-[hsl(27,66%,92%)] pt-14">
+      <div className="flex justify-between items-end border-t-[2px] border-[hsl(27,66%,92%)] pt-8">
         <div className="flex flex-col justify-center gap-2">
           <span className="text-[hsl(28,10%,53%)]">Total this month</span>
           <span className="md:text-5xl text-4xl font-bold text-[hsl(25,47%,15%)]">
