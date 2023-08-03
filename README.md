@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/interactive-pricing-component-built-in-react-03f_U9UWgX)
 - Live Site URL: [Live Site](https://interactive-pricing-ev.netlify.app/)
 
 ## My process
