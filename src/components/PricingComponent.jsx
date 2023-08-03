@@ -55,11 +55,11 @@ export default function PricingComponent() {
             <>
               <p className="flex justify-center items-center gap-1 text-[hsl(225,20%,60%)]">
                 <span className="text-5xl font-bold text-[hsl(227,35%,25%)]">
-                  {slider === 1 && `${billing === true ? "$2.00" : "$8.00"}`}
-                  {slider === 2 && `${billing === true ? "$3.00" : "$12.00"}`}
-                  {slider === 3 && `${billing === true ? "$4.00" : "$16.00"}`}
-                  {slider === 4 && `${billing === true ? "$6.00" : "$24.00"}`}
-                  {slider === 5 && `${billing === true ? "$9.00" : "$36.00"}`}
+                  {slider === 1 && `${billing === true ? "$6.00" : "$8.00"}`}
+                  {slider === 2 && `${billing === true ? "$9.00" : "$12.00"}`}
+                  {slider === 3 && `${billing === true ? "$12.00" : "$16.00"}`}
+                  {slider === 4 && `${billing === true ? "$18.00" : "$24.00"}`}
+                  {slider === 5 && `${billing === true ? "$27.00" : "$36.00"}`}
                 </span>
                 / month
               </p>
