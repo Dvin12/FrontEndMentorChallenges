@@ -21,11 +21,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./public/images/screenshot.png)
+![](./public/assets/images/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/data-storage-component-jJYvMpNAIO)
 - Live Site URL: [Live Site](https://data-storage-component-ev.netlify.app/)
 
 ## My process
