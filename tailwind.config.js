@@ -5,12 +5,7 @@ export default {
     fontFamily: {
       Raleway: ["Raleway"],
     },
-    extend: {
-      backgroundImage: {
-        "bg-desktop": "url('./public/assets/images/bg-desktop.png')",
-        "bg-mobile": "url('./public/assets/images/bg-mobile.png')",
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };
