@@ -5,7 +5,7 @@ export default function Article3() {
         <div className="flex items-center gap-4">
           <img
             src="./assets/images/image-kira.jpg"
-            alt="daniel"
+            alt="kira"
             className="rounded-full  w-10 "
           />
           <div className="flex flex-col text-sm ">

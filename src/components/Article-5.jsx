@@ -5,7 +5,7 @@ export default function Article5() {
         <div className="flex items-center gap-4">
           <img
             src="./assets/images/image-patrick.jpg"
-            alt="daniel"
+            alt="patrick"
             className="rounded-full border-[2px] w-10 border-[hsl(263,55%,72%)]"
           />
           <div className="flex flex-col text-sm ">
