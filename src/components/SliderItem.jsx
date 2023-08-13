@@ -12,7 +12,7 @@ export default function SliderItem({
     <section
       className={`  w-full h-full  ${
         selected !== index ? "hidden" : "grid"
-      } grid-rows-1 lg:grid-rows-0 lg:grid-cols-2 lg:px-44`}
+      } grid-rows-1 lg:grid-rows-0 lg:grid-cols-2 lg:px-24`}
     >
       <div className="  z-20  order-last flex items-center lg:items-start justify-center w-full flex-col my-16 lg:my-0 lg:mx-0 lg:order-first ">
         <p className=" text-lg lg:text-4xl lg:font-thin  lg:leading-tight lg:text-left  text-center lg:px-0 lg:w-[800px] px-4 text-[hsl(240,38%,20%)] ">
