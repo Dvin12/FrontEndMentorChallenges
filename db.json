@@ -1,0 +1,50 @@
+{
+  "followers": [
+    {
+      "id": 111,
+      "platform": "fb",
+      "channel": "@nathanf",
+      "totalFollowers": 1987,
+      "todayFollowed": 12,
+      "pageViews": 87,
+      "pageViewsBy": 3,
+      "likes": 52,
+      "growth": 2
+    },
+    {
+      "id": 222,
+      "platform": "twitter",
+      "channel": "@nathanf",
+      "totalFollowers": 1044,
+      "todayFollowed": 99,
+      "likes": 507,
+      "growth": 553,
+      "retweets": 117,
+      "tweetsBy": 303
+    },
+
+    {
+      "id": 333,
+      "platform": "ig",
+      "channel": "@realnathanf",
+      "totalFollowers": "11k",
+      "todayFollowed": 1099,
+      "likes": 5462,
+      "growth": 2257,
+      "profileViews": "52k",
+      "profileViewsBy": 1375
+    },
+
+    {
+      "id": 444,
+      "platform": "youtube",
+      "channel": "Nathan F.",
+      "totalFollowers": 8239,
+      "todayFollowed": 144,
+      "likes": 107,
+      "growth": 19,
+      "profileViews": 1407,
+      "profileViewsBy": 12
+    }
+  ]
+}
