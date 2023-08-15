@@ -1,7 +1,7 @@
 export default function TodayCard({ card }) {
   const { platform, type, amount, growth, loss } = card;
   return (
-    <div className="flex flex-col gap-8 px-8 py-6 rounded-md bg-lightCardBg dark:bg-darkCardBg">
+    <div className="flex flex-col gap-8 px-8 py-6 duration-200 rounded-md cursor-pointer bg-lightCardBg dark:bg-darkCardBg hover:bg-lightCardBgHover dark:hover:bg-darkCardBgHover">
       <div className="flex items-center justify-between">
         <span className="font-semibold text-lightTextSmall dark:text-darkSmallText">
           {type === "Page Views" && type}

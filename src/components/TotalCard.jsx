@@ -8,7 +8,7 @@ export default function TotalCard({ card }) {
   const youtubeBorder = "bg-[hsl(348,97%,39%)]";
 
   return (
-    <div className="relative flex flex-col justify-between gap-5 py-8 overflow-hidden rounded-md bg-lightCardBg dark:bg-darkCardBg">
+    <div className="relative flex flex-col justify-between gap-5 py-8 overflow-hidden duration-200 rounded-md cursor-pointer bg-lightCardBg dark:bg-darkCardBg dark:hover:bg-darkCardBgHover hover:bg-lightCardBgHover ">
       <div
         className={`absolute top-0 w-full h-[5px] ${
           platform === "fb"

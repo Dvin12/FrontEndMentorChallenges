@@ -1,10 +1,9 @@
 import Main from "./components/Main";
 import Header from "./components/Header";
-import TotalFollowers from "./components/TotalFollowers";
-import DarkMode from "./components/DarkMode";
 import OverviewTotal from "./components/OverviewTotal";
 import OverviewToday from "./components/OverviewToday";
 import { useState, useEffect } from "react";
+import Background from "./components/Background";
 
 const followers = `https://my-json-server.typicode.com/dvin12/social-media-dashboard/followers`;
 const overview =
@@ -54,10 +53,8 @@ export default function App() {
 
   return (
     <Main>
-      <Header>
-        <TotalFollowers />
-        <DarkMode setTheme={setTheme} theme={theme} />
-      </Header>
+      <Background />
+      <Header theme={theme} setTheme={setTheme}></Header>
       <OverviewTotal followersData={followersData} />
       <OverviewToday overviewData={overviewData} />
     </Main>
