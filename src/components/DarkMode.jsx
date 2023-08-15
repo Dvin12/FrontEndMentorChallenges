@@ -19,7 +19,7 @@ export default function DarkMode({ setTheme, theme }) {
         >
           <div
             className={`w-[28px] h-[28px] rounded-full bg-lightBg absolute top-1 ${
-              theme === "light" ? "left-[36px]" : `left-[5px] bg-darkBg `
+              theme === "light" ? "left-[36px]" : `left-[5px] dark:bg-darkBg `
             } duration-300`}
           ></div>
         </div>
