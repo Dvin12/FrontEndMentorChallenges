@@ -4,40 +4,62 @@ import TotalFollowers from "./components/TotalFollowers";
 import DarkMode from "./components/DarkMode";
 import OverviewTotal from "./components/OverviewTotal";
 import OverviewToday from "./components/OverviewToday";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
-const URL = `https://my-json-server.typicode.com/dvin12/social-media-dashboard/followers`;
+const followers = `https://my-json-server.typicode.com/dvin12/social-media-dashboard/followers`;
+const overview =
+  "https://my-json-server.typicode.com/dvin12/social-media-dashboard/Overview";
 
 export default function App() {
-  const [analyticData, setAnalyticData] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
+  const [followersData, setFollowersData] = useState([]);
+  const [overviewData, setOverviewData] = useState([]);
+  const [theme, setTheme] = useState("light");
+
   useEffect(function () {
     async function getData() {
       try {
-        setIsLoading(true);
-        const response = await fetch(`${URL}`);
+        const response = await fetch(`${followers}`);
         const data = await response.json();
-        setAnalyticData(data);
+        setFollowersData(data);
       } catch (err) {
         console.log("There was an error fetching");
-      } finally {
-        setIsLoading(false);
       }
     }
     getData();
   }, []);
 
-  console.log(analyticData);
+  useEffect(function () {
+    async function getData() {
+      try {
+        const response = await fetch(`${overview}`);
+        const data = await response.json();
+        setOverviewData(data);
+      } catch (err) {
+        console.log("There was an error fetching");
+      }
+    }
+    getData();
+  }, []);
+
+  useEffect(
+    function () {
+      if (theme === "dark") {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    },
+    [theme]
+  );
 
   return (
     <Main>
       <Header>
         <TotalFollowers />
-        <DarkMode />
+        <DarkMode setTheme={setTheme} theme={theme} />
       </Header>
-      <OverviewTotal analyticData={analyticData} />
-      <OverviewToday analyticData={analyticData} />
+      <OverviewTotal followersData={followersData} />
+      <OverviewToday overviewData={overviewData} />
     </Main>
   );
 }
