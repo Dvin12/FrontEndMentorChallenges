@@ -1,12 +1,16 @@
 export default function Background() {
   return (
-    <div className=" w-full flex ">
+    <div className="flex w-full ">
       <img
         src="../assets/images/bg-top.svg"
         alt=""
-        className="absolute -top-12 left-48"
+        className="absolute -top-12 left-48 xl:top-0 xl:left-auto xl:right-1"
       />
-      <img src="../assets/images/bg-bottom.svg" alt="" className="hidden" />
+      <img
+        src="../assets/images/bg-bottom.svg"
+        alt=""
+        className="hidden xl:absolute xl:block xl:bottom-0"
+      />
     </div>
   );
 }

@@ -3,7 +3,7 @@ export default function Card({ type, price, storage, users, send }) {
     <article
       className={`${
         type === "Professional"
-          ? "bg-gradient-to-r from-gradient1 to-gradient2 text-[#fff]"
+          ? "bg-gradient-to-r from-gradient1 to-gradient2 text-[#fff] xl:h-[580px]"
           : "bg-[#fff] text-grayishBlue"
       } z-30 flex flex-col items-center justify-center px-8 gap-6  shadow-lg rounded-xl w-full`}
     >
@@ -16,14 +16,14 @@ export default function Card({ type, price, storage, users, send }) {
         <span className="text-3xl">$</span>
         <span className="text-6xl">{price}</span>
       </div>
-      <ul className="flex flex-col w-full items-center justify-center">
-        <li className="border-t  w-full text-center py-5 border-lGrayishBlue">
+      <ul className="flex flex-col items-center justify-center w-full">
+        <li className="w-full py-5 text-center border-t border-lGrayishBlue">
           {storage} Storage
         </li>
-        <li className=" w-full text-center border-t py-5 border-lGrayishBlue ">
+        <li className="w-full py-5 text-center border-t border-lGrayishBlue">
           {users} Users Allowed
         </li>
-        <li className="border-t w-full text-center border-b py-5 border-lGrayishBlue">
+        <li className="w-full py-5 text-center border-t border-b border-lGrayishBlue">
           Send up to {send} GB
         </li>
       </ul>

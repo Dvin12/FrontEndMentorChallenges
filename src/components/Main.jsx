@@ -1,6 +1,6 @@
 export default function Main({ children }) {
   return (
-    <main className=" w-full  h-full bg-vLGrayishBlue font-Montserrat relative overflow-x-hidden  px-8 pb-12">
+    <main className="relative w-full h-full px-8 pb-12 overflow-x-hidden bg-vLGrayishBlue font-Montserrat xl:h-screen">
       {children}
     </main>
   );

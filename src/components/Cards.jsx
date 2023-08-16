@@ -2,7 +2,7 @@ import Card from "./Card";
 
 export default function Cards({ annually }) {
   return (
-    <section className="z-30 flex flex-col w-full items-center  justify-center gap-8">
+    <section className="z-30 flex flex-col items-center justify-center w-full gap-8 xl:flex-row xl:gap-0 xl:px-64 xl:justify-center xl:py-2">
       <Card
         type="Basic"
         price={annually ? "199.99" : "19.99"}
