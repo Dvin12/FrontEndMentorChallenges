@@ -9,6 +9,7 @@ export default {
       dGrayishBlue: "hsl(232,13%,33%)",
       gradient1: "hsl(236,72%,79%)",
       gradient2: "hsl(237,63%,64%)",
+      transparent: "hsl(0,0%,0%,0)",
     },
     fontFamily: {
       Montserrat: ["Montserrat"],

@@ -28,13 +28,21 @@ export default function Card({ type, price, storage, users, send }) {
         </li>
       </ul>
       <button
-        className={`mb-8 ${
+        className={`${
           type === "Professional"
-            ? "bg-[#fff] text-gradient2"
+            ? ""
             : "bg-gradient-to-r from-gradient1 to-gradient2"
-        } w-full py-4 rounded-lg text-vLGrayishBlue tracking-[2px] text-xs `}
+        } w-full h-[60px] my-8  rounded-lg overflow-hidden  `}
       >
-        LEARN MORE
+        <div
+          className={`${
+            type === "Professional"
+              ? "text-gradient1 bg-[#fff] hover:bg-transparent hover:text-[#fff] hover:border-[#fff] hover:border-[1px]"
+              : "text-[#fff] hover:bg-[#fff] hover:border-gradient2 hover:border-[1px] hover:text-gradient2"
+          } uppercase text-sm tracking-[3px] w-full h-[60px] flex items-center justify-center transition rounded-lg`}
+        >
+          Learn More
+        </div>
       </button>
     </article>
   );
