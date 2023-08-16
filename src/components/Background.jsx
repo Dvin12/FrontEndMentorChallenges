@@ -9,7 +9,7 @@ export default function Background() {
       <img
         src="../assets/images/bg-bottom.svg"
         alt=""
-        className="hidden xl:absolute xl:block xl:bottom-0"
+        className="hidden xl:absolute xl:block xl:bottom-0 xl:left-0"
       />
     </div>
   );
