@@ -10,7 +10,7 @@ export default function App() {
       <Navigation />
       <Header />
       <Section />
-      <Footer />
+      {/* <Footer /> */}
     </Main>
   );
 }

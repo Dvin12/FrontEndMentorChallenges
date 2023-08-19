@@ -3,7 +3,7 @@ export default function MobileNav({ activated }) {
     <aside
       className={`fixed top-20 left-0 w-full h-full bg-vDarkViolet text-vLightGray flex  justify-center ${
         activated ? "translate-x-0" : "translate-x-full"
-      } transition-all duration-300 z-30`}
+      } transition-all duration-300 z-30 lg:hidden`}
     >
       <img
         src="../assets/images/bg-pattern-mobile-nav.svg"
