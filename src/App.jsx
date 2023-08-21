@@ -1,7 +1,7 @@
 import Main from "./components/Main";
 import Header from "./components/Header";
 import Section from "./components/Section";
-import Article from "./components/Article";
+import Articles from "./components/Articles";
 import Footer from "./components/Footer";
 
 export default function App() {
@@ -9,7 +9,7 @@ export default function App() {
     <Main>
       <Header />
       <Section>
-        <Article></Article>
+        <Articles></Articles>
       </Section>
       <Footer />
     </Main>
