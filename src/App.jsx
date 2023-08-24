@@ -5,6 +5,7 @@ import Section from "./components/Section";
 import Article from "./components/Article";
 import Newsletter from "./components/Newsletter";
 import Footer from "./components/Footer";
+import { useState } from "react";
 
 export default function App() {
   return (
@@ -13,9 +14,9 @@ export default function App() {
       <Header />
       <Section>
         <Article />
-        {/* <Newsletter /> */}
+        <Newsletter />
       </Section>
-      {/* <Footer /> */}
+      <Footer />
     </Main>
   );
 }

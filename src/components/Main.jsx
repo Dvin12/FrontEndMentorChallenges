@@ -1,3 +1,3 @@
 export default function Main({ children }) {
-  return <main className="p-6 overflow-hidden font-openSans">{children}</main>;
+  return <main className="overflow-hidden font-openSans">{children}</main>;
 }
