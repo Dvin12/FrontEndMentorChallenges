@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/fylo-landing-page-with-two-column-layout-0RFZQqply0)
 - Live Site URL: [Live Site](https://fylo-landing-page-ev.netlify.app/)
 
 ## My process
