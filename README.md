@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/fylo-dark-theme-landing-page-hjrnyg9eGc)
 - Live Site URL: [Live Site](https://fylo-dark-ev.netlify.app/)
 
 ## My process
