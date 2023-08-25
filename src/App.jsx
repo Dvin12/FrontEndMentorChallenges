@@ -2,10 +2,11 @@ import Main from "./components/Main";
 import Nav from "./components/Nav";
 import Header from "./components/Header";
 import Section from "./components/Section";
-import Article from "./components/Article";
 import Testimonials from "./components/Testimonials";
 import NewsLetter from "./components/NewsLetter";
 import Footer from "./components/Footer";
+import BulletPoints from "./components/BulletPoints";
+import Article from "./components/Article";
 
 export default function App() {
   return (
@@ -13,11 +14,12 @@ export default function App() {
       <Nav />
       <Header />
       <Section>
+        <BulletPoints />
         <Article />
-        {/* <Testimonials />
-        <NewsLetter /> */}
+        <Testimonials />
+        <NewsLetter />
       </Section>
-      {/* <Footer /> */}
+      <Footer />
     </Main>
   );
 }
