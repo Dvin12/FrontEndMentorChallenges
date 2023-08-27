@@ -22,7 +22,7 @@ export default function Testimonials() {
         <article className="flex flex-col items-center justify-center xl:gap-5">
           <img
             src="./assets/images/image-thomas.jpg"
-            alt="emily"
+            alt="thomas"
             className="w-1/5 rounded-full xl:w-[5rem]"
           />
           <p className="py-10 text-lg leading-relaxed text-center text-dCyan xl:leading-normal 2xl:px-10 ">
@@ -36,7 +36,7 @@ export default function Testimonials() {
         <article className="flex flex-col items-center justify-center xl:gap-5">
           <img
             src="./assets/images/image-jennie.jpg"
-            alt="emily"
+            alt="jennie"
             className="w-1/5 rounded-full xl:w-[5rem]"
           />
           <p className="py-10 text-lg leading-relaxed text-center text-dCyan xl:leading-normal 2xl:px-10 ">

@@ -16,37 +16,37 @@ export default function Gallery() {
 
         <img
           src="./assets/images/mobile/image-gallery-orange.jpg"
-          alt="milkbottles"
+          alt="orange"
           className="block xl:hidden"
         />
 
         <img
           src="./assets/images/desktop/image-gallery-orange.jpg"
-          alt="milkbottles"
+          alt="orange"
           className="hidden xl:block"
         />
       </div>
       <div className="flex items-center justify-center w-1/2 xl:w-[30%] xl:items-start ">
         <img
           src="./assets/images/mobile/image-gallery-cone.jpg"
-          alt="milkbottles"
+          alt="cone"
           className="block xl:hidden"
         />
 
         <img
           src="./assets/images/desktop/image-gallery-cone.jpg"
-          alt="milkbottles"
+          alt="cone"
           className="hidden xl:block"
         />
         <img
           src="./assets/images/mobile/image-gallery-sugar-cubes.jpg"
-          alt="milkbottles"
+          alt="sugar cubes"
           className="block xl:hidden"
         />
 
         <img
           src="./assets/images/desktop/image-gallery-sugarcubes.jpg"
-          alt="milkbottles"
+          alt="sugar cubes"
           className="hidden xl:block"
         />
       </div>

@@ -1,12 +1,10 @@
-import Article from "./Article";
-
 export default function Section() {
   return (
     <section>
       <article className="relative items-center justify-center w-full xl:flex ">
         <img
           src="./assets/images/mobile/image-transform.jpg"
-          alt="transform"
+          alt="egg"
           className="block xl:hidden"
         />
         <img
