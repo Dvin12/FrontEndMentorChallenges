@@ -1,6 +1,6 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Gallary from "./components/Gallary";
+import Gallery from "./components/Gallery";
 import Main from "./components/Main";
 import Nav from "./components/Nav";
 import Section from "./components/Section";
@@ -13,7 +13,7 @@ export default function App() {
       <Header />
       <Section />
       <Testimonials />
-      <Gallary />
+      <Gallery />
       <Footer />
     </Main>
   );
