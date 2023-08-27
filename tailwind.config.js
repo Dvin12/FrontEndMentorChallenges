@@ -19,6 +19,7 @@ export default {
       vDGrayBlue: "hsl(213,9%,39%)",
       dGrayBlue: "hsl(232,10%,55%)",
       grayBlue: "hsl(210,4%,67%)",
+      white: "hsl(0,0%,100%)",
     },
   },
   plugins: [],
