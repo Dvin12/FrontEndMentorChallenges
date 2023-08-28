@@ -17,6 +17,10 @@ export default {
       bodyGrayBlue: "hsl(237,17%,21%)",
       bodyDesaturatedBlue: "hsl(237,23%,32%)",
     },
+    fontFamily: {
+      ubuntu: ["Ubuntu"],
+      Overpass: ["Overpass"],
+    },
   },
   plugins: [],
 };

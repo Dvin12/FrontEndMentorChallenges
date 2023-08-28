@@ -9,8 +9,8 @@ export default function App() {
     <Main>
       <Nav />
       <Header />
-      {/* <Section />
-      <Footer /> */}
+      <Section />
+      <Footer />
     </Main>
   );
 }

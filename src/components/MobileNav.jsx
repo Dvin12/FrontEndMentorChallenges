@@ -1,11 +1,7 @@
 export default function MobileNav() {
   return (
-    <div>
-      <img
-        src="./assets/images/icon-hamburger.svg"
-        alt="menu"
-        className="bg-blueBody"
-      />
+    <div className="z-30">
+      <img src="./assets/images/icon-hamburger.svg" alt="menu" />
     </div>
   );
 }
