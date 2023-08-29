@@ -4,7 +4,7 @@ export default function Section() {
   return (
     <section className="w-full h-full ">
       <article className="relative flex flex-col items-center justify-center px-6 my-28 xl:px-0 xl:my-40 ">
-        <h2 className="text-2xl tracking-wide font-ubuntu xl:text-4xl xl:tracking-normal ">
+        <h2 className="text-2xl font-medium font-ubuntu xl:text-4xl xl:tracking-normal text-blueHeadings ">
           Designed for the future
         </h2>
         <div className="items-center justify-center xl:flex">
@@ -12,7 +12,7 @@ export default function Section() {
             <img
               src="./assets/images/illustration-editor-mobile.svg"
               alt="illustration"
-              className="block py-14 xl:hidden "
+              className="block md:w-full py-14 xl:hidden "
             />
 
             <img
@@ -23,10 +23,10 @@ export default function Section() {
           </section>
           <section className="items-center justify-center w-full xl:flex xl:flex-col ">
             <div className="flex flex-col  justify-center xl:w-[51%]">
-              <h3 className="text-3xl text-center font-ubuntu xl:text-left">
+              <h3 className="text-3xl font-medium text-center font-ubuntu xl:text-left text-blueHeadings">
                 Introducing an extensible editor
               </h3>
-              <p className="py-8 text-lg text-center xl:text-left ">
+              <p className="py-8 text-lg text-center xl:text-left text-bodyDesaturatedBlue">
                 Blogr features an exceedingly intuitive interface which lets you
                 focus on one thing: creating content. The editor supports
                 management of multiple blogs and allows easy manipulation of
@@ -35,10 +35,10 @@ export default function Section() {
                 change the looks of a blog.
               </p>
 
-              <h3 className="py-8 text-3xl text-center font-ubuntu xl:text-left ">
+              <h3 className="py-8 text-3xl font-medium text-center font-ubuntu xl:text-left text-blueHeadings ">
                 Robust content management
               </h3>
-              <p className="text-lg text-center xl:text-left ">
+              <p className="text-lg text-center xl:text-left text-bodyDesaturatedBlue ">
                 Flexible content management enables users to easily move through
                 posts. Increase the usability of your blog by adding customized
                 categories, sections, format or flow. With this functionality,
@@ -50,7 +50,7 @@ export default function Section() {
         <img
           src="./assets/images/illustration-phones.svg"
           alt="phones"
-          className="absolute z-40 -bottom-[30rem] xl:-bottom-[40rem] xl:left-64 drop-shadow-xl"
+          className="absolute z-40 -bottom-[30rem] md:-bottom-[36rem] xl:-bottom-[40rem] xl:left-64 drop-shadow-xl"
         />
       </article>
 
@@ -62,7 +62,7 @@ export default function Section() {
             <img
               src="./assets/images/illustration-laptop-mobile.svg"
               alt=""
-              className="block xl:hidden "
+              className="block xl:hidden md:w-full "
             />
 
             <img
@@ -73,11 +73,11 @@ export default function Section() {
           </section>
           <section className="items-center justify-center w-full xl:flex xl:flex-col ">
             <div className="flex flex-col  justify-center xl:w-[52%]">
-              <h3 className="mt-24 text-2xl tracking-wider text-center font-ubuntu xl:text-left ">
+              <h3 className="mt-24 text-2xl font-medium tracking-wider text-center font-ubuntu xl:text-left text-blueHeadings ">
                 Free, open, simple
               </h3>
 
-              <p className="py-10 text-lg text-center xl:text-left">
+              <p className="py-10 text-lg text-center xl:text-left text-blueHeadings">
                 Blogr is a free and open source application backed by a large
                 community of helpful developers. It supports features such as
                 code syntax highlighting. RSS feeds, social media intergration,
@@ -86,10 +86,10 @@ export default function Section() {
                 learn.
               </p>
 
-              <h3 className="text-2xl text-center font-ubuntu xl:text-left">
+              <h3 className="text-2xl font-medium text-center font-ubuntu xl:text-left text-blueHeadings">
                 Powerful tooling
               </h3>
-              <p className="py-6 text-lg text-center xl:text-left">
+              <p className="py-6 text-lg text-center xl:text-left text-blueHeadings">
                 Batteries included. We built a simple and straightforward CLI
                 tool that makes customization and deployment a breeze, but
                 capable of producing even the most coplicated sites.
