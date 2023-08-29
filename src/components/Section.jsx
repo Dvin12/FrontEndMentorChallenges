@@ -50,7 +50,7 @@ export default function Section() {
         <img
           src="./assets/images/illustration-phones.svg"
           alt="phones"
-          className="absolute z-40 -bottom-[30rem] md:-bottom-[36rem] xl:-bottom-[40rem] xl:left-64 drop-shadow-xl"
+          className="absolute z-40 -bottom-[30rem] md:-bottom-[36rem] xl:-bottom-[40rem] 2xl:left-64 xl:left-20 drop-shadow-xl"
         />
       </article>
 
