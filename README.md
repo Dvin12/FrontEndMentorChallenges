@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/blogr-landing-page-xc0YsUTkLW)
 - Live Site URL: [Live Site](https://blogr-ev.netlify.app/)
 
 ## My process
