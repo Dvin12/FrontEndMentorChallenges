@@ -49,12 +49,37 @@ export default function Nav() {
             }     absolute bottom-1`}
           ></span>
           {product ? (
-            <article className="absolute z-60  w-[8rem] bg-white top-10 text-blueHeadings flex flex-col justify-center px-6 py-4 shadow-lg text-base gap-2 rounded-md">
-              <a href="#">Overview</a>
-              <a href="#">Pricing</a>
-              <a href="#">Marketplace</a>
-              <a href="#">Features</a>
-              <a href="#">Integrations</a>
+            <article className="absolute z-60  w-[9rem] bg-white top-10 text-blueHeadings flex flex-col justify-center px-7 py-4 shadow-lg text-base gap-2 rounded-md">
+              <a
+                href="#"
+                className="duration-200 hover:text-lg hover:text-bodyGrayBlue"
+              >
+                Overview
+              </a>
+              <a
+                href="#"
+                className="duration-200 hover:text-lg hover:text-bodyGrayBlue"
+              >
+                Pricing
+              </a>
+              <a
+                href="#"
+                className="duration-200 hover:text-lg hover:text-bodyGrayBlue"
+              >
+                Marketplace
+              </a>
+              <a
+                href="#"
+                className="duration-200 hover:text-lg hover:text-bodyGrayBlue"
+              >
+                Features
+              </a>
+              <a
+                href="#"
+                className="duration-200 hover:text-lg hover:text-bodyGrayBlue"
+              >
+                Integrations
+              </a>
             </article>
           ) : (
             ""
@@ -80,10 +105,30 @@ export default function Nav() {
           ></span>
           {company ? (
             <article className="absolute z-60  w-[8rem] bg-white top-10 text-blueHeadings flex flex-col justify-center px-6 py-4 shadow-lg text-base gap-2 rounded-md">
-              <a href="#">About</a>
-              <a href="#">Team</a>
-              <a href="#">Blog</a>
-              <a href="#">Careers</a>
+              <a
+                href="#"
+                className="duration-200 hover:text-lg hover:text-bodyGrayBlue"
+              >
+                About
+              </a>
+              <a
+                href="# "
+                className="duration-200 hover:text-lg hover:text-bodyGrayBlue"
+              >
+                Team
+              </a>
+              <a
+                href="#"
+                className="duration-200 hover:text-lg hover:text-bodyGrayBlue"
+              >
+                Blog
+              </a>
+              <a
+                href="#"
+                className="duration-200 hover:text-lg hover:text-bodyGrayBlue"
+              >
+                Careers
+              </a>
             </article>
           ) : (
             ""
@@ -109,9 +154,24 @@ export default function Nav() {
           ></span>
           {connect ? (
             <article className="absolute z-60  w-[8rem] bg-white top-10 text-blueHeadings flex flex-col justify-center px-6 py-4 shadow-lg text-base gap-2 rounded-md">
-              <a href="#">Contact</a>
-              <a href="#">Newsletter</a>
-              <a href="#">LinkedIn</a>
+              <a
+                href="#"
+                className="duration-200 hover:text-lg hover:text-bodyGrayBlue"
+              >
+                Contact
+              </a>
+              <a
+                href="#"
+                className="duration-200 hover:text-lg hover:text-bodyGrayBlue"
+              >
+                Newsletter
+              </a>
+              <a
+                href="#"
+                className="duration-200 hover:text-lg hover:text-bodyGrayBlue"
+              >
+                LinkedIn
+              </a>
             </article>
           ) : (
             ""
