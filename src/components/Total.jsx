@@ -1,12 +1,12 @@
-export default function Total() {
+export default function Total({ totalBackers, backed }) {
   return (
     <article className="z-40 flex flex-col items-center justify-center w-full px-6 rounded-md shadow-lg bg-[#fff] ">
       <section className="flex flex-col items-center justify-center  border-b-[1px] border-b-cyan py-6 gap-2 ">
-        <h3 className="text-4xl font-bold">$89,914</h3>
+        <h3 className="text-4xl font-bold">${backed.toLocaleString()}</h3>
         <p className="text-sm text-dCyan ">of $100,000 backed</p>
       </section>
       <section className="flex flex-col items-center justify-center border-b-[1px] gap-2 border-b-cyan  py-6 ">
-        <h3 className="text-4xl font-bold">5,007</h3>
+        <h3 className="text-4xl font-bold">{totalBackers.toLocaleString()}</h3>
         <p className="text-sm text-dCyan">total backers</p>
       </section>
       <section className="flex flex-col items-center justify-center ">
@@ -18,7 +18,7 @@ export default function Total() {
         className="w-full my-6 overflow-hidden rounded-lg appearance-none bg-cyan bg-opacity-40"
         min={0}
         max={100000}
-        value={89914}
+        value={86000}
       />
     </article>
   );

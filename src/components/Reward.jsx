@@ -1,6 +1,16 @@
 import About from "./About";
 
-export default function Reward() {
+export default function Reward({ setBamboo, setBlack, setActiveModal }) {
+  function handleBamboo() {
+    setBamboo(true);
+    setActiveModal(true);
+  }
+
+  function handleBlack() {
+    setBlack(true);
+    setActiveModal(true);
+  }
+
   return (
     <article className="my-6 bg-[#fff] w-full shadow-md rounded-md items-start px-6 py-8 flex flex-col justify-center">
       <About />
@@ -17,7 +27,10 @@ export default function Reward() {
           <span className="text-4xl">101</span>
           <span className="pt-1 font-normal">left</span>
         </section>
-        <button className="px-8 py-3 rounded-full mt-7 bg-cyan text-[#fff] ">
+        <button
+          className="px-8 py-3 rounded-full mt-7 bg-cyan text-[#fff] "
+          onClick={handleBamboo}
+        >
           Select Reward
         </button>
       </section>
@@ -33,7 +46,10 @@ export default function Reward() {
           <span className="text-4xl">64</span>
           <span className="pt-1 font-normal">left</span>
         </section>
-        <button className="px-8 py-3 rounded-full mt-7 bg-cyan text-[#fff] ">
+        <button
+          className="px-8 py-3 rounded-full mt-7 bg-cyan text-[#fff]"
+          onClick={handleBlack}
+        >
           Select Reward
         </button>
       </section>

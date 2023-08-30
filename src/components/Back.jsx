@@ -1,4 +1,8 @@
-export default function Back() {
+export default function Back({ setActiveModal }) {
+  function handleBackProject() {
+    setActiveModal(true);
+  }
+
   return (
     <article className=" z-40 flex flex-col items-center justify-between w-full px-6 py-12 text-center shadow-md -mt-14  bg-[#fff] rounded-md ">
       <img
@@ -13,7 +17,10 @@ export default function Back() {
         A beautifully handcrafted monitor stand to reduce neck and eye strain.
       </p>
       <section className="flex items-center justify-between w-full my-2">
-        <button className="px-12 py-4 rounded-full bg-cyan text-[#fff] font-medium">
+        <button
+          className="px-12 py-4 rounded-full bg-cyan text-[#fff] font-medium"
+          onClick={handleBackProject}
+        >
           Back this project
         </button>
         <button>
