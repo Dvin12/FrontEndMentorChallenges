@@ -1,6 +1,12 @@
 import About from "./About";
 
-export default function Reward({ setBamboo, setBlack, setActiveModal }) {
+export default function Reward({
+  setBamboo,
+  setBlack,
+  setActiveModal,
+  bambooLeft,
+  blackLeft,
+}) {
   function handleBamboo() {
     setBamboo(true);
     setActiveModal(true);
@@ -24,7 +30,7 @@ export default function Reward({ setBamboo, setBlack, setActiveModal }) {
           Backer member list.
         </p>
         <section className="flex items-center justify-start w-full gap-1">
-          <span className="text-4xl">101</span>
+          <span className="text-4xl">{bambooLeft}</span>
           <span className="pt-1 font-normal">left</span>
         </section>
         <button
@@ -43,7 +49,7 @@ export default function Reward({ setBamboo, setBlack, setActiveModal }) {
           you. You'll be added to our Backer member list. Shipping is included.
         </p>
         <section className="flex items-center justify-start w-full gap-1">
-          <span className="text-4xl">64</span>
+          <span className="text-4xl">{blackLeft}</span>
           <span className="pt-1 font-normal">left</span>
         </section>
         <button

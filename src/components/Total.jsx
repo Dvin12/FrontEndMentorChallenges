@@ -18,7 +18,7 @@ export default function Total({ totalBackers, backed }) {
         className="w-full my-6 overflow-hidden rounded-lg appearance-none bg-cyan bg-opacity-40"
         min={0}
         max={100000}
-        value={86000}
+        value={backed}
       />
     </article>
   );
