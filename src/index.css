@@ -7,7 +7,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: 14px;
   cursor: ew-resize;
   background-color: #147b74;
-  box-shadow: -405px 0 0 400px #147b74;
+  box-shadow: -1000px 0 0 995px #147b74;
   border-radius: 100%;
 }
 

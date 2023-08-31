@@ -26,7 +26,7 @@ export default function Modal({
   const [success, setSuccess] = useState(false);
 
   return (
-    <section className="absolute top-0 z-50 w-full h-full px-6 bg-black bg-opacity-40">
+    <section className="absolute top-0 z-50 w-full h-full px-6 bg-black bg-opacity-40 xl:px-72 ">
       {success ? (
         <Success
           setSuccess={setSuccess}

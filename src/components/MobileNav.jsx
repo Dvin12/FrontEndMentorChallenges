@@ -11,7 +11,7 @@ export default function MobileNav() {
     <>
       <button
         onClick={handleActive}
-        className={`z-50 ${active ? "fixed right-6" : ""}`}
+        className={`z-50 ${active ? "fixed right-6" : ""} xl:hidden block`}
       >
         <img
           src={`./assets/images/${
@@ -22,7 +22,7 @@ export default function MobileNav() {
       </button>
 
       {active ? (
-        <section className="fixed top-0 left-0 z-40 flex items-start justify-center w-screen h-screen bg-black bg-opacity-40">
+        <section className="fixed top-0 left-0 z-40 flex items-start justify-center w-screen h-screen bg-black bg-opacity-40 xl:hidden">
           <div className="bg-[#fff] my-28 w-full mx-6 flex flex-col items-start justify-center  rounded-md font-medium  ">
             <a href="#" className="p-6">
               About
