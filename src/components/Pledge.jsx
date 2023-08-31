@@ -29,6 +29,7 @@ export default function Pledge({
     setBamboo(false);
     setBlack(false);
     setNoReward(false);
+    setAlert(false);
   }
 
   function handleNoReward() {
@@ -39,6 +40,7 @@ export default function Pledge({
   }
 
   function handleBamboo() {
+    if (bambooLeft === 0) return;
     setBambooAmount("");
     setBamboo(true);
     setNoReward(false);
@@ -46,6 +48,7 @@ export default function Pledge({
   }
 
   function handleBlack() {
+    if (blackLeft === 0) return;
     setBlackAmount("");
     setBlack(true);
     setBamboo(false);
@@ -110,7 +113,7 @@ export default function Pledge({
           noReward
             ? "border-[3px] cursor-default"
             : "border-[1px] cursor-pointer"
-        } rounded-lg border-cyan  pt-12 my-4 xl:py-8`}
+        } rounded-lg border-cyan  pt-12 my-4 xl:py-8 `}
         onClick={handleNoReward}
       >
         <section className="flex items-center gap-3 px-5">
@@ -130,19 +133,19 @@ export default function Pledge({
             <div className="relative flex items-center justify-center gap-4 mt-4 xl:mt-0">
               <input
                 type="text"
-                className="border-[1px] w-2/4 rounded-full py-4 px-6 font-semibold border-cyan xl:w-1/3 xl:px-10 "
+                className="border-[1px] w-2/4 rounded-full py-4 px-6 font-semibold border-cyan xl:w-1/3 xl:px-10 outline-none focus:border-dCyan "
                 min={25}
                 value={noRewardAmount}
                 onChange={(e) => setNoRewardAmount(Number(e.target.value))}
               ></input>
 
               <button
-                className="px-8 py-4 font-medium text-[#fff] rounded-full bg-cyan"
+                className="px-8 py-4 font-medium text-[#fff] rounded-full bg-cyan hover:bg-dCyan duration-200"
                 onClick={handlePledgeNoReward}
               >
                 Continue
               </button>
-              <span className="absolute font-semibold left-3 text-cyan xl:left-24">
+              <span className="absolute font-semibold left-3 text-cyan xl:left-24 md:left-9">
                 $
               </span>
             </div>
@@ -158,7 +161,9 @@ export default function Pledge({
       <article
         className={`${
           bamboo ? "border-[3px] cursor-default" : "border-[1px] cursor-pointer"
-        } rounded-lg border-cyan  pt-12 my-4 xl:py-8`}
+        } rounded-lg border-cyan  pt-12 my-4 xl:py-8 ${
+          bambooLeft === 0 ? "opacity-40 cursor-not-allowed" : ""
+        }`}
         onClick={handleBamboo}
       >
         <section className="flex items-center gap-3 px-4">
@@ -200,12 +205,12 @@ export default function Pledge({
               ></input>
 
               <button
-                className="px-8 py-4 font-medium text-[#fff] rounded-full bg-cyan "
+                className="px-8 py-4 font-medium text-[#fff] rounded-full bg-cyan  hover:bg-dCyan duration-200"
                 onClick={handlePledgeBamboo}
               >
                 Continue
               </button>
-              <span className="absolute font-semibold left-3 text-cyan xl:left-24">
+              <span className="absolute font-semibold left-3 text-cyan xl:left-24 md:left-9">
                 $
               </span>
             </div>
@@ -221,7 +226,9 @@ export default function Pledge({
       <article
         className={`${
           black ? "border-[3px] cursor-default" : "border-[1px] cursor-pointer"
-        } rounded-lg border-cyan  pt-12 my-4 xl:py-8`}
+        } rounded-lg border-cyan  pt-12 my-4 xl:py-8 ${
+          blackLeft === 0 ? "opacity-40 cursor-not-allowed" : ""
+        }`}
         onClick={handleBlack}
       >
         <section className="flex items-center gap-3 px-5">
@@ -263,12 +270,12 @@ export default function Pledge({
               ></input>
 
               <button
-                className="px-8 py-4 font-medium text-[#fff] rounded-full bg-cyan"
+                className="px-8 py-4 font-medium text-[#fff] rounded-full bg-cyan hover:bg-dCyan duration-200"
                 onClick={handlePledgeBlack}
               >
                 Continue
               </button>
-              <span className="absolute font-semibold left-3 text-cyan xl:left-24">
+              <span className="absolute font-semibold left-3 text-cyan xl:left-24 md:left-9">
                 $
               </span>
             </div>

@@ -5,7 +5,7 @@ export default function Back({ setActiveModal }) {
     setActiveModal(true);
   }
 
-  const [bookmarked, setBookmarked] = useState(true);
+  const [bookmarked, setBookmarked] = useState(false);
 
   function handleBookmark() {
     setBookmarked((c) => (c !== true ? true : false));
@@ -24,27 +24,29 @@ export default function Back({ setActiveModal }) {
       <p className="my-4 text-sm leading-relaxed text-dCyan xl:text-base">
         A beautifully handcrafted monitor stand to reduce neck and eye strain.
       </p>
-      <section className="flex items-center justify-between w-full my-2 xl:my-6 xl:justify-center xl:pr-28 xl:gap-10 ">
+      <section className="flex items-center justify-between w-full my-2 xl:my-6 xl:justify-center md:justify-center md:gap-8 xl:pr-36 xl:gap-10 ">
         <button
-          className="px-10 py-4 rounded-full bg-cyan text-[#fff] font-medium "
+          className="px-10 py-4 rounded-full bg-cyan text-[#fff] font-medium hover:bg-dCyan duration-200 "
           onClick={handleBackProject}
         >
           Back this project
         </button>
         <button
-          className="relative flex items-center justify-center "
+          className="relative flex items-center justify-center group brig "
           onClick={handleBookmark}
         >
           <img
             src="./assets/images/icon-bookmark.svg"
             alt="bookmark"
-            className="z-30"
+            className={`z-30 duration-200 group-hover:opacity-70 ${
+              bookmarked ? "brightness-150 group-hover:opacity-100" : ""
+            }`}
           />
 
           <span
             className={`absolute w-[9rem] h-[3rem] text-center rounded-full  left-8 bg-cyan bg-opacity-10 hidden items-center justify-end ${
-              bookmarked ? "pr-4" : "pr-8"
-            } font-bold  text-dCyan xl:flex`}
+              bookmarked ? "pr-4 group-hover:opacity-100" : "pr-8"
+            } font-bold  text-dCyan xl:flex group-hover:opacity-70 `}
           >
             {bookmarked ? "Bookmarked" : "Bookmark"}
           </span>
