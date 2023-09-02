@@ -16,18 +16,18 @@ export default function Footer() {
         </article>
       </section>
       <section className="flex flex-col items-center justify-center">
-        <article className="flex gap-4 my-5">
+        <article className="flex gap-4 my-5 items-center">
           <a href="#">
-            <img src="./assets/images/icon-facebook.svg" alt="" />
+            <img src="./assets/images/icon-facebook.svg" alt="logo" />
           </a>
           <a href="#">
-            <img src="./assets/images/icon-twitter.svg" alt="" />
+            <img src="./assets/images/icon-twitter.svg" alt="logo" />
           </a>
           <a href="#">
-            <img src="./assets/images/icon-pinterest.svg" alt="" />
+            <img src="./assets/images/icon-pinterest.svg" alt="logo" />
           </a>
           <a href="#">
-            <img src="./assets/images/icon-instagram.svg" alt="" />
+            <img src="./assets/images/icon-instagram.svg" alt="logo" />
           </a>
         </article>
         <p className=" text-darkGray">

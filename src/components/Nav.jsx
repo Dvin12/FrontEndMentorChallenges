@@ -8,6 +8,7 @@ export default function Nav() {
         alt="loop studios"
         className="w-[45%]"
       />
+
       <Mobile />
     </nav>
   );

@@ -1,3 +1,4 @@
+import Button from "./Button";
 import Item from "./Item";
 
 const grid = [
@@ -64,10 +65,8 @@ export default function Creations() {
           <Item item={item} key={i} />
         ))}
       </section>
-      <div className="flex items-center justify-center my-7">
-        <button className=" tracking-[4px] border-black border-[1px] px-10 py-2">
-          SEE ALL
-        </button>
+      <div className="flex items-center justify-center mt-14">
+        <Button />
       </div>
     </section>
   );
