@@ -76,7 +76,7 @@ export default function Footer() {
             <span className="w-0 h-[2px] bg-white absolute top-8 group-hover:w-3/4 transition-all duration-200 "></span>
           </a>
         </article>
-        <p className=" text-darkGray xl:py-12">
+        <p className=" text-darkGray xl:pt-8 2xl:pt-12">
           &copy; 2023 Loopstudios. All rights reserved.
         </p>
       </section>
