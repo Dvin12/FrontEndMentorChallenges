@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function Mobile() {
-  const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(false);
 
   function handleClick() {
     setIsActive((click) => !click);

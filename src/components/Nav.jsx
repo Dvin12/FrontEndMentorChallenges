@@ -10,11 +10,41 @@ export default function Nav() {
       />
 
       <section className="z-30 items-center hidden gap-8 text-white xl:flex ">
-        <a href="#">About</a>
-        <a href="#">Careers</a>
-        <a href="#">Events</a>
-        <a href="#">Products</a>
-        <a href="#">Support</a>
+        <a
+          href="#"
+          className="relative flex flex-col items-center justify-center transition duration-300 group"
+        >
+          About
+          <span className="w-0 h-[2px] bg-white absolute top-7 group-hover:w-3/4 transition-all duration-200 "></span>
+        </a>
+        <a
+          href="#"
+          className="relative flex flex-col items-center justify-center transition duration-300 group"
+        >
+          Careers
+          <span className="w-0 h-[2px] bg-white absolute top-7 group-hover:w-3/4 transition-all duration-200 "></span>
+        </a>
+        <a
+          href="#"
+          className="relative flex flex-col items-center justify-center transition duration-300 group"
+        >
+          Events
+          <span className="w-0 h-[2px] bg-white absolute top-7 group-hover:w-3/4 transition-all duration-200 "></span>
+        </a>
+        <a
+          href="#"
+          className="relative flex flex-col items-center justify-center transition duration-300 group"
+        >
+          Products
+          <span className="w-0 h-[2px] bg-white absolute top-7 group-hover:w-3/4 transition-all duration-200 "></span>
+        </a>
+        <a
+          href="#"
+          className="relative flex flex-col items-center justify-center transition duration-300 group"
+        >
+          Support
+          <span className="w-0 h-[2px] bg-white absolute top-7 group-hover:w-3/4 transition-all duration-200 "></span>
+        </a>
       </section>
 
       <Mobile />
