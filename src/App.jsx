@@ -18,7 +18,7 @@ export default function App() {
         <Article />
         <Creations />
       </Section>
-      <Footer />
+      {/* <Footer /> */}
     </Main>
   );
 }

@@ -1,15 +1,15 @@
 import { useState } from "react";
 
 export default function Mobile() {
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(true);
 
   function handleClick() {
     setIsActive((click) => !click);
   }
 
   return (
-    <section className="xl:hidden block z-20">
-      <section className="z-30">
+    <section className="block z-60 xl:hidden">
+      <section className="z-60">
         <button onClick={handleClick}>
           <img src="./assets/images/icon-hamburger.svg" alt="menu" />
         </button>
@@ -24,13 +24,13 @@ export default function Mobile() {
           <img
             src="./assets/images/logo.svg"
             alt="loop studios"
-            className=" w-[45%]"
+            className=" w-[45%] md:w-fit"
           />
           <button onClick={handleClick}>
             <img src="./assets/images/icon-close.svg" alt="button" />
           </button>
         </section>
-        <section className="flex flex-col justify-center w-full h-full font-JosefinSans gap-4 text-3xl tracking-wider">
+        <section className="flex flex-col justify-center w-full h-full gap-4 text-3xl tracking-wider font-JosefinSans">
           <a href="#">ABOUT</a>
           <a href="#">CAREERS</a>
           <a href="#">EVENTS</a>
