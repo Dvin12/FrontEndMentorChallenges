@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import Section from "./components/Section";
 import Snippets from "./components/Snippets";
+import Workflow from "./components/Workflow";
 
 export default function App() {
   return (
@@ -12,10 +13,11 @@ export default function App() {
       <Header />
       <Section>
         <Snippets />
-        {/* <Clipboard /> */}
-        {/* <Download /> */}
+        <Clipboard />
+        <Workflow />
+        <Download />
       </Section>
-      {/* <Footer /> */}
+      <Footer />
     </Main>
   );
 }

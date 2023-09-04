@@ -2,9 +2,9 @@ import Button from "./Button.jsx";
 
 export default function Header() {
   return (
-    <header className="w-full h-full relative text-grayBlue ">
+    <header className="relative w-full h-full ">
       <img src="./assets/images/bg-header-mobile.png" alt="background" />
-      <section className="w-full flex flex-col items-center justify-normal z-30 text-center  px-[2.2rem]  ">
+      <section className="z-30 flex flex-col items-center w-full px-8 text-center justify-normal ">
         <img
           src="./assets/images/logo.svg"
           alt="company"
@@ -13,11 +13,11 @@ export default function Header() {
         <h1 className="text-3xl font-bold text-dBlue ">
           A history of everything you copy
         </h1>
-        <p className="my-10  leading-relaxed ">
+        <p className="my-10 leading-relaxed ">
           Clipboard allow you to track and organize everything you copy.
           Instantly access your clipboard on all your devices.
         </p>
-        <section className="flex flex-col gap-6 w-full my-3">
+        <section className="flex flex-col w-full gap-6 my-3">
           <Button>Download for iOS</Button>
           <Button color="bg-lBlue">Download for Mac</Button>
         </section>
