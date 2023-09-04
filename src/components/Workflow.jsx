@@ -52,19 +52,21 @@ export default function Workflow() {
   return (
     <>
       <article className="flex flex-col items-center justify-center w-full text-center">
-        <h3 className="text-3xl font-bold text-dBlue">
+        <h3 className="text-3xl font-bold text-dBlue xl:text-5xl">
           Supercharge your workflow
         </h3>
-        <p className="my-4">We've got the tools to boost your productivity.</p>
+        <p className="my-4 xl:text-lg xl:my-8">
+          We've got the tools to boost your productivity.
+        </p>
       </article>
 
-      <section className="my-14 ">
+      <section className="w-full my-14 xl:flex xl:items-center xl:justify-center xl:px-40 xl:gap-10">
         {bulletPoints.map((bulletPoint, i) => (
           <BulletPoint bulletPoint={bulletPoint} key={i} />
         ))}
       </section>
 
-      <section className="my-24">
+      <section className="my-24 xl:flex xl:w-full xl:justify-between xl:items-center xl:px-40">
         {companies.map((company, i) => (
           <Company company={company} key={i} />
         ))}
