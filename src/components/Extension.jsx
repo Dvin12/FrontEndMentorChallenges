@@ -25,7 +25,7 @@ export default function Extension() {
     <>
       <article className="flex flex-col items-center justify-center px-6 text-center">
         <h3 className="text-2xl font-medium">Download the extension</h3>
-        <p className="my-2">
+        <p className="mt-2">
           We've got more browsers in the pipeline. Please do let us know if
           you've got a favourite you'd like us to prioritize.
         </p>

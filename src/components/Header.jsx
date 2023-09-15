@@ -6,7 +6,7 @@ export default function Header() {
       <section className="relative px-3 py-8">
         <img
           src="./assets/images/illustration-hero.svg"
-          alt=""
+          alt="image"
           className="relative z-30"
         />
         <div className="absolute right-0 z-20 h-52 w-80 top-24 bg-sBlue rounded-tl-[6rem] rounded-bl-[6rem]"></div>
@@ -19,7 +19,7 @@ export default function Header() {
           A clean and simple interface to organize your favourite websites. Open
           a new browser tab and see your sites loand instantly. Try it for free.
         </p>
-        <div className="flex items-center justify-center w-full gap-4 my-4">
+        <div className="flex items-center justify-center w-full gap-2 my-4">
           <Button>Get it on Chrome</Button>
           <Button>Get it on Firefox</Button>
         </div>

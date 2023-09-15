@@ -1,20 +1,55 @@
+import { useState } from "react";
+
 export default function NewsLetter() {
+  const [email, setEmail] = useState("");
+  const [valid, setValid] = useState(true);
+  const emailRegEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,})+$/;
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    if (!emailRegEx.test(email) || email === "") {
+      setValid(false);
+    } else {
+      setValid(true);
+      setEmail("");
+    }
+  }
+
   return (
-    <section className="flex flex-col items-center justify-center px-6 py-12 mt-20 bg-sBlue text-[#fff] text-opacity-90 text-center">
+    <section className="flex flex-col items-center justify-center px-6 py-16 mt-20 bg-sBlue text-[#fff] text-opacity-90 text-center">
       <span className="tracking-[3px] text-sm ">35,000+ ALREADY JOINED</span>
       <h5 className="my-2 text-2xl font-medium">
         Stay up-to-date with what we're doing
       </h5>
-      <div className="flex flex-col items-center justify-center w-full gap-4 mt-6">
+      <form
+        className={`flex flex-col items-center justify-center w-full ${
+          !valid ? "gap-10" : "gap-4"
+        }  mt-6 relative`}
+        onSubmit={handleSubmit}
+      >
         <input
           type="text"
           placeholder="Enter your email address"
-          className="w-full px-4 py-3 rounded-md shadow-md text-vDarkBlue placeholder:opacity-40"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className={`w-full px-4 py-3 rounded-md shadow-md text-vDarkBlue placeholder:opacity-40 ${
+            !valid ? " border-sRed border-[3px] outline-none" : ""
+          }`}
         />
+        {!valid && (
+          <p className="absolute z-10 w-full px-3 py-1 text-xs italic font-medium text-left rounded-b-md top-[50px] bg-sRed text-opacity-70">
+            Whoops, make sure it's an email
+          </p>
+        )}
+        {!valid && (
+          <div className="absolute top-4 right-4">
+            <img src="./assets/images/icon-error.svg" alt="error" />
+          </div>
+        )}
         <button className="w-full py-3 rounded-md shadow-md bg-sRed">
           Contact Us
         </button>
-      </div>
+      </form>
     </section>
   );
 }

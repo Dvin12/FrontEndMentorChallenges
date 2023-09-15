@@ -41,7 +41,7 @@ export default function FAQ() {
         </p>
       </article>
 
-      <section className="px-6 my-8">
+      <section className="w-full px-6 my-10">
         {faq.map((question, i) => (
           <FaqItem
             question={question}

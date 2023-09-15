@@ -24,26 +24,57 @@ const features = [
 export default function Features() {
   const [selected, setIsSelected] = useState(0);
 
+  function handleBookmarking() {
+    setIsSelected(0);
+  }
+
+  function handleSearching() {
+    setIsSelected(1);
+  }
+
+  function handleSharing() {
+    setIsSelected(2);
+  }
+
   return (
     <>
-      <article className="flex flex-col items-center justify-center w-full px-6 text-center mt-28">
+      <article className="flex flex-col items-center justify-center w-full px-8 text-center mt-28">
         <h2 className="text-2xl font-medium">Features</h2>
-        <p className="my-2 leading-normal">
+        <p className="mt-2 leading-normal ">
           Our aim is to make it quick and easy for you to access your favourite
           websites. Your bookmarks sync between your devices so you can access
           them on the go.
         </p>
       </article>
-      <div className="px-6 mt-8">
+      <div className="px-6 mt-6">
         <ul className="flex flex-col items-center justify-center text-center text-vDarkBlue">
-          <li className="w-full py-4 border-t-[1px] border-gBlue cursor-pointer">
-            Simple Bookmarking
+          <li
+            className="w-full py-4 border-t-[1px] border-gBlue cursor-pointer relative"
+            onClick={handleBookmarking}
+          >
+            <span> Simple Bookmarking</span>
+            {selected === 0 && (
+              <div className="absolute bottom-0 w-[50%] h-1 bg-sRed translate-x-1/2"></div>
+            )}
           </li>
-          <li className="w-full py-4 border-t-[1px] border-gBlue cursor-pointer">
-            Speedy Searching
+          <li
+            className="w-full py-4 border-t-[1px] border-gBlue cursor-pointer relative"
+            onClick={handleSearching}
+          >
+            <span>Speedy Searching</span>
+            {selected === 1 && (
+              <div className="absolute bottom-0 w-[50%] h-1 bg-sRed translate-x-1/2"></div>
+            )}
           </li>
-          <li className="w-full py-4 border-t-[1px] border-b-[1px] border-gBlue cursor-pointer">
-            Easy Sharing
+          <li
+            className="w-full py-4 border-t-[1px] border-b-[1px] border-gBlue cursor-pointer relative"
+            onClick={handleSharing}
+          >
+            <span>Easy Sharing</span>
+
+            {selected === 2 && (
+              <div className="absolute bottom-0 w-[50%] h-1 bg-sRed translate-x-1/2"></div>
+            )}
           </li>
         </ul>
       </div>
