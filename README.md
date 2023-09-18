@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/bookmark-landing-page-kfAI2OJlL1)
 - Live Site URL: [Live Site](https://bookmark-ev.netlify.app/)
 
 ## My process
