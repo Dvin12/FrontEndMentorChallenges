@@ -19,7 +19,7 @@ export default function NewsLetter() {
   return (
     <section className="flex flex-col items-center justify-center px-6 py-16 mt-20 bg-sBlue text-[#fff] text-opacity-90 text-center">
       <span className="tracking-[3px] text-sm ">35,000+ ALREADY JOINED</span>
-      <h5 className="my-2 text-2xl font-medium xl:text-4xl xl:w-1/4 xl:my-4">
+      <h5 className="my-2 text-2xl font-medium xl:text-4xl xl:w-1/3 xl:my-4">
         Stay up-to-date with what we're doing
       </h5>
       <form
