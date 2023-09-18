@@ -13,13 +13,13 @@ export default function App() {
     <Main>
       <Navigation />
       <Header />
-      {/* <Section>
+      <Section>
         <Features />
         <Extension />
         <FAQ />
         <NewsLetter />
       </Section>
-      <Footer /> */}
+      <Footer />
     </Main>
   );
 }

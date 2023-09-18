@@ -34,14 +34,16 @@ export default function FAQ() {
   return (
     <section className="flex flex-col items-center justify-center">
       <article className="px-6 mt-24 text-center ">
-        <h4 className="px-4 text-2xl font-medium">Fequently Asked Questions</h4>
-        <p className="my-4">
+        <h4 className="px-4 text-2xl font-medium xl:text-3xl">
+          Fequently Asked Questions
+        </h4>
+        <p className="my-4 xl:text-lg xl:w-[33rem]">
           Here are some of our FAQ's. If you have any other questions you'd like
           answered please feel free to email us.
         </p>
       </article>
 
-      <section className="w-full px-6 my-10">
+      <section className="w-full px-6 my-10 xl:w-1/2">
         {faq.map((question, i) => (
           <FaqItem
             question={question}

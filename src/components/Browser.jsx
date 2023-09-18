@@ -1,9 +1,13 @@
 import Button from "./Button";
 
-export default function Browser({ browser }) {
+export default function Browser({ browser, num }) {
   const { image, text, version, title } = browser;
   return (
-    <article className="flex flex-col items-center justify-center py-10 shadow-lg rounded-2xl ">
+    <article
+      className={`flex flex-col items-center justify-center py-10 shadow-lg rounded-2xl ${
+        num === 1 && "mt-20"
+      } ${num === 2 && "mt-40"} `}
+    >
       <div className="flex flex-col items-center justify-center text-center">
         <img src={image} alt={title} />
         <h4 className="mt-5 text-xl font-medium">Add to {title}</h4>
