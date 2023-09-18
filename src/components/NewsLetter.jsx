@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "./Button";
 
 export default function NewsLetter() {
   const [email, setEmail] = useState("");
@@ -27,7 +28,7 @@ export default function NewsLetter() {
         }  mt-6 relative`}
         onSubmit={handleSubmit}
       >
-        <div className="relative w-[20%]">
+        <div className="relative xl:w-[20%] w-[80%]">
           <input
             type="text"
             placeholder="Enter your email address"
@@ -49,9 +50,7 @@ export default function NewsLetter() {
           )}
         </div>
 
-        <button className="w-full py-3 rounded-md shadow-md xl:w-fit xl:px-6 bg-sRed">
-          Contact Us
-        </button>
+        <Button color="red">Contact Us</Button>
       </form>
     </section>
   );

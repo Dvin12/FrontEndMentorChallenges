@@ -20,7 +20,7 @@ export default function Header() {
           a new browser tab and see your sites load instantly. Try it for free.
         </p>
         <div className="flex items-center justify-center w-full gap-2 my-4 xl:justify-start xl:gap-4">
-          <Button>Get it on Chrome</Button>
+          <Button color="blue">Get it on Chrome</Button>
           <Button>Get it on Firefox</Button>
         </div>
       </section>

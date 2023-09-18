@@ -32,9 +32,9 @@ export default function FAQ() {
   }
 
   return (
-    <section className="flex flex-col items-center justify-center">
+    <section className="flex flex-col items-center justify-center text-gBlue">
       <article className="px-6 mt-24 text-center ">
-        <h4 className="px-4 text-2xl font-medium xl:text-3xl">
+        <h4 className="px-4 text-2xl font-medium xl:text-4xl text-vDarkBlue">
           Fequently Asked Questions
         </h4>
         <p className="my-4 xl:text-lg xl:w-[33rem]">
@@ -54,7 +54,7 @@ export default function FAQ() {
           />
         ))}
       </section>
-      <Button>More Info</Button>
+      <Button color="blue">More Info</Button>
     </section>
   );
 }

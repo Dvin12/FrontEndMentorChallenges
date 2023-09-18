@@ -8,14 +8,28 @@ export default function Footer() {
             BOOKMARK
           </span>
         </div>
-        <a href="#">FEATURES</a>
-        <a href="#">PRICING</a>
-        <a href="#">CONTACT</a>
+        <a href="#" className="duration-300 hover:text-sRed">
+          FEATURES
+        </a>
+        <a href="#" className="duration-300 hover:text-sRed">
+          PRICING
+        </a>
+        <a href="#" className="duration-300 hover:text-sRed">
+          CONTACT
+        </a>
       </section>
 
       <section className="flex items-center justify-center gap-10 mt-10 xl:mt-0 ">
-        <img src="./assets/images/icon-facebook.svg" alt="facebook" />
-        <img src="./assets/images/icon-twitter.svg" alt="twitter" />
+        <img
+          src="./assets/images/icon-facebook.svg"
+          alt="facebook"
+          className=" hover:invert-[30%] hover:sepia-[70%] hover:brightness-[60%] hover:hue-rotate-[300deg] hover:contrast-[67%] duration-200 cursor-pointer"
+        />
+        <img
+          src="./assets/images/icon-twitter.svg"
+          alt="twitter"
+          className=" hover:invert-[30%] hover:sepia-[70%] hover:brightness-[60%] hover:hue-rotate-[300deg] hover:contrast-[67%] duration-200 cursor-pointer"
+        />
       </section>
     </footer>
   );

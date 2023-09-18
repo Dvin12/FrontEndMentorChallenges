@@ -23,8 +23,8 @@ const extensions = [
 export default function Extension() {
   return (
     <>
-      <article className="flex flex-col items-center justify-center px-6 text-center xl:mt-36">
-        <h3 className="text-2xl font-medium xl:text-4xl">
+      <article className="flex flex-col items-center justify-center px-6 text-center xl:mt-36 text-gBlue">
+        <h3 className="text-2xl font-medium xl:text-4xl text-vDarkBlue">
           Download the extension
         </h3>
         <p className="mt-2 xl:text-lg xl:w-[34rem] xl:mt-10">
