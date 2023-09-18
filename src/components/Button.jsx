@@ -10,7 +10,7 @@ export default function Button({ children, color = "grey" }) {
         "bg-gBlue bg-opacity-10 text-vDarkBlue border-[2px] border-gBlue border-opacity-0 hover:border-opacity-100 hover:border-vDarkBlue duration-200 hover:bg-[#fff]"
       } ${
         color === "red" &&
-        " xl:px-10 opacity-90 xl:py-3 shadow-lg hover:bg-[#fff] border-sRed border-[2px] tracking-wider hover:text-sRed duration-200 rounded-md bg-sRed xl:w-auto w-[80%] text-[#fff]"
+        " xl:px-12 opacity-90 xl:py-3 shadow-lg hover:bg-[#fff] border-sRed border-[2px] tracking-wider hover:text-sRed duration-200 rounded-md bg-sRed xl:w-auto w-[80%] text-[#fff]"
       } ${
         color === "blue" &&
         "bg-sBlue text-[#fff] text-opacity-95 border-sBlue border-[2px] hover:bg-[#fff] duration-200 hover:text-sBlue"
