@@ -1,8 +1,8 @@
 export default function FooterNav() {
   return (
     <div className="w-full">
-      <nav className="flex justify-between w-full px-12 text-veryLightGray ">
-        <ul className="flex flex-col gap-2">
+      <nav className="flex justify-between w-full px-12 text-veryLightGray md:justify-evenly xl:justify-between ">
+        <ul className="flex flex-col gap-2 ">
           <li>
             <a href="#" className="duration-200 hover:text-brightRed">
               Home

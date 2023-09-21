@@ -7,9 +7,10 @@ export default function Header() {
         <img
           src="./assets/images/illustration-intro.svg"
           alt="statistics mockup"
+          className="xl:w-[40rem]"
         />
       </section>
-      <section className="flex flex-col items-center justify-center w-full my-5 text-center text-darkGrayBlue xl:text-left xl:items-start">
+      <section className="flex flex-col items-center justify-center w-full my-5 text-center text-darkGrayBlue xl:text-left xl:items-start xl:w-full">
         <h1 className="text-4xl font-semibold leading-snug text-darkBlue xl:text-6xl xl:w-[40rem]">
           Bring everyone together to build better products.
         </h1>

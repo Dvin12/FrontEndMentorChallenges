@@ -26,13 +26,13 @@ export default function FooterSubscribe() {
           type="text"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full px-6 py-3 rounded-full xl:w-[50%] "
+          className="w-full px-6 py-3 rounded-full md:w-[50%] "
           placeholder="Updates in your inbox..."
         />
         <Button>GO</Button>
       </form>
       {!valid && (
-        <p className="absolute text-sm italic xl:left-[22%] xl:top-14 top-[5.4rem] left-10 text-brightRed opacity-80">
+        <p className="absolute text-sm italic xl:left-[22%] xl:top-14 top-[5.4rem] left-10 md:left-48 text-brightRed opacity-80">
           Please insert a valid email
         </p>
       )}

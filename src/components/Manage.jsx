@@ -18,8 +18,8 @@ const features = [
 
 export default function Manage() {
   return (
-    <article className="flex flex-col items-center justify-center mt-14 xl:flex-row xl:items-start xl:mt-40 xl:px-44 xl:w-full ">
-      <section className="flex flex-col items-center justify-center px-6 text-center text-darkGrayBlue xl:px-0 xl:items-start xl:text-left xl:w-full">
+    <article className="flex flex-col items-center justify-center mt-14 xl:flex-row xl:items-start xl:mt-40 xl:w-full ">
+      <section className="flex flex-col items-center justify-center w-full px-6 text-center text-darkGrayBlue xl:items-start xl:text-left xl:px-44">
         <h2 className="text-3xl font-semibold leading-normal text-darkBlue xl:text-4xl xl:w-[26rem]">
           What's different about Manage?
         </h2>
@@ -29,7 +29,7 @@ export default function Manage() {
           teams.
         </p>
       </section>
-      <section className="flex flex-col gap-10 my-10 xl:my-0 xl:w-full xl:gap-2 ">
+      <section className="flex flex-col gap-10 my-10 xl:w-full xl:my-0 xl:gap-6 xl:px-20">
         {features.map((feature, i) => (
           <Feature key={i} feature={feature} number={i} />
         ))}
