@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/manage-landing-page-L03jkKi_d-)
 - Live Site URL: [Live Site](https://manage-ev.netlify.app/)
 
 ## My process
