@@ -19,7 +19,7 @@ export default function App() {
         <GetStarted />
       </Section>
       <Footer />
-      {/* <Background /> */}
+      <Background />
     </Main>
   );
 }

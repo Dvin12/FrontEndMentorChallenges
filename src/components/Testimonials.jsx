@@ -1,4 +1,5 @@
 import Button from "./Button";
+import DesktopTestimonials from "./DesktopTestimonials";
 import MobileCarousel from "./MobileCarousel";
 
 const testimonials = [
@@ -29,12 +30,13 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <article className="flex flex-col items-center justify-center text-center">
-      <h3 className="text-3xl font-semibold text-darkBlue">
+    <article className="flex flex-col items-center justify-center text-center xl:my-24">
+      <h3 className="text-3xl font-semibold text-darkBlue xl:text-4xl">
         What they've said
       </h3>
       <MobileCarousel testimonials={testimonials} />
-      <div className="my-8">
+      <DesktopTestimonials testimonials={testimonials} />
+      <div className="my-8 xl:my-20">
         <Button>Get Started</Button>
       </div>
     </article>

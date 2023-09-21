@@ -6,14 +6,22 @@ import "../Slider.css";
 
 export default function MobileCarousel({ testimonials }) {
   return (
-    <div className="h-auto mt-6">
+    <div className="block h-auto mt-6 xl:hidden">
       <Splide
         options={{
           type: "loop",
           arrows: false,
-          width: 320,
+
           height: 340,
           gap: "2rem",
+          breakpoints: {
+            764: {
+              width: 320,
+            },
+            1280: {
+              width: 740,
+            },
+          },
         }}
       >
         {testimonials.map((testimonial, i) => (

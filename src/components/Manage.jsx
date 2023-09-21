@@ -18,18 +18,18 @@ const features = [
 
 export default function Manage() {
   return (
-    <article className="flex flex-col items-center justify-center mt-14">
-      <section className="flex flex-col items-center justify-center px-6 text-center text-darkGrayBlue">
-        <h2 className="text-3xl font-semibold leading-normal text-darkBlue">
+    <article className="flex flex-col items-center justify-center mt-14 xl:flex-row xl:items-start xl:mt-40 xl:px-44 xl:w-full ">
+      <section className="flex flex-col items-center justify-center px-6 text-center text-darkGrayBlue xl:px-0 xl:items-start xl:text-left xl:w-full">
+        <h2 className="text-3xl font-semibold leading-normal text-darkBlue xl:text-4xl xl:w-[26rem]">
           What's different about Manage?
         </h2>
-        <p className="px-2 my-4 text-sm leading-loose ">
+        <p className="px-2 my-4 text-sm leading-loose xl:px-0 xl:text-base xl:my-8 xl:w-[23rem]">
           Manage provides all the functionality your team needs, without the
           complexity. Our software is tailor-made for modern digital product
           teams.
         </p>
       </section>
-      <section className="flex flex-col gap-10 my-10">
+      <section className="flex flex-col gap-10 my-10 xl:my-0 xl:w-full xl:gap-2 ">
         {features.map((feature, i) => (
           <Feature key={i} feature={feature} number={i} />
         ))}
