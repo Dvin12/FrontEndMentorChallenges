@@ -1,0 +1,106 @@
+{
+  "followers": [
+    {
+      "id": 111,
+      "platform": "fb",
+      "channel": "@nathanf",
+      "type": "followers",
+      "total": 1987,
+      "growth": 12,
+      "loss": 0
+    },
+    {
+      "id": 222,
+      "platform": "twitter",
+      "channel": "@nathanf",
+      "type": "followers",
+      "total": 1044,
+      "growth": 99,
+      "loss": 0
+    },
+
+    {
+      "id": 333,
+      "platform": "ig",
+      "channel": "@realnathanf",
+      "type": "followers",
+      "total": "11k",
+      "growth": 1099,
+      "loss": 0
+    },
+
+    {
+      "id": 444,
+      "platform": "youtube",
+      "channel": "Nathan F.",
+      "type": "subscribers",
+      "total": 8239,
+      "growth": 0,
+      "loss": 144
+    }
+  ],
+
+  "Overview": [
+    {
+      "platform": "fb",
+      "type": "Page Views",
+      "amount": 87,
+      "growth": 3,
+      "loss": 0
+    },
+
+    {
+      "platform": "fb",
+      "type": "Likes",
+      "amount": 52,
+      "growth": 0,
+      "loss": 2
+    },
+    {
+      "platform": "ig",
+      "type": "Likes",
+      "amount": 5462,
+      "growth": 2257,
+      "loss": 0
+    },
+
+    {
+      "platform": "ig",
+      "type": "Profile Views",
+      "amount": "52k",
+      "growth": 1375,
+      "loss": 0
+    },
+
+    {
+      "platform": "twitter",
+      "type": "Retweets",
+      "amount": 117,
+      "growth": 303,
+      "loss": 0
+    },
+
+    {
+      "platform": "twitter",
+      "type": "Likes",
+      "amount": 507,
+      "growth": 553,
+      "loss": 0
+    },
+
+    {
+      "platform": "youtube",
+      "type": "Likes",
+      "amount": 107,
+      "growth": 0,
+      "loss": 19
+    },
+    {
+      "platform": "youtube",
+      "type": "Total Views",
+      "amount": 1407,
+      "growth": 0,
+      "loss": 12
+    }
+  ]
+}
