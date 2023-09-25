@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Manrope:wght@600;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: hsl(174, 86%, 45%);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 100%;
+  background-image: url(../public/assets/images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 55%;
+  transition: all 0.3s;
+}
+
+input::-moz-range-thumb {
+  -moz-appearance: none;
+  background-color: hsl(174, 86%, 45%);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 100%;
+  background-image: url(../public/assets/images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 55%;
+  transition: all 0.3s;
+}
+
+input::-webkit-slider-thumb:hover {
+  background-color: hsl(174, 86%, 35%);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+input::-moz-range-thumb:hover {
+  background-color: hsl(174, 86%, 35%);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+input::-webkit-slider-thumb:active {
+  background-color: hsl(174, 86%, 35%);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+input::-moz-range-thumb:active {
+  background-color: hsl(174, 86%, 35%);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.btn {
+  background-color: hsl(224, 65%, 95%);
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.btn::before {
+  position: absolute;
+  content: "";
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  margin: 2px;
+  transition: all 0.3s;
+}
+
+#check {
+  display: none;
+}
+
+input:checked + .btn {
+  background-color: hsl(174, 86%, 45%);
+}
+
+input:checked + .btn::before {
+  transform: translateX(30px);
+}
