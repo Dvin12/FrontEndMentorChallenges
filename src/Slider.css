@@ -1,0 +1,10 @@
+.splide__pagination .splide__pagination__page.is-active {
+  background-color: #ff0000;
+}
+
+.splide__pagination .splide__pagination__page {
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ff0000;
+}
