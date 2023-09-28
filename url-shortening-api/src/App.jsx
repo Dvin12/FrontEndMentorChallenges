@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Article from "./components/Article";
 import Banner from "./components/Banner";
 import Footer from "./components/Footer";
@@ -9,13 +10,23 @@ import Section from "./components/Section";
 import Shortener from "./components/Shortener";
 
 export default function App() {
+  const [input, setInput] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+
+  console.log(input);
+
   return (
     <Main>
       <Navigation />
       <Header />
       <Section>
-        <Shortener />
-        {/* <Links /> */}
+        <Shortener
+          setInput={setInput}
+          input={input}
+          setIsLoading={setIsLoading}
+          isLoading={isLoading}
+        />
+        <Links input={input} isLoading={isLoading} />
         <Article />
         <Banner />
       </Section>
