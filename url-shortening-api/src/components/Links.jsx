@@ -6,7 +6,7 @@ export default function Links({ input, isLoading }) {
       {isLoading ? (
         <p className="text-center pt-28">Loading....</p>
       ) : (
-        <section className="flex flex-col gap-5 px-6 pt-28">
+        <section className="flex flex-col gap-5 px-6 pt-32">
           {input.map((link, i) => (
             <Link key={i} link={link} />
           ))}

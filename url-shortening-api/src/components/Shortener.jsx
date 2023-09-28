@@ -8,24 +8,36 @@ export default function Shortener({
   isLoading,
 }) {
   const [value, setValue] = useState("");
+  const [isValid, setIsValid] = useState(false);
+
+  const urlRegex =
+    /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/gi;
 
   function handleSubmit(e) {
     e.preventDefault();
-    if (value === "") return;
-    const fetchLink = async () => {
-      setIsLoading(true);
-      const res = await fetch(`https://api.shrtco.de/v2/shorten?url=${value}`);
-      const data = await res.json();
-      setInput([
-        ...input,
-        {
-          original: value,
-          converted: data.result.full_short_link,
-        },
-      ]);
-      setTimeout(() => setIsLoading(false), 800);
-    };
-    fetchLink();
+    if (value === "" || !value.match(urlRegex)) {
+      setIsValid(true);
+      setValue("");
+    } else {
+      setIsValid(false);
+      const fetchLink = async () => {
+        setIsLoading(true);
+        const res = await fetch(
+          `https://api.shrtco.de/v2/shorten?url=${value}`
+        );
+        const data = await res.json();
+        setInput([
+          ...input,
+          {
+            original: value,
+            converted: data.result.full_short_link,
+          },
+        ]);
+        setTimeout(() => setIsLoading(false), 800);
+      };
+
+      fetchLink();
+    }
   }
 
   return (
@@ -35,14 +47,26 @@ export default function Shortener({
         alt="background"
         className="absolute w-full -top-10 -right-20 -z-30"
       />
-      <form className="flex flex-col w-full gap-4" onSubmit={handleSubmit}>
+      <form
+        className={`relative flex flex-col w-full ${
+          isValid ? "gap-8" : "gap-4"
+        } `}
+        onSubmit={handleSubmit}
+      >
         <input
           type="text"
-          className="w-full px-4 py-3 tracking-wide rounded-md"
+          className={`w-full px-4 py-3 tracking-wide rounded-md ${
+            isValid && "outline-none border-[2px] border-Red"
+          }`}
           placeholder="Shorten a link here..."
           value={value}
           onChange={(e) => setValue(e.target.value)}
         />
+        {isValid && (
+          <p className="absolute text-sm italic top-14 text-Red">
+            Please add a link
+          </p>
+        )}
         <Button width="full" rounded="md" isLoading={isLoading}>
           Shorten it
         </Button>
