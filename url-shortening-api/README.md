@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/url-shortening-api-landing-page-HdzAsORg0l)
 - Live Site URL: [https://shortly-ev.netlify.app/](https://shortly-ev.netlify.app/)
 
 ## My process
