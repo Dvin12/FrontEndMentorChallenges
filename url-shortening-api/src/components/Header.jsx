@@ -5,7 +5,7 @@ export default function Header() {
     <header className="grid grid-cols-1 grid-rows-1 xl:grid-cols-2 xl:mb-32 ">
       <section className="flex items-end justify-end w-[140%] xl:items-center  xl:order-last">
         <img
-          src="./images/illustration-working.svg"
+          src="./assets/images/illustration-working.svg"
           alt="header illustration"
           className=" w-[95%] xl:w-full  "
         />

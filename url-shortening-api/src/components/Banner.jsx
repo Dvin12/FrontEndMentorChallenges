@@ -17,7 +17,7 @@ export default function Banner() {
         className="absolute top-0 right-0 block w-full h-full xl:hidden"
       />
       <img
-        src="./images/bg-boost-desktop.svg"
+        src="./assets/images/bg-boost-desktop.svg"
         alt="background"
         className="absolute top-0 right-0 hidden w-full h-full xl:block"
       />

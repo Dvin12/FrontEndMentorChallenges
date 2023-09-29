@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="flex flex-col items-center justify-center py-10 font-medium text-center bg-veryDarkViolet gap-7 text-Gray xl:flex-row xl:justify-between xl:items-start xl:px-40 xl:text-left xl:py-16">
       <section>
         <img
-          src="./images/logo.svg"
+          src="./assets/images/logo.svg"
           alt="company name"
           className=" grayscale brightness-[500%]"
         />
@@ -76,28 +76,28 @@ export default function Footer() {
       <section className="flex items-center justify-center gap-6">
         <a href="#">
           <img
-            src="./images/icon-facebook.svg"
+            src="./assets/images/icon-facebook.svg"
             alt="icon"
             className="duration-200 hover:opacity-50"
           />
         </a>
         <a href="#">
           <img
-            src="./images/icon-twitter.svg"
+            src="./assets/images/icon-twitter.svg"
             alt="icon"
             className="duration-200 hover:opacity-50"
           />
         </a>
         <a href="#">
           <img
-            src="./images/icon-pinterest.svg"
+            src="./assets/images/icon-pinterest.svg"
             alt="icon"
             className="duration-200 hover:opacity-50"
           />
         </a>
         <a href="#">
           <img
-            src="./images/icon-instagram.svg"
+            src="./assets/images/icon-instagram.svg"
             alt="icon"
             className="duration-200 hover:opacity-50"
           />

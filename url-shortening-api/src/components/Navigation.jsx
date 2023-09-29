@@ -4,7 +4,7 @@ import MobileNav from "./MobileNav";
 export default function Navigation() {
   return (
     <nav className="flex items-center justify-between px-6 py-9 xl:px-20 2xl:px-40 xl:py-14 xl:text-gViolet xl:font-bold xl:tracking-wide">
-      <img src="./images/logo.svg" alt="Shortly company logo" />
+      <img src="./assets/images/logo.svg" alt="Shortly company logo" />
       <ul className="items-center flex-1 hidden xl:flex gap-7 px-14">
         <li>
           <a href="#" className="duration-200 hover:text-veryDarkViolet">

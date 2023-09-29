@@ -43,12 +43,12 @@ export default function Shortener({
   return (
     <div className="absolute -top-20  -translate-x-1/2 left-1/2  bg-dViolet  w-[88%] flex flex-col items-center justify-center py-7 gap-4 rounded-xl px-6 overflow-hidden xl:w-[88%]  2xl:w-[83%] xl:px-10 xl:py-16 ">
       <img
-        src="./images/bg-shorten-mobile.svg"
+        src="./assets/images/bg-shorten-mobile.svg"
         alt="background"
         className="absolute block w-full h-full xl:hidden -top-10 -right-20 -z-30"
       />
       <img
-        src="./images/bg-shorten-desktop.svg"
+        src="./assets/images/bg-shorten-desktop.svg"
         alt="background"
         className="absolute hidden w-full h-full xl:block -z-30"
       />
