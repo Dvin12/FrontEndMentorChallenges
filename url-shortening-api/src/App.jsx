@@ -13,8 +13,6 @@ export default function App() {
   const [input, setInput] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  console.log(input);
-
   return (
     <Main>
       <Navigation />

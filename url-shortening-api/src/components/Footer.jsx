@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className=" bg-veryDarkViolet flex flex-col items-center justify-center text-center py-10 gap-7 text-Gray font-medium">
+    <footer className="flex flex-col items-center justify-center py-10 font-medium text-center bg-veryDarkViolet gap-7 text-Gray xl:flex-row xl:justify-between xl:items-start xl:px-40 xl:text-left xl:py-16">
       <section>
         <img
           src="./images/logo.svg"
@@ -10,61 +10,97 @@ export default function Footer() {
       </section>
       <section>
         <span className="text-[#fff] font-bold tracking-wide">Features</span>
-        <ul className="my-3 flex flex-col gap-2">
+        <ul className="flex flex-col gap-2 my-3">
           <li>
-            <a href="#">Link Shortening</a>
+            <a href="#" className="duration-200 hover:text-gViolet">
+              Link Shortening
+            </a>
           </li>
           <li>
-            <a href="#">Branded Links</a>
+            <a href="#" className="duration-200 hover:text-gViolet">
+              Branded Links
+            </a>
           </li>
           <li>
-            <a href="#">Analytics</a>
+            <a href="#" className="duration-200 hover:text-gViolet">
+              Analytics
+            </a>
           </li>
         </ul>
       </section>
       <section>
         <span className="text-[#fff] font-bold tracking-wide">Resources</span>
-        <ul className="my-3 flex flex-col gap-2">
+        <ul className="flex flex-col gap-2 my-3">
           <li>
-            <a href="#">Blog</a>
+            <a href="#" className="duration-200 hover:text-gViolet">
+              Blog
+            </a>
           </li>
           <li>
-            <a href="#">Developers</a>
+            <a href="#" className="duration-200 hover:text-gViolet">
+              Developers
+            </a>
           </li>
           <li>
-            <a href="#">Support</a>
+            <a href="#" className="duration-200 hover:text-gViolet">
+              Support
+            </a>
           </li>
         </ul>
       </section>
       <section>
         <span className="text-[#fff] font-bold tracking-wide">Company</span>
-        <ul className="my-3 flex flex-col gap-2">
+        <ul className="flex flex-col gap-2 my-3">
           <li>
-            <a href="#">About</a>
+            <a href="#" className="duration-200 hover:text-gViolet">
+              About
+            </a>
           </li>
           <li>
-            <a href="#">Our Team</a>
+            <a href="#" className="duration-200 hover:text-gViolet">
+              Our Team
+            </a>
           </li>
           <li>
-            <a href="#">Careers</a>
+            <a href="#" className="duration-200 hover:text-gViolet">
+              Careers
+            </a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#" className="duration-200 hover:text-gViolet">
+              Contact
+            </a>
           </li>
         </ul>
       </section>
-      <section className="flex gap-6 items-center justify-center">
+      <section className="flex items-center justify-center gap-6">
         <a href="#">
-          <img src="./images/icon-facebook.svg" alt="icon" />
+          <img
+            src="./images/icon-facebook.svg"
+            alt="icon"
+            className="duration-200 hover:opacity-50"
+          />
         </a>
         <a href="#">
-          <img src="./images/icon-twitter.svg" alt="icon" />
+          <img
+            src="./images/icon-twitter.svg"
+            alt="icon"
+            className="duration-200 hover:opacity-50"
+          />
         </a>
         <a href="#">
-          <img src="./images/icon-pinterest.svg" alt="icon" />
+          <img
+            src="./images/icon-pinterest.svg"
+            alt="icon"
+            className="duration-200 hover:opacity-50"
+          />
         </a>
         <a href="#">
-          <img src="./images/icon-instagram.svg" alt="icon" />
+          <img
+            src="./images/icon-instagram.svg"
+            alt="icon"
+            className="duration-200 hover:opacity-50"
+          />
         </a>
       </section>
     </footer>

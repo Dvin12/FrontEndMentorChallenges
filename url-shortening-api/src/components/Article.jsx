@@ -22,21 +22,21 @@ const cards = [
 
 export default function Article() {
   return (
-    <article className="pt-44 px-6">
+    <article className="px-6 pt-44">
       <section className="flex flex-col items-center justify-center text-center text-gViolet">
-        <h2 className="text-2xl font-bold text-veryDarkBlue">
+        <h2 className="text-2xl font-bold xl:text-4xl text-veryDarkBlue">
           Advanced Statistics
         </h2>
-        <p className="my-6 leading-relaxed font-medium ">
+        <p className="my-6 font-medium leading-relaxed xl:text-lg xl:w-1/2 2xl:w-1/3 ">
           Track how your links are performing across the web with our advanced
           statistics dashboard.
         </p>
       </section>
-      <section className="my-16 flex flex-col items-center justify-center gap-24 relative">
+      <section className="relative flex flex-col items-center justify-center gap-24 my-20 xl:flex-row xl:gap-10 xl:px-10 2xl:px-40 xl:mt-0 xl:mb-40">
         {cards.map((card, i) => (
-          <Card key={i} card={card} />
+          <Card key={i} card={card} num={i} />
         ))}
-        <div className="absolute top-0 h-full  bg-gViolet w-2 -z-10"></div>
+        <div className="absolute w-2 h-full xl:top-1/2 xl:h-2 xl:w-[60%] bg-gViolet -z-10"></div>
       </section>
     </article>
   );

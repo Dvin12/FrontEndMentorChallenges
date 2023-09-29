@@ -19,7 +19,7 @@ export default function MobileNav() {
   }, []);
 
   return (
-    <div ref={menuRef}>
+    <div ref={menuRef} className="block  xl:hidden">
       <button onClick={() => setIsOpen(!isOpen)}>
         <BiMenu size={40} />
       </button>

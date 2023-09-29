@@ -41,21 +41,26 @@ export default function Shortener({
   }
 
   return (
-    <div className="absolute -top-20  -translate-x-1/2 left-1/2  bg-dViolet  w-[88%] flex flex-col items-center justify-center py-7 gap-4 rounded-xl px-6 overflow-hidden">
+    <div className="absolute -top-20  -translate-x-1/2 left-1/2  bg-dViolet  w-[88%] flex flex-col items-center justify-center py-7 gap-4 rounded-xl px-6 overflow-hidden xl:w-[88%]  2xl:w-[83%] xl:px-10 xl:py-16 ">
       <img
         src="./images/bg-shorten-mobile.svg"
         alt="background"
-        className="absolute w-full -top-10 -right-20 -z-30"
+        className="absolute block w-full h-full xl:hidden -top-10 -right-20 -z-30"
+      />
+      <img
+        src="./images/bg-shorten-desktop.svg"
+        alt="background"
+        className="absolute hidden w-full h-full xl:block -z-30"
       />
       <form
-        className={`relative flex flex-col w-full ${
+        className={`relative flex flex-col xl:flex-row w-full ${
           isValid ? "gap-8" : "gap-4"
         } `}
         onSubmit={handleSubmit}
       >
         <input
           type="text"
-          className={`w-full px-4 py-3 tracking-wide rounded-md ${
+          className={`w-full xl:w-[500%] px-4 py-3 tracking-wide rounded-md ${
             isValid && "outline-none border-[2px] border-Red"
           }`}
           placeholder="Shorten a link here..."
@@ -68,7 +73,7 @@ export default function Shortener({
           </p>
         )}
         <Button width="full" rounded="md" isLoading={isLoading}>
-          Shorten it
+          Shorten it!
         </Button>
       </form>
     </div>
