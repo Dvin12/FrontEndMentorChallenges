@@ -12,7 +12,7 @@ export default function Banner() {
         </Button>
       </div>
       <img
-        src="./images/bg-boost-mobile.svg"
+        src="./assets/images/bg-boost-mobile.svg"
         alt="background"
         className="absolute top-0 right-0 block w-full h-full xl:hidden"
       />
