@@ -25,15 +25,17 @@ const bulletPoints = [
 
 export default function EasyBank() {
   return (
-    <article className=" bg-lightGB px-4 mt-8 py-14 text-gBlue">
-      <section className="text-center flex flex-col items-center justify-center ">
-        <h2 className="text-3xl px-4 text-dBlue">Why choose Easybank?</h2>
-        <p className="my-4">
+    <article className="px-4 mt-8 bg-lightGB py-14 text-gBlue xl:-mt-20 xl:py-20 xl:px-40">
+      <section className="flex flex-col items-center justify-center text-center xl:text-left xl:items-start ">
+        <h2 className="px-4 text-3xl xl:text-4xl text-dBlue xl:px-0">
+          Why choose Easybank?
+        </h2>
+        <p className="my-4 xl:text-lg xl:w-[40rem]">
           We leverage Open Banking to turn your bank account into your financial
           hub. Control your finances like never before.
         </p>
       </section>
-      <section className="flex flex-col items-center justify-center gap-10 mt-10">
+      <section className="flex flex-col items-center justify-center gap-10 mt-10 xl:flex-row">
         {bulletPoints.map((bulletPoint, i) => (
           <BulletPoint bulletPoint={bulletPoint} key={i} />
         ))}

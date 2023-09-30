@@ -32,11 +32,11 @@ const articles = [
 
 export default function Articles() {
   return (
-    <article className="py-14 bg-veryLighG px-4">
-      <div className="flex items-center justify-center text-center">
-        <h3 className="text-3xl text-dBlue">Latest Articles</h3>
+    <article className="px-4 py-20 bg-veryLighG xl:px-40 xl:py-24 ">
+      <div className="flex items-center justify-center text-center xl:items-start xl:justify-start xl:text-left">
+        <h3 className="text-3xl xl:text-4xl text-dBlue">Latest Articles</h3>
       </div>
-      <section className="flex flex-col items-center justify-center mt-8 gap-6">
+      <section className="flex flex-col items-center justify-center h-full gap-6 mt-8 xl:mt-12 xl:gap-10 xl:flex-row ">
         {articles.map((card, i) => (
           <Card card={card} key={i} />
         ))}

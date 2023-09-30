@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Articles from "./components/Articles";
 import EasyBank from "./components/EasyBank";
 import Footer from "./components/Footer";
@@ -7,9 +8,10 @@ import Navigation from "./components/Navigation";
 import Section from "./components/Section";
 
 export default function App() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <Main>
-      <Navigation />
+    <Main isOpen={isOpen}>
+      <Navigation isOpen={isOpen} setIsOpen={setIsOpen} />
       <Header />
       <Section>
         <EasyBank />
