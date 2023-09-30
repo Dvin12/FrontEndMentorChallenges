@@ -24,7 +24,7 @@ export default function Header() {
           one-stop-shop for spending, saving, budgeting, investing and much
           more.
         </p>
-        <div className="my-4">
+        <div className="mt-5 mb-20">
           <Button>Request Invite</Button>
         </div>
       </section>
