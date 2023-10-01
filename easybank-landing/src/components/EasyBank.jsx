@@ -25,7 +25,7 @@ const bulletPoints = [
 
 export default function EasyBank() {
   return (
-    <article className="px-4 mt-8 bg-lightGB py-14 text-gBlue xl:-mt-20 xl:py-20 xl:px-40">
+    <article className="px-4 mt-8 bg-lightGB py-14 text-gBlue 2xl:-mt-20 xl:-mt-12 xl:py-20 2xl:px-40 xl:px-16">
       <section className="flex flex-col items-center justify-center text-center xl:text-left xl:items-start ">
         <h2 className="px-4 text-3xl xl:text-4xl text-dBlue xl:px-0">
           Why choose Easybank?
