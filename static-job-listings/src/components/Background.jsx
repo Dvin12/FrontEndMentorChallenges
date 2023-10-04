@@ -4,7 +4,13 @@ export default function Background() {
       <img
         src="./images/bg-header-mobile.svg"
         alt="header background"
-        className="w-full"
+        className="block w-full xl:hidden"
+      />
+
+      <img
+        src="./images/bg-header-desktop.svg"
+        alt="header background"
+        className="hidden w-full xl:block"
       />
     </header>
   );
