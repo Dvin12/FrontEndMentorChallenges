@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Background from "./components/Background";
 import Section from "./components/Section";
 

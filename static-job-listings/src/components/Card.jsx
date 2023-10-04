@@ -1,7 +1,15 @@
+import { useState } from "react";
 import Button from "./Button";
 
-export default function Card({ card }) {
+export default function Card({ card, filtered, setFiltered }) {
   console.log(card);
+
+  function handleFilter(filter) {
+    if (!filtered.includes(filter)) {
+      setFiltered([...filtered, filter]);
+    }
+  }
+
   return (
     <article className=" bg-[#fff] w-full p-6 shadow-lg rounded-md flex relative flex-col">
       <section className="w-full my-3">
@@ -10,17 +18,23 @@ export default function Card({ card }) {
           alt={card.company}
           className="absolute -top-8 w-[4rem]"
         />
-        <div className="flex items-center justify-start gap-3 my-2 ">
-          <span className="font-bold text-desaturatedCyan">{card.company}</span>
-          <div className="flex items-center justify-center gap-2 font-medium text-lCyan">
-            <span className="px-3 py-1 rounded-full bg-desaturatedCyan ">
-              NEW!
+        {card.featured === true || card.new === true ? (
+          <div className="flex items-center justify-start gap-3 my-2 ">
+            <span className="font-bold text-desaturatedCyan">
+              {card.company}
             </span>
-            <span className="px-3 py-1 rounded-full bg-veryDCyan">
-              FEATURED
-            </span>
+            <div className="flex items-center justify-center gap-2 font-medium text-lCyan">
+              <span className="px-3 py-1 rounded-full bg-desaturatedCyan ">
+                NEW!
+              </span>
+              <span className="px-3 py-1 rounded-full bg-veryDCyan">
+                FEATURED
+              </span>
+            </div>
           </div>
-        </div>
+        ) : (
+          ""
+        )}
         <div className="my-3">
           <span className="font-bold">{card.position}</span>
           <ul className="flex gap-4 pb-4 mt-2 font-medium border-b text-dCyan">
@@ -37,20 +51,15 @@ export default function Card({ card }) {
         </div>
       </section>
       <section className="flex flex-wrap items-center gap-4">
-        <Button className="px-3 py-2 font-bold rounded-md bg-Cyan text-dCyan">
-          {card.role}
-        </Button>
-        <Button>{card.level}</Button>
+        <Button onClick={() => handleFilter(card.role)}>{card.role}</Button>
+        <Button onClick={() => handleFilter(card.level)}>{card.level}</Button>
         {card.languages.map((language, i) => (
-          <Button
-            key={i}
-            className="px-3 py-2 font-bold rounded-md bg-Cyan text-dCyan"
-          >
+          <Button key={i} onClick={() => handleFilter(language)}>
             {language}
           </Button>
         ))}
-        {card.tools.map((tool) => (
-          <Button className="px-3 py-2 font-bold rounded-md bg-Cyan text-dCyan">
+        {card.tools.map((tool, i) => (
+          <Button key={i} onClick={() => handleFilter(tool)}>
             {tool}
           </Button>
         ))}
