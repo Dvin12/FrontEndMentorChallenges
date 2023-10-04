@@ -29,7 +29,11 @@ export default function Section() {
           </div>
         </section>
       )}
-      <section className="flex flex-col items-center justify-center px-6 py-36 gap-14 bg-Cyan">
+      <section
+        className={`flex flex-col items-center justify-center h-full px-6  gap-14 bg-Cyan ${
+          filtered.length > 0 ? "py-48" : "py-16"
+        }`}
+      >
         {data
           .filter((card) => {
             return filtered.length === 0
