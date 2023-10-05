@@ -9,7 +9,7 @@ export default function Section() {
     const updatedFiltered = filtered.filter((item) => item !== removeItem);
     setFiltered([...updatedFiltered]);
   }
-  console.log(filtered);
+
   return (
     <>
       {filtered.length > 0 && (
@@ -17,12 +17,12 @@ export default function Section() {
           <div className="flex flex-wrap gap-4 xl:flex-nowrap">
             {filtered.map((item, i) => (
               <div className="flex" key={i}>
-                <Button>{item}</Button>
+                <Button hover={false}>{item}</Button>
                 <button
                   className="px-3 rounded-tr-md rounded-br-md bg-dCyan"
                   onClick={() => removeFilter(item)}
                 >
-                  <img src="./images/icon-remove.svg" alt="" />
+                  <img src="./images/icon-remove.svg" alt="button" />
                 </button>
               </div>
             ))}
