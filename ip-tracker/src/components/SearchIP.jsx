@@ -47,7 +47,7 @@ export default function SearchIP({ setIp }) {
         value={input}
         onChange={(e) => setInput(e.target.value)}
       />
-      <button className="absolute top-24 2xl:top-32 right-[4.8%] xl:right-[24.9%] px-5 py-[1.3rem] bg-veryDarkGrey rounded-tr-2xl rounded-br-2xl hover:bg-opacity-70 duration-200 ">
+      <button className="absolute top-24 2xl:top-32 right-[4.8%] xl:right-[25%] px-5 py-[1.3rem] bg-veryDarkGrey rounded-tr-2xl rounded-br-2xl hover:bg-opacity-70 duration-200 ">
         <img src="./images/icon-arrow.svg" alt="button" />
       </button>
     </form>
