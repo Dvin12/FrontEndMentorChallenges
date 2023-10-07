@@ -15,12 +15,24 @@ export default function SearchIP({ setIp }) {
       setIsValid(true);
       const fetchData = async () => {
         const response = await fetch(
-          `https://geo.ipify.org/api/v2/country?apiKey=${
+          `
+          https://geo.ipify.org/api/v2/country,city?apiKey=${
             import.meta.env.VITE_API_KEY
           }&ipAddress=${input}`
         );
         const data = await response.json();
-        setIp([data]);
+
+        setIp([
+          {
+            ip: data.ip,
+            isp: data.isp,
+            country: data.location.country,
+            region: data.location.region,
+            geocode: [data.location.lat, data.location.lng],
+
+            timezone: data.location.timezone,
+          },
+        ]);
       };
       fetchData();
     }

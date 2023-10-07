@@ -6,12 +6,12 @@ import Map from "./components/Map";
 
 export default function App() {
   const [ip, setIp] = useState([]);
-  console.log(ip);
+
   return (
     <Main>
       <Header setIp={setIp} ip={ip} />
       <Info ip={ip} />
-      <Map />
+      <Map ip={ip} />
     </Main>
   );
 }

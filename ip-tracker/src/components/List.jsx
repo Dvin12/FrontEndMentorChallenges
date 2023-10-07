@@ -1,7 +1,7 @@
 export default function List({ info }) {
   return (
     <>
-      <ul key={info.ip} className="flex flex-col items-center justify-center">
+      <ul className="flex flex-col items-center justify-center">
         <li className="text-xs font-medium tracking-wider text-darkGrey">
           IP ADDRESS
         </li>
@@ -13,7 +13,7 @@ export default function List({ info }) {
           LOCATION
         </li>
         <li className="mt-2 text-lg font-semibold">
-          {info.location.region}, {info.location.country}
+          {info.region}, {info.country}
         </li>
       </ul>
 
@@ -21,9 +21,7 @@ export default function List({ info }) {
         <li className="text-xs font-medium tracking-wider text-darkGrey">
           TIMEZONE
         </li>
-        <li className="mt-2 text-lg font-semibold">
-          UTC {info.location.timezone}
-        </li>
+        <li className="mt-2 text-lg font-semibold">UTC {info.timezone}</li>
       </ul>
 
       <ul className="flex flex-col items-center justify-center">
