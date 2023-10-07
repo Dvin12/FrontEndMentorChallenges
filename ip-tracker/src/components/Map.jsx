@@ -8,7 +8,7 @@ export default function Map({ ip }) {
 
   const customIcon = new Icon({
     iconUrl: "./images/icon-location.svg",
-    iconSize: [30, 30],
+    iconSize: [35, 35],
   });
 
   useEffect(() => {

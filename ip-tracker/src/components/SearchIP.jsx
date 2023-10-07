@@ -43,11 +43,11 @@ export default function SearchIP({ setIp }) {
       <input
         type="text"
         placeholder="Type IP address"
-        className="absolute top-24 left-1/2 -translate-x-1/2 px-6 py-4 w-[90%] rounded-2xl "
+        className="absolute top-24 left-1/2 -translate-x-1/2 px-6 py-4 w-[90%] xl:w-[50%] rounded-2xl 2xl:top-32 xl:font-medium "
         value={input}
         onChange={(e) => setInput(e.target.value)}
       />
-      <button className="absolute top-24 right-[4.8%] px-5 py-[1.3rem] bg-veryDarkGrey rounded-tr-2xl rounded-br-2xl ">
+      <button className="absolute top-24 2xl:top-32 right-[4.8%] xl:right-[24.9%] px-5 py-[1.3rem] bg-veryDarkGrey rounded-tr-2xl rounded-br-2xl hover:bg-opacity-70 duration-200 ">
         <img src="./images/icon-arrow.svg" alt="button" />
       </button>
     </form>
