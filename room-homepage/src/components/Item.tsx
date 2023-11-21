@@ -14,7 +14,7 @@ export default function Item({
   slide,
   setSlide,
 }: ItemProps): JSX.Element {
-  function handleNext() {
+  function handleNext(): void {
     if (slide > Item.length) {
       setSlide(0);
     } else {
@@ -22,7 +22,7 @@ export default function Item({
     }
   }
 
-  function handlePrevious() {
+  function handlePrevious(): void {
     if (slide < Item.length) {
       setSlide(2);
     } else {
@@ -33,24 +33,33 @@ export default function Item({
   return (
     <>
       {slide === num ? (
-        <section className="transition-all duration-100 ">
-          <div className="relative">
-            <img src={imageMobile} alt="" />
+        <section className="grid w-full grid-cols-1 transition-all duration-100 xl:grid-cols-2">
+          <div className="relative w-full ">
+            <img
+              src={imageMobile}
+              alt=""
+              className="object-cover w-full xl:hidden"
+            />
+            <img
+              src={imageDesktop}
+              alt=""
+              className="hidden object-cover w-full h-full xl:block"
+            />
             <Switch handleNext={handleNext} handlePrevious={handlePrevious} />
           </div>
-          <section className="flex flex-col items-start justify-center gap-3 px-6 py-14">
-            <h1 className="text-4xl font-semibold tracking-tighter ">
+          <section className="flex flex-col items-start justify-center gap-3 px-6 py-14 xl:px-20 xl:py-28 2xl:px-44 xl:gap-8">
+            <h1 className="text-4xl font-semibold tracking-tighter 2xl:text-6xl ">
               {title}
             </h1>
-            <p className=" text-darkGrey">{description}</p>
-            <button className="flex items-start gap-4 my-4">
-              <span className="tracking-[0.8em] text-lg font-semibold ">
+            <p className=" text-darkGrey xl:text-lg">{description}</p>
+            <button className="flex items-start gap-4 my-4 xl:items-center group">
+              <span className="tracking-[0.8em] text-lg xl:text-xl font-semibold group-hover:opacity-50 duration-200 ">
                 SHOP NOW
               </span>
               <img
                 src="./assets/images/icon-arrow.svg"
                 alt=""
-                className="mt-1"
+                className="mt-1 duration-200 xl:mt-0 group-hover:opacity-50"
               />
             </button>
           </section>
