@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/room-homepage---jFWUe1ss)
-- Live Site URL: [Add live site URL here](https://room-ev.netlify.app/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/room-homepage---jFWUe1ss)
+- Live Site URL: [Live Site](https://room-ev.netlify.app/)
 
 ## My process
 
