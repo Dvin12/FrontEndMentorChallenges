@@ -1,6 +1,6 @@
 export default function NavMobile(): JSX.Element {
   return (
-    <section className="absolute flex items-center justify-between w-full px-6 py-12">
+    <section className="absolute z-30 flex items-center justify-between w-full px-6 py-12">
       <button className="w-full">
         <img src="./assets/images/icon-hamburger.svg" alt="hamburger" />
       </button>

@@ -1,23 +1,43 @@
 import { Items } from "./Header";
+import Switch from "./Switch";
 
 interface ItemProps {
   item: Items;
   num: number;
   slide: number;
+  setSlide: (slide: number) => void;
 }
 
 export default function Item({
   item: { imageDesktop, imageMobile, title, description },
   num,
   slide,
+  setSlide,
 }: ItemProps): JSX.Element {
+  function handleNext() {
+    if (slide > Item.length) {
+      setSlide(0);
+    } else {
+      setSlide(slide + 1);
+    }
+  }
+
+  function handlePrevious() {
+    if (slide < Item.length) {
+      setSlide(2);
+    } else {
+      setSlide(slide - 1);
+    }
+  }
+
   return (
     <>
-      {slide === num && (
-        <>
-          <section>
+      {slide === num ? (
+        <section className="transition-all duration-100 ">
+          <div className="relative">
             <img src={imageMobile} alt="" />
-          </section>
+            <Switch handleNext={handleNext} handlePrevious={handlePrevious} />
+          </div>
           <section className="flex flex-col items-start justify-center gap-3 px-6 py-14">
             <h1 className="text-4xl font-semibold tracking-tighter ">
               {title}
@@ -34,7 +54,9 @@ export default function Item({
               />
             </button>
           </section>
-        </>
+        </section>
+      ) : (
+        ""
       )}
     </>
   );

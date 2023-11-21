@@ -39,7 +39,7 @@ export default function Header(): JSX.Element {
   return (
     <header>
       {header.map((item: Items, i: number) => (
-        <Item item={item} key={i} num={i} slide={slide} />
+        <Item item={item} key={i} num={i} slide={slide} setSlide={setSlide} />
       ))}
     </header>
   );
