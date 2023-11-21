@@ -14,7 +14,7 @@ export default function NavMobile(): JSX.Element {
           <img src="./assets/images/icon-hamburger.svg" alt="hamburger" />
         </button>
         <div className="w-full">
-          <img src="./assets/images/logo.svg" alt="" />
+          <img src="./assets/images/logo.svg" alt="company room logo" />
         </div>
         <div className="w-1/2"></div>
       </section>
@@ -25,7 +25,7 @@ export default function NavMobile(): JSX.Element {
       >
         <nav className="flex items-center justify-between px-6 py-12 bg-white">
           <button onClick={handleClick}>
-            <img src="./assets/images/icon-close.svg" alt="" />
+            <img src="./assets/images/icon-close.svg" alt="close navigation" />
           </button>
           <ul className="flex items-center justify-center gap-8 font-bold">
             <li>

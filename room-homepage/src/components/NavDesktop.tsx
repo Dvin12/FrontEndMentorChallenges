@@ -2,7 +2,7 @@ export default function NavDesktop() {
   return (
     <nav className="absolute top-0 z-30 items-center justify-center hidden px-16 py-12 xl:flex gap-14 ">
       <button>
-        <img src="./assets/images/logo.svg" alt="" />
+        <img src="./assets/images/logo.svg" alt="company room logo" />
       </button>
       <ul className="flex items-center justify-center gap-8 text-lg text-white ">
         <li className="flex flex-col items-center justify-center group">

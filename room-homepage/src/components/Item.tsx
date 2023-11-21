@@ -37,12 +37,12 @@ export default function Item({
           <div className="relative w-full ">
             <img
               src={imageMobile}
-              alt=""
+              alt={title}
               className="object-cover w-full xl:hidden"
             />
             <img
               src={imageDesktop}
-              alt=""
+              alt={title}
               className="hidden object-cover w-full h-full xl:block"
             />
             <Switch handleNext={handleNext} handlePrevious={handlePrevious} />
@@ -58,7 +58,7 @@ export default function Item({
               </span>
               <img
                 src="./assets/images/icon-arrow.svg"
-                alt=""
+                alt="arrow pointing right"
                 className="mt-1 duration-200 xl:mt-0 group-hover:opacity-50"
               />
             </button>

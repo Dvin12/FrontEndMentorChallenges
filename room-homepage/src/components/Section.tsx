@@ -4,7 +4,7 @@ export default function Section(): JSX.Element {
       <div className="w-full h-full">
         <img
           src="./assets/images/image-about-dark.jpg"
-          alt=""
+          alt="about image 1"
           className="object-cover w-full h-full"
         />
       </div>
@@ -24,7 +24,7 @@ export default function Section(): JSX.Element {
       <div className="w-full h-full">
         <img
           src="./assets/images/image-about-light.jpg"
-          alt=""
+          alt="about image 2"
           className="object-cover w-full h-full"
         />
       </div>
