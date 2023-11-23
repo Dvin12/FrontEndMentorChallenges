@@ -1,29 +1,52 @@
 .countdown {
   display: flex;
+  justify-content: center;
   gap: 30px;
 }
 
 .time {
   text-align: center;
-  font-size: 1.6rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 .time-group {
   display: flex;
-  gap: 8px;
 }
 
 .time-segment {
   display: block;
-  font-size: 3.8rem;
+  font-size: 4.9rem;
   font-weight: 900;
-  width: 90px;
+  width: 160px;
   border-radius: 120px;
 }
 
 .segment-display {
   position: relative;
   height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.14) -2px 10px 2px,
+    rgba(0, 0, 0, 0.14) 0px 12px 2px;
+
+  overflow: hidden;
+  .dots {
+    position: absolute;
+    top: 50%;
+    left: -2%;
+    transform: translateY(-50%);
+    z-index: 100;
+    display: flex;
+    width: 104%;
+    justify-content: space-between;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 100%;
+  }
 }
 
 .segment-display-top,
@@ -36,7 +59,7 @@
 }
 
 .segment-display-top {
-  background-color: hsl(236, 21%, 20%);
+  background-color: hsl(236, 21%, 19%);
   color: hsl(345, 95%, 68%);
   line-height: 1.5;
   border-top-left-radius: 8px;
@@ -55,8 +78,8 @@
   position: absolute;
   top: 0px;
   height: 100%;
-  width: 90px;
-  perspective: 400px;
+  width: 100%;
+  perspective: 300px;
 }
 
 .segment-overlay-top,
@@ -66,13 +89,14 @@
   text-align: center;
   width: 100%;
   height: 50%;
+  z-index: 40;
 }
 
 .segment-overlay-top {
   top: 0;
   line-height: 1.5;
   color: hsl(345, 95%, 68%);
-  background-color: hsl(236, 21%, 20%);
+  background-color: hsl(236, 21%, 19%);
   transform-origin: bottom;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -89,14 +113,12 @@
   transform-origin: top;
 }
 
-.segment-overlay.flip,
-.segment-overlay-top {
-  animation: flip-top 0.8s linear;
+.segment-overlay.flip .segment-overlay-top {
+  animation: flip-top 0.3s linear;
 }
 
-.segment-overlay.flip,
-.segment-overlay-bottom {
-  animation: flip-bottom 0.8s linear;
+.segment-overlay.flip .segment-overlay-bottom {
+  animation: flip-bottom 0.3s linear;
 }
 
 @keyframes flip-top {
@@ -116,5 +138,82 @@
   }
   100% {
     transform: rotateX(0deg);
+  }
+}
+
+p {
+  text-transform: uppercase;
+  width: 100%;
+  padding-top: 8px;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  color: hsl(237, 18%, 59%);
+  font-weight: 700;
+}
+
+@media screen and (max-width: 740px) {
+  .time-segment {
+    font-size: 3.4rem;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .time-segment {
+    font-size: 2.4rem;
+    width: 80px;
+  }
+
+  .segment-display {
+    .dots {
+      position: absolute;
+      top: 50%;
+      left: -4%;
+      transform: translateY(-50%);
+      z-index: 100;
+      display: flex;
+      width: 108%;
+      justify-content: space-between;
+    }
+    .dot {
+      width: 8px;
+      height: 8px;
+      background-color: black;
+      border-radius: 100%;
+    }
+  }
+
+  p {
+    font-size: 0.4rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .time-segment {
+    font-size: 1.8rem;
+    width: 60px;
+  }
+
+  p {
+    font-size: 0.4rem;
+  }
+
+  .segment-display {
+    .dots {
+      position: absolute;
+      top: 50%;
+      left: -8%;
+      transform: translateY(-50%);
+      z-index: 100;
+      display: flex;
+      width: 117%;
+      justify-content: space-between;
+    }
+    .dot {
+      width: 8px;
+      height: 8px;
+      background-color: black;
+      border-radius: 100%;
+    }
   }
 }
