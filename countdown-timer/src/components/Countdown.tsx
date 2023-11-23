@@ -3,10 +3,10 @@ import Block from "./Block";
 import "./countdown.css";
 
 export default function Countdown(): JSX.Element {
-  const [timerDays, setTimerDays] = useState(1);
-  const [timerHours, setTimerHours] = useState(1);
-  const [timerMinutes, setTimerMinutes] = useState(1);
-  const [timerSeconds, setTimerSeconds] = useState(1);
+  const [timerDays, setTimerDays] = useState(6);
+  const [timerHours, setTimerHours] = useState(6);
+  const [timerMinutes, setTimerMinutes] = useState(6);
+  const [timerSeconds, setTimerSeconds] = useState(6);
 
   const interval = useRef<number>();
 
