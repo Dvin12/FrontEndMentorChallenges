@@ -5,7 +5,7 @@ export default {
     extend: {},
     fontFamily: {
       bellefair: ["Bellefair"],
-      barlowCondensed: ["Barlow-Condensed"],
+      barlowCondensed: ["Barlow Condensed"],
     },
     colors: {
       darkBlue: "#0B0D17",

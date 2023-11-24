@@ -9,7 +9,7 @@ import Technology from "./pages/Technology/Technology";
 export default function App(): JSX.Element {
   function Layout(): JSX.Element {
     return (
-      <main>
+      <main className="relative">
         <Navigation />
         <Outlet />
       </main>
