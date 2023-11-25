@@ -26,8 +26,8 @@ export default function CrewMember({
     <>
       {isSelected === number && (
         <section>
-          <div className=" border-b-[1px] mx-6 my-10 flex items-center justify-center border-white border-opacity-30">
-            <img src={images.png} alt="" className="w-[70%] " />
+          <div className=" border-b-[1px] mx-6 my-12 flex items-center justify-center border-white border-opacity-30">
+            <img src={images.png} alt="" className="w-[80%] " />
           </div>
 
           <ul className="flex items-center justify-center gap-4 my-8 text-sm">
@@ -45,11 +45,13 @@ export default function CrewMember({
             </li>
           </ul>
 
-          <div className="flex flex-col items-center justify-center gap-2 font-bellefair">
+          <div className="flex flex-col items-center justify-center gap-3 font-bellefair">
             <span className="text-xl text-white uppercase text-opacity-40 ">
               {role}
             </span>
-            <h2 className="text-3xl tracking-wide uppercase ">{name}</h2>
+            <h2 className="text-3xl tracking-wide text-center uppercase ">
+              {name}
+            </h2>
             <p className="px-5 py-2 font-serif leading-relaxed tracking-wide text-center whitespace-break-spaces text-skyBlue">
               {bio}
             </p>
