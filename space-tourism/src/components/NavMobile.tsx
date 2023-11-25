@@ -16,7 +16,7 @@ export default function NavMobile(): JSX.Element {
       </button>
 
       <section
-        className={`fixed top-0 left-0 z-30 w-[70%] ${
+        className={`fixed top-0 left-0 z-40 w-[70%] ${
           isActive ? "translate-x-[43%]" : "translate-x-[200%]"
         }   h-screen  p-6 backdrop-blur-lg text-white font-barlowCondensed duration-200  `}
       >
@@ -38,7 +38,7 @@ export default function NavMobile(): JSX.Element {
           </li>
 
           <li>
-            <Link to="/" className="flex gap-2 ">
+            <Link to="/destination" className="flex gap-2 ">
               <span className="font-bold tracking-[0.4em]">01</span>
               <span className="tracking-[0.2em]">DESTINATION</span>
             </Link>

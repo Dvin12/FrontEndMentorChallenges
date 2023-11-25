@@ -6,7 +6,7 @@ export default function Destination() {
   const [slide, setSlide] = useState(0);
 
   return (
-    <section className="bg-[url('./assets/images/destination/background-destination-mobile.jpg')] h- bg-cover font-barlowCondensed flex flex-col items-center justify-between py-28 text-white ">
+    <section className="bg-[url('./assets/images/destination/background-destination-mobile.jpg')] h-full bg-cover font-barlowCondensed flex flex-col items-center justify-between py-28 text-white ">
       <div className="flex gap-4 tracking-[0.17em] ">
         <span>01</span>
         <span>PICK YOUR DESTINATION</span>
