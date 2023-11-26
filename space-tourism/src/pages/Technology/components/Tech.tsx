@@ -64,7 +64,7 @@ export default function Tech({
               THE TERMINOLOGY...
             </span>
             <h2 className="text-3xl uppercase font-bellefair">{name}</h2>
-            <p className="px-5 my-4 font-serif text-lg leading-relaxed tracking-wide whitespace-break-spaces text-skyBlue">
+            <p className="px-5 my-6 font-serif text-lg leading-relaxed tracking-wide whitespace-break-spaces text-skyBlue">
               {description}
             </p>
           </div>

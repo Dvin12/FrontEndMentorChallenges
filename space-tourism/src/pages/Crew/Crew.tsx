@@ -9,6 +9,7 @@ export default function Crew() {
     <section className=" bg-[url('./assets/images/crew/background-crew-mobile.jpg')] w-full h-full  bg-cover items-center justify-between gap-3 flex-col flex py-28 text-white">
       <div className="flex gap-3 text-xl tracking-[0.17em] font-barlowCondensed">
         <span>02</span>
+
         <span>MEET YOUR CREW</span>
       </div>
 
