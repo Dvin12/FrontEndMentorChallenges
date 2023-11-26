@@ -7,7 +7,7 @@ export default function Destination() {
 
   return (
     <section className="bg-[url('./assets/images/destination/background-destination-mobile.jpg')] h-full bg-cover font-barlowCondensed flex flex-col items-center justify-between py-28 text-white ">
-      <div className="flex gap-4 tracking-[0.17em] ">
+      <div className="flex text-xl gap-4 tracking-[0.17em] ">
         <span>01</span>
         <span>PICK YOUR DESTINATION</span>
       </div>
