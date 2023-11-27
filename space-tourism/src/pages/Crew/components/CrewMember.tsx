@@ -25,12 +25,12 @@ export default function CrewMember({
   return (
     <>
       {isSelected === number && (
-        <section>
-          <div className=" border-b-[1px] mx-6 my-12 flex items-center justify-center border-white border-opacity-30">
-            <img src={images.png} alt="" className="w-[80%] " />
+        <section className="md:flex md:flex-col ">
+          <div className=" order-last mx-6 my-12 flex items-center justify-center border-b-[1px] border-white/30 md:my-0 md:border-none  ">
+            <img src={images.png} alt="" className="w-[80%] md:w-3/4 " />
           </div>
 
-          <ul className="flex items-center justify-center gap-4 my-8 text-sm">
+          <ul className="order-2 my-8 flex items-center justify-center gap-4 text-sm md:my-14">
             <li>
               <button onClick={() => handleClick(0)}>&#9898;</button>
             </li>
@@ -45,14 +45,14 @@ export default function CrewMember({
             </li>
           </ul>
 
-          <div className="flex flex-col items-center justify-center gap-3 font-bellefair">
-            <span className="text-xl text-white uppercase text-opacity-40 ">
+          <div className="flex flex-col items-center justify-center gap-3 font-bellefair md:mt-14  ">
+            <span className="text-xl uppercase text-white text-opacity-40 md:text-2xl ">
               {role}
             </span>
-            <h2 className="text-3xl tracking-wide text-center uppercase ">
+            <h2 className="text-center text-3xl uppercase tracking-wide md:text-5xl ">
               {name}
             </h2>
-            <p className="px-5 py-2 font-serif leading-relaxed tracking-wide text-center whitespace-break-spaces text-skyBlue">
+            <p className="whitespace-break-spaces px-5 py-2 text-center font-serif leading-relaxed tracking-wide text-skyBlue md:px-24  md:text-xl md:leading-loose">
               {bio}
             </p>
           </div>
