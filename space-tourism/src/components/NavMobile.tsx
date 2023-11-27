@@ -9,7 +9,7 @@ export default function NavMobile(): JSX.Element {
   }
 
   return (
-    <nav className="fixed flex items-center justify-between w-full p-6 xl:hidden">
+    <nav className="fixed flex items-center justify-between w-full p-6 md:hidden">
       <img src="./assets/images/shared/logo.svg" alt="" className="w-[13%]" />
       <button onClick={handleClick}>
         <img src="./assets/images/shared/icon-hamburger.svg" alt="" />
@@ -27,6 +27,7 @@ export default function NavMobile(): JSX.Element {
             className=""
           />
         </button>
+
         <ul className="flex flex-col items-start w-full gap-8 my-24 text-xl ">
           <li>
             <Link to="/" className="flex gap-2 ">
@@ -50,6 +51,7 @@ export default function NavMobile(): JSX.Element {
               <span className="tracking-[0.2em]">CREW</span>
             </Link>
           </li>
+
           <li>
             <Link to="/technology" className="flex gap-2 ">
               <span className="font-bold tracking-[0.3em] ">03</span>
