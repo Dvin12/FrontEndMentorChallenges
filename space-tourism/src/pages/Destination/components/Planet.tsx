@@ -26,76 +26,91 @@ export default function Planet({
   return (
     <>
       {slide === number && (
-        <section>
-          <div className="flex items-center justify-center">
+        <section className="xl:my-20 xl:flex xl:h-full xl:w-full xl:items-center xl:justify-between">
+          <div className="flex w-full items-center justify-center">
             <img
               src={images.png}
               alt=""
-              className="w-[240px] py-12 md:w-[300px] "
+              className="w-[240px] py-12 md:w-[300px] xl:w-1/2 "
             />
           </div>
 
-          <ul className="flex items-center justify-center gap-7 text-xl ">
-            <li>
-              <button
-                onClick={() => handleClick(0)}
-                className="tracking-[0.18em]"
-              >
-                MOON
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() => handleClick(1)}
-                className="tracking-[0.18em]"
-              >
-                MARS
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() => handleClick(2)}
-                className="tracking-[0.18em]"
-              >
-                EUROPA
-              </button>
-            </li>
-            <li>
-              <button
-                onClick={() => handleClick(3)}
-                className="tracking-[0.18em]"
-              >
-                TITAN
-              </button>
-            </li>
-          </ul>
+          <div className="xl:flex xl:w-1/2 xl:flex-col ">
+            <ul className="flex items-center justify-center gap-7 text-xl xl:justify-start ">
+              <li className="relative flex items-center justify-center">
+                <button
+                  onClick={() => handleClick(0)}
+                  className="tracking-[0.18em]"
+                >
+                  MOON
+                </button>
+                {slide === 0 && (
+                  <span className=" absolute -bottom-5 h-[4px] w-full bg-white"></span>
+                )}
+              </li>
+              <li className="relative flex items-center justify-center">
+                <button
+                  onClick={() => handleClick(1)}
+                  className="tracking-[0.18em]"
+                >
+                  MARS
+                </button>
+                {slide === 1 && (
+                  <span className=" absolute -bottom-5 h-[4px] w-full bg-white"></span>
+                )}
+              </li>
+              <li className="relative flex items-center justify-center">
+                <button
+                  onClick={() => handleClick(2)}
+                  className="tracking-[0.18em]"
+                >
+                  EUROPA
+                </button>
 
-          <div className="my-10 flex flex-col items-center justify-center gap-6 px-4 text-center">
-            <h1 className="font-bellefair text-6xl uppercase md:text-8xl">
-              {name}
-            </h1>
-            <p className="mx-2  border-b-[1px]  pb-10 font-serif leading-relaxed tracking-wide text-skyBlue md:mx-10 md:pb-12 md:text-xl md:leading-loose ">
-              {description}
-            </p>
-          </div>
+                {slide === 2 && (
+                  <span className=" absolute -bottom-5 h-[4px] w-full bg-white"></span>
+                )}
+              </li>
+              <li className="relative flex items-center justify-center">
+                <button
+                  onClick={() => handleClick(3)}
+                  className="tracking-[0.18em]"
+                >
+                  TITAN
+                </button>
+                {slide === 3 && (
+                  <span className=" absolute -bottom-5 h-[4px] w-full bg-white"></span>
+                )}
+              </li>
+            </ul>
 
-          <div className="md:flex md:w-full md:items-center md:justify-between md:px-40">
-            <div className="my-8 flex flex-col items-center justify-center gap-2">
-              <span className="text-lg tracking-[0.18em] text-skyBlue">
-                AVG. DISTANCE
-              </span>
-              <h3 className="font-bellefair text-3xl uppercase tracking-wider">
-                {distance}
-              </h3>
+            <div className="my-10 flex flex-col items-center justify-center gap-6 px-4 text-center xl:items-start xl:px-0 xl:text-left">
+              <h1 className="font-bellefair text-6xl uppercase md:text-8xl">
+                {name}
+              </h1>
+              <p className="mx-2  border-b-[1px]  pb-10 font-serif leading-relaxed tracking-wide text-skyBlue md:mx-10 md:pb-12 md:text-xl md:leading-loose xl:mx-0 ">
+                {description}
+              </p>
             </div>
 
-            <div className="flex flex-col items-center justify-center gap-2">
-              <span className="text-lg tracking-[0.18em] text-skyBlue">
-                EST. TRAVEL TIME
-              </span>
-              <h3 className="font-bellefair text-3xl uppercase tracking-wider">
-                {travel}
-              </h3>
+            <div className="md:flex md:w-full md:items-center md:justify-center md:px-40 xl:justify-start xl:gap-32 xl:px-0">
+              <div className="my-8 flex flex-col items-center justify-center gap-2">
+                <span className="text-lg tracking-[0.18em] text-skyBlue">
+                  AVG. DISTANCE
+                </span>
+                <h3 className="font-bellefair text-3xl uppercase tracking-wider">
+                  {distance}
+                </h3>
+              </div>
+
+              <div className="flex flex-col items-center justify-center gap-2">
+                <span className="text-lg tracking-[0.18em] text-skyBlue">
+                  EST. TRAVEL TIME
+                </span>
+                <h3 className="font-bellefair text-3xl uppercase tracking-wider">
+                  {travel}
+                </h3>
+              </div>
             </div>
           </div>
         </section>
