@@ -10,7 +10,7 @@ export default function NavMobile(): JSX.Element {
 
   return (
     <nav className="fixed flex w-full items-center justify-between p-6 md:hidden">
-      <img src="./assets/images/shared/logo.svg" alt="" className="w-[13%]" />
+      <img src="./assets/images/shared/logo.svg" alt="" className="w-[50px]" />
       <button onClick={handleClick}>
         <img src="./assets/images/shared/icon-hamburger.svg" alt="" />
       </button>

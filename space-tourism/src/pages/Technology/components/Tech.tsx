@@ -29,7 +29,7 @@ export default function Tech({
             <img
               src={images.landscape}
               alt=""
-              className="h-[180px] object-cover md:h-full md:w-full "
+              className="h-[180px] w-full object-cover md:h-full  "
             />
           </div>
 
