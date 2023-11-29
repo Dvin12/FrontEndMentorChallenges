@@ -30,7 +30,7 @@ export default function CrewMember({
             <img
               src={images.png}
               alt=""
-              className="w-[80%] md:w-3/4 xl:w-full "
+              className="w-[80%] md:w-[70%] xl:w-full "
             />
           </div>
           <div className="md:flex md:h-full md:flex-col md:justify-between">
@@ -56,7 +56,7 @@ export default function CrewMember({
               <h2 className="text-center text-3xl uppercase tracking-wide md:text-5xl ">
                 {name}
               </h2>
-              <p className="whitespace-break-spaces px-5 py-2 text-center font-serif leading-relaxed tracking-wide text-skyBlue md:px-24  md:text-xl md:leading-loose xl:px-0 xl:text-left">
+              <p className="whitespace-break-spaces  px-5 text-center font-serif leading-relaxed tracking-wide text-skyBlue  md:text-xl md:leading-loose xl:px-0 xl:text-left">
                 {bio}
               </p>
             </div>

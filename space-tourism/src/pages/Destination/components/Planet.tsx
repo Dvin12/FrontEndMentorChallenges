@@ -26,7 +26,7 @@ export default function Planet({
   return (
     <>
       {slide === number && (
-        <section className="xl:my-20 xl:flex xl:h-full xl:w-full xl:items-center xl:justify-between">
+        <article className="xl:my-20 xl:flex   xl:items-center xl:justify-between ">
           <div className="flex w-full items-center justify-center">
             <img
               src={images.png}
@@ -35,7 +35,7 @@ export default function Planet({
             />
           </div>
 
-          <div className="xl:flex xl:w-1/2 xl:flex-col ">
+          <div className=" xl:w-2/3  ">
             <ul className="flex items-center justify-center gap-7 text-xl xl:justify-start ">
               <li className="relative flex items-center justify-center">
                 <button
@@ -84,16 +84,16 @@ export default function Planet({
               </li>
             </ul>
 
-            <div className="my-10 flex flex-col items-center justify-center gap-6 px-4 text-center xl:items-start xl:px-0 xl:text-left">
+            <div className="my-10 flex flex-col items-center justify-center gap-8 px-4 text-center xl:items-start xl:px-0 xl:text-left">
               <h1 className="font-bellefair text-6xl uppercase md:text-8xl">
                 {name}
               </h1>
-              <p className="mx-2  border-b-[1px]  pb-10 font-serif leading-relaxed tracking-wide text-skyBlue md:mx-10 md:pb-12 md:text-xl md:leading-loose xl:mx-0 ">
+              <p className="  border-b-[1px]  pb-10 font-serif leading-relaxed tracking-wide text-skyBlue  md:pb-12 md:text-xl md:leading-loose  ">
                 {description}
               </p>
             </div>
 
-            <div className="md:flex md:w-full md:items-center md:justify-center md:px-40 xl:justify-start xl:gap-32 xl:px-0">
+            <div className="md:flex md:w-full md:items-center md:justify-center md:gap-20 ">
               <div className="my-8 flex flex-col items-center justify-center gap-2">
                 <span className="text-lg tracking-[0.18em] text-skyBlue">
                   AVG. DISTANCE
@@ -113,7 +113,7 @@ export default function Planet({
               </div>
             </div>
           </div>
-        </section>
+        </article>
       )}
     </>
   );

@@ -6,21 +6,23 @@ export default function Destination() {
   const [slide, setSlide] = useState(0);
 
   return (
-    <section className="flex h-full flex-col items-center justify-between bg-[url('./assets/images/destination/background-destination-mobile.jpg')] bg-cover py-28 font-barlowCondensed text-white md:items-start md:bg-[url('./assets/images/destination/background-destination-tablet.jpg')] md:py-36  xl:h-screen xl:bg-[url('./assets/images/destination/background-destination-desktop.jpg')] xl:px-36 xl:py-48 ">
-      <div className="flex gap-4 text-xl tracking-[0.18em] md:px-12 xl:px-0 ">
-        <span className="text-white text-opacity-50 ">01</span>
-        <span>PICK YOUR DESTINATION</span>
-      </div>
+    <header className="h-full bg-[url('./assets/images/destination/background-destination-mobile.jpg')] bg-cover  font-barlowCondensed text-white md:bg-[url('./assets/images/destination/background-destination-tablet.jpg')] xl:h-screen xl:bg-[url('./assets/images/destination/background-destination-desktop.jpg')] ">
+      <section className="flex flex-col items-center justify-between py-28  md:items-start md:px-12 md:py-36 xl:h-full xl:px-40 xl:py-48">
+        <div className="flex gap-4 text-xl tracking-[0.18em]">
+          <span className="text-white text-opacity-50 ">01</span>
+          <span>PICK YOUR DESTINATION</span>
+        </div>
 
-      {data.destinations.map((item, i) => (
-        <Planet
-          destination={item}
-          number={i}
-          slide={slide}
-          setSlide={setSlide}
-          key={i}
-        />
-      ))}
-    </section>
+        {data.destinations.map((item, i) => (
+          <Planet
+            destination={item}
+            number={i}
+            slide={slide}
+            setSlide={setSlide}
+            key={i}
+          />
+        ))}
+      </section>
+    </header>
   );
 }
