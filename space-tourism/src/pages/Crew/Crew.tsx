@@ -6,10 +6,10 @@ export default function Crew() {
   const [isSelected, setIsSelected] = useState(0);
 
   return (
-    <header className=" h-full bg-[url('./assets/images/crew/background-crew-mobile.jpg')] bg-cover  text-white  md:bg-[url('./assets/images/crew/background-crew-tablet.jpg')] xl:bg-[url('./assets/images/crew/background-crew-desktop.jpg')]   ">
-      <section className="flex flex-col items-center  justify-between gap-3 py-28 md:items-start md:px-14 md:py-40 xl:px-36 xl:py-48  ">
-        <div className="flex gap-3 font-barlowCondensed text-xl tracking-[0.17em]      ">
-          <span className="text-white text-opacity-50 ">02</span>
+    <header className=" h-screen  bg-[url('./assets/images/crew/background-crew-mobile.jpg')] bg-cover font-barlowCondensed  text-white md:h-full  md:bg-[url('./assets/images/crew/background-crew-tablet.jpg')]  xl:h-screen xl:bg-[url('./assets/images/crew/background-crew-desktop.jpg')]  ">
+      <section className="flex h-full flex-col  items-center justify-start px-6 py-24   md:justify-between  md:px-10 md:py-0 md:pt-40  xl:items-start xl:px-52 xl:pt-48  ">
+        <div className="flex gap-5 tracking-[0.27em] md:text-xl md:tracking-[0.338em] xl:text-3xl xl:tracking-[0.472em]      ">
+          <span className="font-bold text-white text-opacity-50 ">02</span>
 
           <span>MEET YOUR CREW</span>
         </div>
