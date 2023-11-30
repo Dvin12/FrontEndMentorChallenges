@@ -44,47 +44,65 @@ export default function Planet({
 
           <div className=" xl:w-2/3  ">
             <ul className="flex items-center justify-center gap-7 text-sm md:gap-8 md:text-base xl:justify-start ">
-              <li className="relative flex items-center justify-center">
+              <li className="group relative flex items-center justify-center">
                 <button
                   onClick={() => handleClick(0)}
                   className="tracking-[0.236em] md:tracking-[0.27em]"
                 >
                   MOON
                 </button>
+                {slide !== 0 && (
+                  <span className=" absolute -bottom-2 h-[3px] w-0 bg-white duration-300 group-hover:w-full"></span>
+                )}
+
                 {slide === 0 && (
                   <span className=" absolute -bottom-2 h-[3px] w-full bg-white"></span>
                 )}
               </li>
-              <li className="relative flex items-center justify-center">
+
+              <li className=" group relative flex items-center justify-center">
                 <button
                   onClick={() => handleClick(1)}
                   className="tracking-[0.236em] md:tracking-[0.27em]"
                 >
                   MARS
                 </button>
+                {slide !== 1 && (
+                  <span className=" absolute -bottom-2 h-[3px] w-0 bg-white duration-300 group-hover:w-full"></span>
+                )}
+
                 {slide === 1 && (
                   <span className=" absolute -bottom-2 h-[3px] w-full bg-white"></span>
                 )}
               </li>
-              <li className="relative flex items-center justify-center">
+
+              <li className="group relative flex items-center justify-center">
                 <button
                   onClick={() => handleClick(2)}
                   className="tracking-[0.236em] md:tracking-[0.27em]"
                 >
                   EUROPA
                 </button>
+                {slide !== 2 && (
+                  <span className=" absolute -bottom-2 h-[3px] w-0 bg-white duration-300 group-hover:w-full"></span>
+                )}
 
                 {slide === 2 && (
                   <span className=" absolute -bottom-2 h-[3px] w-full bg-white"></span>
                 )}
               </li>
-              <li className="relative flex items-center justify-center">
+
+              <li className="group relative flex items-center justify-center">
                 <button
                   onClick={() => handleClick(3)}
                   className="tracking-[0.236em] md:tracking-[0.27em]"
                 >
                   TITAN
                 </button>
+                {slide !== 3 && (
+                  <span className=" absolute -bottom-2 h-[3px] w-0 bg-white duration-300 group-hover:w-full"></span>
+                )}
+
                 {slide === 3 && (
                   <span className=" absolute -bottom-2 h-[3px] w-full bg-white"></span>
                 )}
@@ -95,7 +113,7 @@ export default function Planet({
               <h1 className="font-bellefair text-6xl uppercase md:text-8xl">
                 {name}
               </h1>
-              <p className="  border-b-[1px] border-white/30   pb-10 font-barlow leading-[25px]  text-skyBlue md:mx-16  md:pb-14  md:text-xl md:leading-loose  xl:mx-0 xl:w-[83%] xl:leading-[32px]">
+              <p className="  border-b-[1px] border-white/30   pb-10 font-barlow leading-[25px]  text-skyBlue md:mx-16  md:pb-14  md:text-xl md:leading-loose  xl:mx-0 xl:w-[75%] xl:leading-[32px]">
                 {description}
               </p>
             </div>

@@ -33,7 +33,7 @@ export default function CrewMember({
           transition={{ duration: 0.8, delay: 0.05 }}
           className="  md:flex  md:flex-col md:items-center md:justify-between xl:flex-row  "
         >
-          <div className=" order-last  my-10 flex  items-center justify-center border-b-[1px] border-white/30 md:my-0  md:h-full  md:border-none   ">
+          <div className=" order-last  my-10 flex  items-center justify-center border-b-[1px] border-white/30 md:my-0  md:h-full  md:border-none    ">
             <img
               src={images.png}
               alt=""
@@ -43,16 +43,44 @@ export default function CrewMember({
           <div className="md:flex md:h-full md:flex-col md:justify-between xl:h-full xl:w-[50%]">
             <ul className="order-2 my-8 flex items-center justify-center gap-4  md:my-14 xl:my-24 xl:justify-start  ">
               <li>
-                <button onClick={() => handleClick(0)}>&#9898;</button>
+                <button
+                  onClick={() => handleClick(0)}
+                  className={`h-5 w-5 rounded-full ${
+                    isSelected === 0
+                      ? "bg-white"
+                      : " bg-white/20 duration-300 hover:bg-white/60"
+                  } `}
+                ></button>
               </li>
               <li>
-                <button onClick={() => handleClick(1)}>&#9898;</button>
+                <button
+                  onClick={() => handleClick(1)}
+                  className={`h-5 w-5 rounded-full ${
+                    isSelected === 1
+                      ? "bg-white"
+                      : " bg-white/20 duration-300 hover:bg-white/60"
+                  } `}
+                ></button>
               </li>
               <li>
-                <button onClick={() => handleClick(2)}>&#9898;</button>
+                <button
+                  onClick={() => handleClick(2)}
+                  className={`h-5 w-5 rounded-full ${
+                    isSelected === 2
+                      ? "bg-white"
+                      : " bg-white/20 duration-300 hover:bg-white/60"
+                  } `}
+                ></button>
               </li>
               <li>
-                <button onClick={() => handleClick(3)}>&#9898;</button>
+                <button
+                  onClick={() => handleClick(3)}
+                  className={`h-5 w-5 rounded-full ${
+                    isSelected === 3
+                      ? "bg-white"
+                      : " bg-white/20 duration-300 hover:bg-white/60"
+                  } `}
+                ></button>
               </li>
             </ul>
 

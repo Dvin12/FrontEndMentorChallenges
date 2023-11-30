@@ -26,7 +26,7 @@ export default function Crew() {
 
   return (
     <header
-      className={` ${heightClass}  bg-[url('./assets/images/crew/background-crew-mobile.jpg')] bg-cover font-barlowCondensed  text-white md:h-full  md:bg-[url('./assets/images/crew/background-crew-tablet.jpg')]  xl:h-screen xl:bg-[url('./assets/images/crew/background-crew-desktop.jpg')]  `}
+      className={` ${heightClass}  overflow-hidden bg-[url('./assets/images/crew/background-crew-mobile.jpg')] bg-cover  font-barlowCondensed text-white  md:h-full  md:bg-[url('./assets/images/crew/background-crew-tablet.jpg')] xl:h-screen  xl:bg-[url('./assets/images/crew/background-crew-desktop.jpg')]  `}
     >
       <section className="flex h-full flex-col  items-center justify-start px-6 py-24 md:items-start   md:justify-between  md:px-10 md:py-0 md:pt-48   xl:items-start xl:px-52 xl:pt-48  ">
         <div className="flex gap-5 tracking-[0.27em] md:text-xl md:tracking-[0.338em] xl:text-3xl xl:tracking-[0.472em]      ">

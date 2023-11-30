@@ -45,7 +45,11 @@ export default function Tech({
             <ul className="my-10 flex items-center justify-center gap-4 font-bellefair md:text-2xl xl:w-full xl:flex-col xl:gap-8 xl:text-3xl  ">
               <li>
                 <button
-                  className="h-10 w-10 rounded-full bg-white text-darkBlue md:h-16 md:w-16 xl:h-20 xl:w-20  "
+                  className={`h-10 w-10 rounded-full ${
+                    slide === 0
+                      ? "bg-white text-darkBlue"
+                      : "bg-transparent text-white hover:bg-white/10"
+                  } border-[1px] border-white/80  duration-300 md:h-16 md:w-16 xl:h-20 xl:w-20`}
                   onClick={() => handleClick(0)}
                 >
                   1
@@ -53,7 +57,11 @@ export default function Tech({
               </li>
               <li>
                 <button
-                  className="h-10 w-10 rounded-full bg-white text-darkBlue md:h-16 md:w-16 xl:h-20 xl:w-20  "
+                  className={`h-10 w-10 rounded-full ${
+                    slide === 1
+                      ? "bg-white text-darkBlue"
+                      : "bg-transparent text-white hover:bg-white/10"
+                  } border-[1px] border-white/80  duration-300 md:h-16 md:w-16 xl:h-20 xl:w-20`}
                   onClick={() => handleClick(1)}
                 >
                   2
@@ -61,14 +69,18 @@ export default function Tech({
               </li>
               <li>
                 <button
-                  className="h-10 w-10 rounded-full bg-white text-darkBlue md:h-16 md:w-16 xl:h-20 xl:w-20   "
+                  className={`h-10 w-10 rounded-full ${
+                    slide === 2
+                      ? "bg-white text-darkBlue"
+                      : "bg-transparent text-white hover:bg-white/10"
+                  } border-[1px] border-white/80  duration-300 md:h-16 md:w-16 xl:h-20 xl:w-20`}
                   onClick={() => handleClick(2)}
                 >
                   3
                 </button>
               </li>
             </ul>
-            <div className="flex flex-col items-center justify-center gap-2 px-6  text-center md:px-48  xl:items-start xl:px-0 xl:text-left ">
+            <div className="flex flex-col items-center justify-center gap-2 px-6  text-center md:px-36  xl:items-start xl:px-0 xl:text-left ">
               <span className=" tracking-[0.236em] text-skyBlue  ">
                 THE TERMINOLOGY...
               </span>

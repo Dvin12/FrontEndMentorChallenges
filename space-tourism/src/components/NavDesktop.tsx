@@ -18,9 +18,14 @@ export default function NavDesktop() {
       <ul className=" flex w-[60%] items-center justify-center gap-10   bg-white bg-opacity-[4%]  py-12 font-barlowCondensed text-sm tracking-[0.24em] text-white backdrop-blur xl:w-[50%] xl:gap-10 ">
         <Link to="/">
           <li className="relative flex flex-col items-center justify-between ">
-            <div className="flex gap-2">
-              <span className=" hidden font-bold xl:inline-block ">00</span>
+            <div className="group relative flex items-center justify-center gap-2 transition-all duration-200">
+              <span className=" hidden font-bold xl:inline-block  ">00</span>
               <span>HOME</span>
+              {pathname !== "/" ? (
+                <span className="absolute -bottom-12 h-[5px] w-0 bg-white/60 duration-200 group-hover:w-full "></span>
+              ) : (
+                ""
+              )}
             </div>
 
             {pathname === "/" && (
@@ -31,9 +36,14 @@ export default function NavDesktop() {
 
         <Link to="/destination">
           <li className="relative flex flex-col items-center justify-between ">
-            <div className="flex gap-2">
+            <div className="group relative  flex items-center justify-center gap-2 transition-all duration-200">
               <span className="hidden font-bold xl:inline-block ">01</span>
               <span>DESTINATION</span>
+              {pathname !== "/destination" ? (
+                <span className="absolute -bottom-12 h-[5px] w-0 bg-white/60 duration-200 group-hover:w-full "></span>
+              ) : (
+                ""
+              )}
             </div>
             {pathname === "/destination" && (
               <span className=" absolute -bottom-12 h-[4px] w-full bg-white"></span>
@@ -43,9 +53,14 @@ export default function NavDesktop() {
 
         <Link to="/crew">
           <li className="relative flex flex-col items-center justify-between ">
-            <div className="flex gap-2">
+            <div className="group relative  flex items-center justify-center gap-2 transition-all duration-200">
               <span className="hidden font-bold xl:inline-block ">02</span>
               <span>CREW</span>
+              {pathname !== "/crew" ? (
+                <span className="absolute -bottom-12 h-[5px] w-0 bg-white/60 duration-200 group-hover:w-full "></span>
+              ) : (
+                ""
+              )}
             </div>
             {pathname === "/crew" && (
               <span className=" absolute -bottom-12 h-[4px] w-full bg-white"></span>
@@ -55,9 +70,14 @@ export default function NavDesktop() {
 
         <Link to="/technology">
           <li className="relative flex flex-col items-center justify-between ">
-            <div className="flex gap-2">
+            <div className="group relative  flex items-center justify-center gap-2 transition-all duration-200">
               <span className="hidden font-bold xl:inline-block ">03</span>
               <span>TECHNOLOGY</span>
+              {pathname !== "/technology" ? (
+                <span className="absolute -bottom-12 h-[5px] w-0 bg-white/60 duration-200 group-hover:w-full "></span>
+              ) : (
+                ""
+              )}
             </div>
             {pathname === "/technology" && (
               <span className=" absolute -bottom-12 h-[4px] w-full bg-white"></span>
