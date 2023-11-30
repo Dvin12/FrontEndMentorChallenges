@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 interface Planet {
   images: { png: string; webp: string };
   name: string;
@@ -26,17 +28,22 @@ export default function Planet({
   return (
     <>
       {slide === number && (
-        <article className="xl:my-10 xl:flex   xl:items-center xl:justify-between ">
+        <motion.article
+          className="xl:my-10 xl:flex   xl:items-center xl:justify-between  "
+          initial={{ opacity: 0, scale: 1 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.05 }}
+        >
           <div className="flex w-full items-center justify-center">
             <img
               src={images.png}
-              alt=""
-              className="w-[170px] py-8 md:w-[300px] md:py-14 xl:w-1/2 "
+              alt={name}
+              className="w-[200px] py-8 md:w-[300px] md:py-14 xl:w-1/2 "
             />
           </div>
 
           <div className=" xl:w-2/3  ">
-            <ul className="flex items-center justify-center gap-7 text-sm md:gap-9 md:text-base xl:justify-start ">
+            <ul className="flex items-center justify-center gap-7 text-sm md:gap-8 md:text-base xl:justify-start ">
               <li className="relative flex items-center justify-center">
                 <button
                   onClick={() => handleClick(0)}
@@ -88,7 +95,7 @@ export default function Planet({
               <h1 className="font-bellefair text-6xl uppercase md:text-8xl">
                 {name}
               </h1>
-              <p className="  border-b-[1px] border-white/30   pb-10 font-barlow leading-[25px]  text-skyBlue md:mx-16  md:pb-14  md:leading-loose xl:mx-0  xl:w-[83%] xl:text-xl xl:leading-[32px]">
+              <p className="  border-b-[1px] border-white/30   pb-10 font-barlow leading-[25px]  text-skyBlue md:mx-16  md:pb-14  md:text-xl md:leading-loose  xl:mx-0 xl:w-[83%] xl:leading-[32px]">
                 {description}
               </p>
             </div>
@@ -111,7 +118,7 @@ export default function Planet({
               </div>
             </div>
           </div>
-        </article>
+        </motion.article>
       )}
     </>
   );

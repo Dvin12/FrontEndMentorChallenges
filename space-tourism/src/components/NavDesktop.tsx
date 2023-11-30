@@ -13,9 +13,9 @@ export default function NavDesktop() {
         />
       </div>
 
-      <div className="absolute left-52 z-30 hidden h-[1px] w-[41%] items-center justify-center bg-white/30 xl:flex"></div>
+      <div className="absolute left-52 z-30 hidden h-[1px] items-center justify-center bg-white/30 xl:flex xl:w-[38%] 2xl:w-[45%]"></div>
 
-      <ul className=" flex w-[60%] items-center justify-center gap-10   bg-white bg-opacity-[4%]  py-12 font-barlowCondensed text-sm tracking-[0.24em] text-white backdrop-blur xl:w-[50%] xl:gap-20 ">
+      <ul className=" flex w-[60%] items-center justify-center gap-10   bg-white bg-opacity-[4%]  py-12 font-barlowCondensed text-sm tracking-[0.24em] text-white backdrop-blur xl:w-[50%] xl:gap-10 ">
         <Link to="/">
           <li className="relative flex flex-col items-center justify-between ">
             <div className="flex gap-2">

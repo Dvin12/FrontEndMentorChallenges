@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 interface CrewMember {
   bio: string;
   images: { png: string; webp: string };
@@ -25,12 +27,17 @@ export default function CrewMember({
   return (
     <>
       {isSelected === number && (
-        <section className="  md:flex  md:flex-col md:items-center md:justify-between xl:flex-row  ">
+        <motion.section
+          initial={{ opacity: 0, scale: 1 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.05 }}
+          className="  md:flex  md:flex-col md:items-center md:justify-between xl:flex-row  "
+        >
           <div className=" order-last  my-10 flex  items-center justify-center border-b-[1px] border-white/30 md:my-0  md:h-full  md:border-none   ">
             <img
               src={images.png}
               alt=""
-              className="w-[80%] md:w-[70%] xl:w-full "
+              className="w-[260px] md:w-full xl:w-full "
             />
           </div>
           <div className="md:flex md:h-full md:flex-col md:justify-between xl:h-full xl:w-[50%]">
@@ -56,12 +63,12 @@ export default function CrewMember({
               <h2 className=" text-2xl uppercase  md:text-4xl xl:text-6xl ">
                 {name}
               </h2>
-              <p className="  font-barlow leading-[25px]  text-skyBlue  md:px-16 md:text-lg md:leading-loose xl:w-[60%] xl:px-0 xl:leading-[32px] ">
+              <p className="  font-barlow leading-[32px]  text-skyBlue  md:px-16 md:text-lg md:leading-loose xl:w-[60%] xl:px-0 xl:leading-[32px] ">
                 {bio}
               </p>
             </div>
           </div>
-        </section>
+        </motion.section>
       )}
     </>
   );

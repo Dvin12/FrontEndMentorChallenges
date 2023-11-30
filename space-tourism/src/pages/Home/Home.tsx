@@ -3,7 +3,7 @@ import Explore from "./components/Explore";
 export default function Home() {
   return (
     <header className="h-screen w-full bg-[url('./assets/images/home/background-home-mobile.jpg')] bg-cover text-white  md:bg-[url('./assets/images/home/background-home-tablet.jpg')] xl:bg-[url('./assets/images/home/background-home-desktop.jpg')]   ">
-      <section className="  flex h-full flex-col items-center justify-between gap-10  px-6 py-28 md:px-40 md:py-52 xl:flex-row xl:py-0 xl:pt-56   ">
+      <section className="  flex h-full flex-col items-center justify-between gap-10  px-6 py-28 md:px-48 md:py-52 xl:flex-row xl:py-0 xl:pt-56   ">
         <div className=" flex flex-col items-center justify-center gap-4 md:gap-6 xl:w-[30%] xl:items-start">
           <span className="font-barlowCondensed    tracking-[0.16em] text-skyBlue md:text-xl md:tracking-[0.38em] xl:text-2xl">
             SO, YOU WANT TO TRAVEL TO

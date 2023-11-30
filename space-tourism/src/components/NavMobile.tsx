@@ -9,14 +9,14 @@ export default function NavMobile(): JSX.Element {
   }
 
   return (
-    <nav className="fixed flex w-full items-center justify-between px-7 py-6 md:hidden">
+    <nav className="fixed z-40 flex w-full items-center justify-between px-7 py-6 md:hidden">
       <img src="./assets/images/shared/logo.svg" alt="" className="w-[40px] " />
       <button onClick={handleClick}>
         <img src="./assets/images/shared/icon-hamburger.svg" alt="" />
       </button>
 
       <section
-        className={`fixed left-0 top-0 z-40 w-[66.6%] ${
+        className={`fixed left-0 top-0  w-[66.6%] ${
           isActive ? "translate-x-[50%]" : "translate-x-[200%]"
         }   h-screen  p-6 font-barlowCondensed text-white backdrop-blur-lg duration-200  `}
       >
