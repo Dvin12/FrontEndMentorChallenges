@@ -91,7 +91,7 @@ export default function CrewMember({
               <h2 className=" text-2xl uppercase  md:text-4xl xl:text-6xl ">
                 {name}
               </h2>
-              <p className="  font-barlow leading-[32px]  text-skyBlue  md:px-16 md:text-lg md:leading-loose xl:w-[60%] xl:px-0 xl:leading-[32px] ">
+              <p className="  font-barlow leading-[32px]  text-skyBlue  md:px-16 md:text-lg md:leading-loose xl:px-0 xl:leading-[32px] 2xl:w-[60%] ">
                 {bio}
               </p>
             </div>

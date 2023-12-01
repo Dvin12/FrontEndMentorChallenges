@@ -8,7 +8,7 @@ export default function Home() {
         initial={{ opacity: 0, scale: 1 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.05 }}
-        className="  flex h-full flex-col items-center justify-between gap-10  px-6 py-28 md:px-48 md:py-52 xl:flex-row xl:px-60 xl:py-0 xl:pt-56    "
+        className="  flex h-full flex-col items-center justify-between gap-10  px-6 py-28 md:px-48 md:py-52 xl:flex-row xl:py-0 xl:pt-56 2xl:px-60    "
       >
         <div className=" flex flex-col items-center justify-center gap-4 md:gap-6 xl:w-[60%] xl:items-start 2xl:w-[40%]">
           <span className="font-barlowCondensed    tracking-[0.16em] text-skyBlue md:text-xl md:tracking-[0.38em] xl:text-2xl">

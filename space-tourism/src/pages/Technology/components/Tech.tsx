@@ -87,7 +87,7 @@ export default function Tech({
               <h2 className="font-bellefair text-2xl uppercase md:text-4xl xl:text-6xl ">
                 {name}
               </h2>
-              <p className="font-barlow  leading-[25px] text-skyBlue md:my-4 md:text-xl md:leading-[40px] xl:my-6 xl:w-[80%] xl:leading-[32px]  ">
+              <p className="font-barlow  leading-[25px] text-skyBlue md:my-4 md:text-xl md:leading-[40px] xl:my-6 xl:leading-[32px] 2xl:w-[80%]  ">
                 {description}
               </p>
             </div>
