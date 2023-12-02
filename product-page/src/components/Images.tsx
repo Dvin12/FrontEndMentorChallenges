@@ -1,11 +1,23 @@
-export default function Images() {
+import { Splide } from "@splidejs/react-splide";
+
+import { Product } from "../App";
+import Image from "./Image";
+
+interface ProductProps {
+  product: Pick<Product, "thumbnails" | "images">;
+}
+
+export default function Images({ product: { images } }: ProductProps) {
   return (
-    <div className="my-2 h-[300px] ">
-      <img
-        src="./images/image-product-1.jpg"
-        alt=""
-        className=" h-full  w-full object-cover"
-      />
-    </div>
+    <Splide
+      options={{
+        height: 300,
+        pagination: false,
+      }}
+    >
+      {images.map((image, i) => (
+        <Image image={image} key={i} />
+      ))}
+    </Splide>
   );
 }
