@@ -26,7 +26,7 @@ export default function Technology() {
 
   return (
     <header
-      className={`${heightClass}  bg-[url('./assets/images/technology/background-technology-mobile.jpg')]   bg-cover  bg-no-repeat  font-barlowCondensed  text-white md:h-full md:bg-[url('./assets/images/technology/background-technology-tablet.jpg')]  xl:h-screen xl:bg-[url('./assets/images/technology/background-technology-desktop.jpg')]`}
+      className={`${heightClass}  bg-[url('../assets/images/technology/background-technology-mobile.jpg')]   bg-cover  bg-no-repeat  font-barlowCondensed  text-white md:h-full md:bg-[url('../assets/images/technology/background-technology-tablet.jpg')]  xl:h-screen xl:bg-[url('../assets/images/technology/background-technology-desktop.jpg')]`}
     >
       <section className="flex  h-full flex-col items-center justify-evenly   gap-4 py-24 md:items-start md:justify-evenly md:py-36   2xl:pt-56    ">
         <div className="flex   gap-4  tracking-[0.27em] md:px-10 md:text-xl md:tracking-[0.338em] xl:px-20 xl:text-3xl xl:tracking-[0.472rem] 2xl:px-52 ">

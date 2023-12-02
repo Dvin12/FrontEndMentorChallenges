@@ -3,7 +3,7 @@ import Explore from "./components/Explore";
 
 export default function Home() {
   return (
-    <header className="h-screen w-full bg-[url('./assets/images/home/background-home-mobile.jpg')] bg-cover text-white  md:bg-[url('./assets/images/home/background-home-tablet.jpg')]  xl:bg-[url('./assets/images/home/background-home-desktop.jpg')]   ">
+    <header className="h-screen w-full bg-[url('../assets/images/home/background-home-mobile.jpg')] bg-cover text-white  md:bg-[url('../assets/images/home/background-home-tablet.jpg')]  xl:bg-[url('../assets/images/home/background-home-desktop.jpg')]   ">
       <motion.section
         initial={{ opacity: 0, scale: 1 }}
         animate={{ opacity: 1, scale: 1 }}
