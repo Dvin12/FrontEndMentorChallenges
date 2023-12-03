@@ -1,6 +1,6 @@
 import { SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
-import { Product } from "../App";
+import { Product } from "./Interfaces";
 
 interface imageProp {
   images: Product;

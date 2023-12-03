@@ -1,7 +1,7 @@
 import { Splide } from "@splidejs/react-splide";
 
-import { Product } from "../App";
 import Image from "./Image";
+import { Product } from "./Interfaces";
 
 interface ProductProps {
   product: Pick<Product, "thumbnails" | "images">;

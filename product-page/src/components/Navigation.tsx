@@ -1,10 +1,10 @@
 import NavDesktop from "./NavDesktop";
 import NavMobile from "./NavMobile";
 
-export default function Navigation() {
+export default function Navigation({ cart }) {
   return (
     <>
-      <NavMobile />
+      <NavMobile cart={cart} />
       <NavDesktop />
     </>
   );

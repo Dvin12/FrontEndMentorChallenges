@@ -1,20 +1,24 @@
-import { Product } from "../App";
 import AddToCart from "./AddToCart";
 import Amount from "./Amount";
+import { Product } from "./Interfaces";
 
 interface ProductProps {
   product: Pick<
     Product,
     "company" | "model" | "description" | "price" | "discountedPrice"
   >;
+  amount: number;
+  setAmount: (amount: number) => void;
 }
 
 export default function Information({
   product: { company, model, description, price, discountedPrice },
+  amount,
+  setAmount,
 }: ProductProps) {
   return (
-    <form className="px-6 py-2 flex flex-col gap-4">
-      <span className="text-sm tracking-wide font-bold text-orange">
+    <form className="px-6 py-4 flex flex-col gap-3">
+      <span className="text-sm tracking-wider font-bold text-orange uppercase">
         {company}
       </span>
 
@@ -34,7 +38,7 @@ export default function Information({
         <span className=" text-dGrayBlue/40 line-through">${price}.00</span>
       </div>
       <section className=" flex flex-col gap-4 my-4 ">
-        <Amount />
+        <Amount amount={amount} setAmount={setAmount} />
         <AddToCart />
       </section>
     </form>
