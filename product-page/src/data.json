@@ -9,7 +9,7 @@
     { "image": "../images/image-product-4.jpg" }
   ],
   "thumbnails": [
-    { "thumbnail": "../image-product-1-thumbnail.jpg" },
+    { "thumbnail": "../images/image-product-1-thumbnail.jpg" },
     { "thumbnail": "../images/image-product-2-thumbnail.jpg" },
     { "thumbnail": "../images/image-product-3-thumbnail.jpg" },
     { "thumbnail": "../images/image-product-4-thumbnail.jpg" }

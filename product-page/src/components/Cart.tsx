@@ -19,14 +19,46 @@ export default function Cart({ cart }) {
         )}
       </button>
       {isActive && (
-        <section className="w-full fixed top-16 z-30 left-0 h-[250px] ">
+        <section
+          className={`w-full fixed top-16 z-30 left-0 ${
+            cart.length === 0 ? "h-[250px]" : "h-fit"
+          }`}
+        >
           <article className="  shadow-xl    bg-white m-2     rounded-lg h-full  ">
             <div className=" border-b-[1px] border-dGrayBlue/30 py-5">
               <span className=" font-bold px-4">Cart</span>
             </div>
-            <span className="flex justify-center overflow-hidden h-3/4 items-center font-bold tracking-wide text-dGrayBlue  ">
-              Your cart is empty.
-            </span>
+            {cart.length === 0 ? (
+              <span className="flex justify-center overflow-hidden h-3/4  items-center font-bold tracking-wide text-dGrayBlue  ">
+                Your cart is empty.
+              </span>
+            ) : (
+              <div className="flex flex-col gap-6 px-4 py-6">
+                <div className="flex items-center justify-between text-dGrayBlue tracking-wide ">
+                  <img
+                    src={`${cart[0].thumbnails[0].thumbnail}`}
+                    alt=""
+                    className="w-[60px] rounded-lg"
+                  />
+                  <div>
+                    <h3>{cart[0].model}</h3>
+                    <div className="flex gap-2">
+                      <span>${cart[0].discountedPrice}.00</span>
+                      <span>x {cart[0].itemAmount}</span>
+                      <span className=" font-bold text-black">
+                        ${cart[0].discountedPrice * cart[0].itemAmount}.00
+                      </span>
+                    </div>
+                  </div>
+                  <button>
+                    <img src="../images/icon-delete.svg" alt="" />
+                  </button>
+                </div>
+                <button className=" bg-orange py-4 rounded-xl text-white font-bold tracking-wide">
+                  Checkout
+                </button>
+              </div>
+            )}
           </article>
         </section>
       )}
