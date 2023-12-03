@@ -1,6 +1,9 @@
 export default function AddToCart() {
   return (
-    <button className=" bg-orange text-white flex items-center justify-center py-4 rounded-lg gap-4 font-bold tracking-wider shadow-xl  shadow-orange/40  ">
+    <button
+      type="submit"
+      className=" bg-orange text-white flex items-center justify-center py-4 rounded-lg gap-4 font-bold tracking-wider shadow-xl  shadow-orange/40  "
+    >
       <img
         src="./images/icon-cart.svg"
         alt=""
