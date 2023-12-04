@@ -14,7 +14,7 @@ export default function Amount({ amount, setAmount }: Amount) {
   }
 
   return (
-    <div className=" bg-lGrayBlue flex items-center justify-between px-6 py-4 font-bold rounded-lg">
+    <div className=" bg-lGrayBlue flex items-center justify-between px-6 py-4 font-bold rounded-lg xl:w-1/4">
       <button onClick={handleDecrease} type="button">
         <img src="./images/icon-minus.svg" alt="" />
       </button>

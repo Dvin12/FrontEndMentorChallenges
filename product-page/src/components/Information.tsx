@@ -34,20 +34,22 @@ export default function Information({
         {company}
       </span>
 
-      <h1 className="text-2xl font-bold tracking-wide w-[70%]">{model}</h1>
+      <h1 className="text-2xl xl:text-4xl font-bold tracking-wide w-[70%]">
+        {model}
+      </h1>
 
-      <p className=" tracking-wider leading-relaxed text-sm text-dGrayBlue ">
+      <p className=" tracking-wider leading-relaxed text-sm text-dGrayBlue xl:text-lg xl:w-3/4 xl:leading-relaxed ">
         {description}
       </p>
 
-      <div className="flex items-center justify-between my-4 font-bold">
+      <div className="flex items-center justify-between my-4 font-bold xl:flex-col xl:items-start xl:gap-2">
         <div className="flex gap-4 items-center justify-center">
           <span className="text-3xl ">${discountedPrice}.00</span>
           <span className=" bg-paleOrange px-2 text-orange rounded">50%</span>
         </div>
         <span className=" text-dGrayBlue/40 line-through">${price}.00</span>
       </div>
-      <section className=" flex flex-col gap-4 my-4 ">
+      <section className=" flex flex-col gap-4 my-4 xl:flex-row xl:w-full xl:items-center ">
         <Amount amount={amount} setAmount={setAmount} />
         <AddToCart />
       </section>

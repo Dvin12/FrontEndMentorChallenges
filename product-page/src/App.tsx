@@ -11,7 +11,7 @@ export default function App() {
   return (
     <main className="font-kumbhSans overflow-hidden xl:mx-40 xl:h-screen">
       <Navigation cart={cart} />
-      <section className=" grid grid-cols-1 xl:grid-cols-2 xl:place-items-center gap-4 xl:px-14 xl:h-full">
+      <section className=" grid grid-cols-1 xl:grid-cols-2 xl:place-items-center gap-4 xl:px-10 xl:h-full">
         <Images product={data} />
         <Information
           product={data}

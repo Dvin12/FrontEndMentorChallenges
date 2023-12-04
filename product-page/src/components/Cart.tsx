@@ -20,7 +20,7 @@ export default function Cart({ cart }) {
       </button>
       {isActive && (
         <section
-          className={`w-full fixed top-16 z-30 left-0 ${
+          className={`w-full xl:w-[400px] xl:top-24 xl:right-36 xl:left-auto fixed top-16 z-30 left-0 ${
             cart.length === 0 ? "h-[250px]" : "h-fit"
           }`}
         >
