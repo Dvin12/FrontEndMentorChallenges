@@ -1,16 +1,13 @@
+import toast, { Toaster } from "react-hot-toast";
 import AddToCart from "./AddToCart";
 import Amount from "./Amount";
 import { Product } from "./Interfaces";
 
 interface ProductProps {
-  product: Pick<
-    Product,
-    "company" | "model" | "description" | "price" | "discountedPrice"
-  >;
+  product: Product;
   amount: number;
   setAmount: (amount: number) => void;
-  setCart: ([]) => void;
-  cart: [];
+  setCart: (cart: Product[]) => void;
 }
 
 export default function Information({
@@ -18,16 +15,21 @@ export default function Information({
   amount,
   setAmount,
   setCart,
-  cart,
 }: ProductProps) {
   const { company, model, description, price, discountedPrice } = product;
 
-  function handleSubmit(e) {
+  function handleSubmit(e: { preventDefault: () => void }) {
     e.preventDefault();
-    if (amount === 0) return;
-    const productsAndAmount = { ...product, itemAmount: amount };
-    setCart([productsAndAmount]);
+    if (amount === 0) {
+      toast.error("Please specify the amount.");
+      return;
+    } else {
+      const productsAndAmount = { ...product, itemAmount: amount };
+      setCart([productsAndAmount]);
+      toast.success("Product has been added to the cart!");
+    }
   }
+
   return (
     <form className="px-6 py-4 flex flex-col gap-3" onSubmit={handleSubmit}>
       <span className="text-sm tracking-wider font-bold text-orange uppercase">
@@ -53,6 +55,7 @@ export default function Information({
         <Amount amount={amount} setAmount={setAmount} />
         <AddToCart />
       </section>
+      <Toaster position="bottom-right" />
     </form>
   );
 }

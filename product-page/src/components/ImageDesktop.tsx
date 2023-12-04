@@ -1,11 +1,17 @@
 import { useState } from "react";
 import Modal from "./Modal";
+import { Product } from "./Interfaces";
 
-export default function ImageDesktop({ images, thumbnails }) {
+interface ImagesThumbnails {
+  images: Product;
+  thumbnails: Product;
+}
+
+export default function ImageDesktop({ images, thumbnails }: ImagesThumbnails) {
   const [selectedSlide, setSelectedSlide] = useState(0);
   const [isModalActive, setisModalActive] = useState(false);
 
-  function handleSlideSelection(index) {
+  function handleSlideSelection(index: number) {
     setSelectedSlide(index);
   }
 

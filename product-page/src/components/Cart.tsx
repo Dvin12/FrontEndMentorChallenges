@@ -1,13 +1,14 @@
 import { useState } from "react";
+import { CartProp } from "./Interfaces";
 
-export default function Cart({ cart, setCart }) {
+export default function Cart({ cart, setCart }: CartProp) {
   const [isActive, setIsActive] = useState(false);
 
   function handleClick() {
     setIsActive((active) => !active);
   }
 
-  function hanldeRemoveFromCart(id) {
+  function hanldeRemoveFromCart(id: number) {
     const updatedCart = cart.filter((item) => item.id !== id);
     setCart(updatedCart);
   }

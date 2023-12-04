@@ -5,12 +5,12 @@ interface Amount {
 
 export default function Amount({ amount, setAmount }: Amount) {
   function handleIncrease() {
-    setAmount((amount) => amount + 1);
+    setAmount(amount + 1);
   }
 
   function handleDecrease() {
     if (amount <= 0) return;
-    setAmount((amount) => amount - 1);
+    setAmount(amount - 1);
   }
 
   return (

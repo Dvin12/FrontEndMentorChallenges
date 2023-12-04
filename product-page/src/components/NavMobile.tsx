@@ -2,8 +2,9 @@ import { useState } from "react";
 import Sidemenu from "./Sidemenu";
 import Cart from "./Cart";
 import User from "./User";
+import { CartProp } from "./Interfaces";
 
-export default function NavMobile({ cart, setCart }): JSX.Element {
+export default function NavMobile({ cart, setCart }: CartProp): JSX.Element {
   const [isActive, setIsActive] = useState(false);
 
   function handleClick() {
