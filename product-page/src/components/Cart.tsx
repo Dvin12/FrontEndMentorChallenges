@@ -1,11 +1,17 @@
 import { useState } from "react";
 
-export default function Cart({ cart }) {
+export default function Cart({ cart, setCart }) {
   const [isActive, setIsActive] = useState(false);
 
   function handleClick() {
     setIsActive((active) => !active);
   }
+
+  function hanldeRemoveFromCart(id) {
+    const updatedCart = cart.filter((item) => item.id !== id);
+    setCart(updatedCart);
+  }
+
   return (
     <>
       <button onClick={handleClick} className="relative">
@@ -50,7 +56,7 @@ export default function Cart({ cart }) {
                       </span>
                     </div>
                   </div>
-                  <button>
+                  <button onClick={() => hanldeRemoveFromCart(cart[0].id)}>
                     <img src="../images/icon-delete.svg" alt="" />
                   </button>
                 </div>

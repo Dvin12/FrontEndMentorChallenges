@@ -3,7 +3,7 @@ import Sidemenu from "./Sidemenu";
 import Cart from "./Cart";
 import User from "./User";
 
-export default function NavMobile({ cart }): JSX.Element {
+export default function NavMobile({ cart, setCart }): JSX.Element {
   const [isActive, setIsActive] = useState(false);
 
   function handleClick() {
@@ -19,7 +19,7 @@ export default function NavMobile({ cart }): JSX.Element {
         <img src="./images/logo.svg" alt="" />
       </div>
       <div className="flex items-center justify-center gap-5">
-        <Cart cart={cart} />
+        <Cart cart={cart} setCart={setCart} />
         <User />
       </div>
       <Sidemenu isActive={isActive} handleClick={handleClick} />

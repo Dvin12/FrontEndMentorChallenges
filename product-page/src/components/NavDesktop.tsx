@@ -1,7 +1,7 @@
 import Cart from "./Cart";
 import User from "./User";
 
-export default function NavDesktop({ cart }) {
+export default function NavDesktop({ cart, setCart }) {
   return (
     <nav className="hidden xl:flex items-center justify-between  py-7 border-b-[1px] border-dGrayBlue/30 ">
       <section className="flex items-center gap-16 ">
@@ -40,7 +40,7 @@ export default function NavDesktop({ cart }) {
         </ul>
       </section>
       <section className="flex items-center justify-center gap-12">
-        <Cart cart={cart} />
+        <Cart cart={cart} setCart={setCart} />
         <User />
       </section>
     </nav>
