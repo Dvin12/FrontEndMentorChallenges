@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Sidemenu from "./Sidemenu";
 import Cart from "./Cart";
+import User from "./User";
 
 export default function NavMobile({ cart }): JSX.Element {
   const [isActive, setIsActive] = useState(false);
@@ -19,9 +20,7 @@ export default function NavMobile({ cart }): JSX.Element {
       </div>
       <div className="flex items-center justify-center gap-5">
         <Cart cart={cart} />
-        <button className="">
-          <img src="./images/image-avatar.png" alt="" className="w-[30px]" />
-        </button>
+        <User />
       </div>
       <Sidemenu isActive={isActive} handleClick={handleClick} />
     </nav>

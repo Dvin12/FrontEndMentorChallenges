@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function Cart({ cart }) {
-  const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(false);
 
   function handleClick() {
     setIsActive((active) => !active);
@@ -9,7 +9,7 @@ export default function Cart({ cart }) {
   return (
     <>
       <button onClick={handleClick} className="relative">
-        <img src="./images/icon-cart.svg" alt="" />
+        <img src="./images/icon-cart.svg" alt="" className="xl:w-[26px]" />
         {cart[0]?.itemAmount > 0 ? (
           <span className=" absolute -top-2 -right-2 bg-orange rounded-full w-5 h-4 text-xs text-white">
             {cart[0]?.itemAmount}

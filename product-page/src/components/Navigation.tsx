@@ -5,7 +5,7 @@ export default function Navigation({ cart }) {
   return (
     <>
       <NavMobile cart={cart} />
-      <NavDesktop />
+      <NavDesktop cart={cart} />
     </>
   );
 }

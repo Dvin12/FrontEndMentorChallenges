@@ -1,23 +1,18 @@
-import { Splide } from "@splidejs/react-splide";
-
-import Image from "./Image";
+import ImageDesktop from "./ImageDesktop";
+import ImageMobile from "./ImageMobile";
 import { Product } from "./Interfaces";
 
 interface ProductProps {
   product: Pick<Product, "thumbnails" | "images">;
 }
 
-export default function Images({ product: { images } }: ProductProps) {
+export default function Images({
+  product: { images, thumbnails },
+}: ProductProps) {
   return (
-    <Splide
-      options={{
-        height: 300,
-        pagination: false,
-      }}
-    >
-      {images.map((image, i) => (
-        <Image image={image} key={i} />
-      ))}
-    </Splide>
+    <>
+      <ImageDesktop images={images} thumbnails={thumbnails} />
+      <ImageMobile images={images} />
+    </>
   );
 }
