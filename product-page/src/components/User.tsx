@@ -4,7 +4,7 @@ export default function User() {
       <img
         src="./images/image-avatar.png"
         alt=""
-        className="w-[30px] xl:w-[58px] hover:border-orange duration-200 border-[3px] border-transparent rounded-full "
+        className="w-[30px] rounded-full border-[3px] border-transparent duration-200 hover:border-orange xl:w-[58px] "
       />
     </button>
   );

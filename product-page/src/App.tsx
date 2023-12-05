@@ -9,9 +9,9 @@ export default function App() {
   const [amount, setAmount] = useState(0);
 
   return (
-    <main className="font-kumbhSans  xl:mx-40 h-screen">
+    <main className="h-screen font-kumbhSans  xl:mx-40 xl:overflow-hidden">
       <Navigation cart={cart} setCart={setCart} />
-      <section className=" grid grid-cols-1 xl:grid-cols-2 xl:place-items-center gap-4 xl:px-10 h-full">
+      <section className=" grid h-full grid-cols-1 gap-4 xl:grid-cols-2 xl:place-items-center xl:px-10">
         <Images product={data} />
         <Information
           product={data}

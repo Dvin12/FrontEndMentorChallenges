@@ -17,5 +17,4 @@ export default {
       kumbhSans: ["Kumbh Sans"],
     },
   },
-  plugins: [],
 };

@@ -30,7 +30,7 @@ export default function Modal({
   };
 
   return (
-    <section className="absolute top-0 left-0 bg-black/70 w-full h-full z-40  text-white items-center justify-center flex flex-col gap-8">
+    <section className="absolute left-0 top-0 z-40 flex h-full w-full  flex-col items-center justify-center gap-8 bg-black/70 text-white">
       <Splide
         options={{
           width: 560,
@@ -45,12 +45,12 @@ export default function Modal({
         ))}
       </Splide>
       <div>
-        <ul className="flex gap-4 items-center justify-center">
+        <ul className="flex items-center justify-center gap-4">
           {thumbnails.map((thumbnail, i) => (
             <li
               key={i}
               onClick={() => handleThumbs(i)}
-              className={` cursor-pointer border-[3px] rounded-2xl ${
+              className={` cursor-pointer rounded-2xl border-[3px] ${
                 selectedSlide === i
                   ? " border-orange duration-200  "
                   : " border-transparent"
@@ -61,18 +61,18 @@ export default function Modal({
                 className={`w-[80px] rounded-xl ${
                   selectedSlide === i
                     ? " opacity-40 "
-                    : " hover:opacity-40 duration-300"
+                    : " duration-300 hover:opacity-40"
                 } `}
               />
             </li>
           ))}
         </ul>
       </div>
-      <button className="absolute top-20 left-[78rem] " onClick={handleModal}>
+      <button className="absolute left-[78rem] top-20 " onClick={handleModal}>
         <img
           src="./images/icon-close.svg"
           alt=""
-          className="w-[24px] hover:invert hover:sepia hover:saturate-200 hue-rotate-[348deg]  contrast-200 duration-200"
+          className="w-[24px] contrast-200 hue-rotate-[348deg] duration-200 hover:invert  hover:saturate-200 hover:sepia"
         />
       </button>
     </section>

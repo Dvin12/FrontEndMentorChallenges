@@ -12,7 +12,7 @@ export default function NavMobile({ cart, setCart }: CartProp): JSX.Element {
   }
 
   return (
-    <nav className="xl:hidden flex items-center justify-between w-full px-6 py-4">
+    <nav className="flex w-full items-center justify-between px-6 py-4 xl:hidden">
       <div className="flex items-center justify-center gap-4">
         <button onClick={handleClick}>
           <img src="./images/icon-menu.svg" alt="" />

@@ -18,7 +18,7 @@ export default function Cart({ cart, setCart }: CartProp) {
       <button onClick={handleClick} className="relative">
         <img src="./images/icon-cart.svg" alt="" className="xl:w-[26px]" />
         {cart[0]?.itemAmount > 0 ? (
-          <span className=" absolute -top-2 -right-2 bg-orange rounded-full w-5 h-4 text-xs text-white">
+          <span className=" absolute -right-2 -top-2 h-4 w-5 rounded-full bg-orange text-xs text-white">
             {cart[0]?.itemAmount}
           </span>
         ) : (
@@ -27,24 +27,24 @@ export default function Cart({ cart, setCart }: CartProp) {
       </button>
       {isActive && (
         <section
-          className={`w-full xl:w-[400px] xl:top-24 xl:right-36 xl:left-auto fixed top-16 z-30 left-0 ${
+          className={`fixed left-0 top-16 z-30 w-full xl:left-auto xl:right-36 xl:top-24 xl:w-[400px] ${
             cart.length === 0 ? "h-[250px]" : "h-fit"
           }`}
         >
-          <article className="  shadow-xl    bg-white m-2     rounded-lg h-full  ">
+          <article className="  m-2    h-full rounded-lg     bg-white shadow-xl  ">
             <div className=" border-b-[1px] border-dGrayBlue/30 py-5">
-              <span className=" font-bold px-4">Cart</span>
+              <span className=" px-4 font-bold">Cart</span>
             </div>
             {cart.length === 0 ? (
-              <span className="flex justify-center overflow-hidden h-3/4  items-center font-bold tracking-wide text-dGrayBlue  ">
+              <p className="flex h-3/4 items-center justify-center  overflow-hidden font-bold tracking-wide text-dGrayBlue  ">
                 Your cart is empty.
-              </span>
+              </p>
             ) : (
-              <div className="flex flex-col gap-6 px-4 py-6">
-                <div className="flex items-center justify-between text-dGrayBlue tracking-wide ">
+              <section className="flex flex-col gap-6 px-4 py-6">
+                <div className="flex items-center justify-between tracking-wide text-dGrayBlue ">
                   <img
                     src={`${cart[0].thumbnails[0].thumbnail}`}
-                    alt=""
+                    alt={cart[0].model}
                     className="w-[60px] rounded-lg"
                   />
                   <div>
@@ -61,10 +61,10 @@ export default function Cart({ cart, setCart }: CartProp) {
                     <img src="../images/icon-delete.svg" alt="" />
                   </button>
                 </div>
-                <button className=" bg-orange py-4 rounded-xl text-white font-bold tracking-wide">
+                <button className=" rounded-xl bg-orange py-4 font-bold tracking-wide text-white">
                   Checkout
                 </button>
-              </div>
+              </section>
             )}
           </article>
         </section>

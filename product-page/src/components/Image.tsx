@@ -10,7 +10,11 @@ interface imageProp {
 export default function Image({ image }: imageProp) {
   return (
     <SplideSlide>
-      <img src={image.image} alt="" className=" h-full  w-full object-cover" />
+      <img
+        src={image.image}
+        alt="product image"
+        className=" h-full  w-full object-cover"
+      />
     </SplideSlide>
   );
 }

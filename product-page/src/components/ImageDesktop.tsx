@@ -3,7 +3,7 @@ import Modal from "./Modal";
 import { Product } from "./Interfaces";
 
 interface ImagesThumbnails {
-  images: Product;
+  images: Product[];
   thumbnails: Product;
 }
 
@@ -22,29 +22,29 @@ export default function ImageDesktop({ images, thumbnails }: ImagesThumbnails) {
 
   return (
     <>
-      <section className="hidden xl:flex flex-col items-center justify-center  ">
+      <section className="hidden flex-col items-center justify-center xl:flex  ">
         <div onClick={handleModal}>
           <img
             src={images[0].image}
             alt=""
-            className=" rounded-2xl w-[480px] cursor-pointer"
+            className=" w-[480px] cursor-pointer rounded-2xl"
           />
         </div>
-        <div className="flex items-center gap-5 my-10">
+        <div className="my-10 flex items-center gap-5">
           {thumbnails.map((thumbnail, i) => (
             <div
               onClick={handleModal}
               key={i}
-              className={`border-[3px] rounded-xl  ${
+              className={`rounded-xl border-[3px]  ${
                 0 === i
                   ? "border-orange border-opacity-100 duration-200"
-                  : " border-transparent cursor-pointer"
+                  : " cursor-pointer border-transparent"
               }`}
             >
               <img
                 src={thumbnail.thumbnail}
                 className={`w-[100px] rounded-lg ${
-                  0 === i ? " opacity-40" : " hover:opacity-40 duration-300"
+                  0 === i ? " opacity-40" : " duration-300 hover:opacity-40"
                 } `}
               />
             </div>
